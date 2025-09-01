@@ -2,14 +2,18 @@
 
 Generate a tailored cover letter directly from a job description markdown file using source materials.
 
+**Quick Help:** Use `write_cover_letter -h` or `write_cover_letter --help` to display usage information.
+
 ## Usage
 ```
-write_cover_letter --job_file=<job_description_file_path>
+write_cover_letter --job_file=<job_description_file_path> [--haiku] [--no-analytics]
 ```
-Example: `write_cover_letter --job_file=raw_jobs/google_swe_2025-08-30.md`
+Example: `write_cover_letter --job_file=raw_jobs/google_swe_2025-08-30.md --haiku --no-analytics`
 
 ## Parameters
 - **job_file** (required): Path to the job description markdown file
+- **--haiku** (optional): Use Claude Haiku model for cost optimization (~85% cost reduction)
+- **--no-analytics** (optional): Skip analysis section generation to reduce tokens and cost
 
 ## Required Source Files
 The command requires these files in `source_materials/`:
@@ -123,6 +127,26 @@ LINKS AND REFERENCES:
 - **Cultural Context**: Emphasize 20+ years Japanese engineering collaboration when relevant
 - **Matching**: Use work_experience.yaml categories, keywords, and story_adaptability ratings to select best examples
 
+## Enhanced Haiku Model Directives
+When using `--haiku` flag, apply these additional requirements to match Sonnet 4 quality:
+
+### Content Enhancement
+- **Target Length**: 600+ words (vs default ~400 for Haiku)
+- **Experience Sections**: Include 3-4 bullet points per section (vs 2 for basic)
+- **Technical Detail**: Expand technical descriptions and context
+- **Quantified Results**: Always include specific metrics and outcomes
+
+### Required Sections
+- **LINKS AND REFERENCES**: Always include this section with 2+ relevant supporting links from work_experience.yaml
+- **Source Footnotes**: Insert footnote flags [1], [2] within experience bullets when referencing supporting links
+- **GENERATION METADATA**: Include cost and token tracking (already implemented)
+
+### Quality Matching
+- **Professional Language**: Use sophisticated phrasing and smooth transitions
+- **Technical Depth**: Match Sonnet's level of technical detail and terminology
+- **Experience Integration**: Provide nuanced matching of experiences to job requirements
+- **Comprehensive Coverage**: Address all job requirements with specific examples
+
 ## Gap Flagging System
 - **✅ WELL-SUPPORTED**: YAML has strong matching experience with quantified results
 - **❌ INSUFFICIENT COVERAGE**: REQUIRED skill lacks adequate YAML evidence - UPDATE NEEDED
@@ -145,6 +169,19 @@ Session totals: 15,230 tokens | $0.46
 
 ### Cost Calculation
 - **Claude Sonnet 4**: $3.00 per million input tokens, $15.00 per million output tokens
+- **Claude Haiku**: $0.25 per million input tokens, $1.25 per million output tokens (85% cost reduction)
 - **Session tracking**: Cumulative tokens and costs across all generations
 - **Per-generation tracking**: Specific costs for this cover letter creation
 - **Timestamp**: UTC timestamp for generation audit trail
+
+## Cost Optimization Options
+
+### Model Selection
+- **Sonnet 4** (default): Highest quality, comprehensive analysis (~$0.35-0.40 per letter)
+- **Haiku + --no-analytics**: Fastest, most economical (~$0.05-0.08 per letter, 85% savings)
+- **Haiku with analytics**: Balanced option (~$0.10-0.15 per letter, 65% savings)
+
+### Usage Recommendations
+- **High-stakes applications**: Use default Sonnet 4 with full analytics
+- **Bulk generation**: Use `--haiku --no-analytics` for maximum cost efficiency
+- **Quality review**: Use `--haiku` (with analytics) for cost-conscious quality assurance
