@@ -59,10 +59,10 @@ Sincerely,
 Spencer Barrett
 
 LINKS AND REFERENCES:
-[1] [TITLE] : [HTML_LINK]
-[2] [TITLE] : [HTML_LINK]
+- [1] [TITLE] : [HTML_LINK]
+- [2] [TITLE] : [HTML_LINK]
  ...
-[N] [TITLE] : [HTML_LINK]
+- [N] [TITLE] : [HTML_LINK]
 
 ----------
 
@@ -244,10 +244,11 @@ The `work_experience.yaml` file is the core database that powers intelligent exp
 
 ### narrative_hook:
 - **Purpose**: One-sentence elevator pitch / cover letter opener
-- **Content**: Your #1 achievement + scale + impact
-- **Format**: [Action] + [Scale/Context] + [Quantified Impact]
+- **Content**: Your #1 achievement + scale + business impact
+- **Format**: [Action] + [Scale/Context] + [Single Most Impressive Business Outcome]
 - **Length**: 1 sentence, <25 words
-- **Example**: "Led MLCC platform generating $30M+ sales, produced 9 patents filed (6 issued) [4], managed 25-engineer team"
+- **Impact Type**: High-level business outcome (revenue, market leadership, team scale) - NOT technical metrics
+- **Example**: "Led MLCC platform generating $30M+ sales, managed 25-engineer team through market leadership achievement [4]"
 
 ### situation_task:
 - **Purpose**: Set the stage - what challenge needed solving?
@@ -265,11 +266,12 @@ The `work_experience.yaml` file is the core database that powers intelligent exp
 - **Example**: "Implemented ROS2 architecture [1], designed custom IDL for API generation, led FMEA analysis sessions"
 
 ### quantified_results:
-- **Purpose**: Measurable proof of success
-- **Content**: All numbers, percentages, dollar figures, patents, certifications
-- **Format**: Metric + context + business impact
+- **Purpose**: Measurable proof of success beyond the narrative_hook
+- **Content**: Technical metrics, performance improvements, certifications, patents, additional business outcomes
+- **Format**: Specific metrics + context + validation
 - **Include references**: Add [1], [2] for proven results
-- **Example**: "Achieved 87.5% performance improvement (8→15 fps), deployed to 6 vehicles, generated $30M+ revenue [4]"
+- **Avoid**: Repeating the main business impact already stated in narrative_hook
+- **Example**: "Produced 9 patents filed with 6 issued [4], achieved 87.5% performance improvement (8→15 fps), obtained TÜV certification, delivered 1M+ devices/hour capability"
 
 ## Information Hierarchy Rules
 - **Tier 1 (Hook)** → narrative_hook: Single biggest win that makes someone want to hire you
@@ -281,7 +283,9 @@ The `work_experience.yaml` file is the core database that powers intelligent exp
 - Each fact appears in only ONE field
 - No metric should be repeated across fields
 - Each field should add NEW information
-- If a number appears in narrative_hook, don't repeat it in quantified_results
+- **narrative_hook gets the #1 business impact** (revenue, team size, market position)
+- **quantified_results gets all other metrics** (technical performance, certifications, additional outcomes)
+- If $30M revenue is in narrative_hook, don't repeat it in quantified_results
 
 ## Best Practices for Experience Entries
 1. **Quantify Everything**: Use numbers, percentages, time saved, cost reduced

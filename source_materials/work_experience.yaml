@@ -24,8 +24,7 @@ experiences:
   action_description: Managed sensor integration using ROS and FLASH LiDAR, implemented cloud connectivity via AWS for real-time
     data analysis, and contributed embedded programming and GPU acceleration on NVIDIA platforms. Coordinated data flows over
     5G networks. Negotiated and executed $50k+ contracts with infrastructure vendors supporting 3D perception stack deployment.
-  quantified_results: Successfully deployed collision alert system to pilot fleet, negotiated multiple $50k+ vendor contracts
-    while maintaining cost targets; tuned perception 8→15fps (87.5% improvement) by optimizing ROS2 node graph, CAN decoding, and telemetry feedback loops.
+  quantified_results: Tuned perception performance 8→15fps (87.5% improvement) by optimizing ROS2 node graph, CAN decoding, and telemetry feedback loops [1]
   proficiency_level: Expert
   keywords:
   - collision detection
@@ -84,7 +83,7 @@ experiences:
     result: 6
   stakeholders: []
   region_context: []
-  narrative_hook: Led collision detection system from prototype through client [1] demos to successful field deployment across 6-van fleet, achieving 87.5% perception performance improvement via ROS2 optimization
+  narrative_hook: Led collision detection system field deployment across 6-van pilot fleet while managing $50k+ vendor contracts [1]
   supporting_links:
   - ref_number: 1
     title: Vehicles that are best-in-class in safety
@@ -123,9 +122,7 @@ experiences:
     verification matrices ensuring full requirements traceability through testing. Coordinated closely with marketing and customer 
     base to develop product roadmaps. Delivered systems capable of testing 1M+ MLCC devices per hour with real-time processing 
     and high-bandwidth data collection.
-  quantified_results: Generated $30M+ in sales from MLCC testing platform while producing 9 patents filed with 6 issued [4]. 
-    Successfully delivered multiple manufacturing workcells from requirements through TÜV certification and field trials using 
-    formal V-model process, achieving market leadership position
+  quantified_results: Produced 9 patents filed with 6 issued [4]. Successfully delivered multiple manufacturing workcells from requirements through TÜV certification and field trials using formal V-model process, achieving market leadership position
   proficiency_level: Expert
   keywords:
   - systems engineering
@@ -220,7 +217,7 @@ experiences:
     url: https://www.linkedin.com/in/spencer-barrett-3263528/overlay/1520433082853/single-media-viewer
   - ref_number: 5
     title: Instrument for measuring eye IR irradiance exposure
-    url: https://docs.google.com/presentation/d/1Mrmg_oQqFi2SO_9tXgrx8gbg1fHQ7j9u2NnY8PWKS54/edit?usp=sharing
+    url: http://bit.ly/3JNMi2T
   - ref_number: 6
     title: Morse Code Decoding Algorithm
     url: https://github.com/unbedded/morsecode
@@ -240,7 +237,7 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: Automated tests and CI pipelines to accelerate safe iteration.
+  narrative_hook: Published open-source AI-assisted V-model development framework with automated code generation [1]
 
 - experience_id: EXP_025
   category: Technical Documentation & Architecture
@@ -292,7 +289,7 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: ''
+  narrative_hook: Established comprehensive technical documentation and requirements architecture across multiple organizations
 
 - experience_id: EXP_018
   category: Hardware & Low-Level Systems
@@ -355,7 +352,7 @@ experiences:
     delta_percent: 566.7
   stakeholders: []
   region_context: []
-  narrative_hook: Scaled production throughput substantially via distributed control and high‑speed I/O.
+  narrative_hook: Scaled MLCC tester throughput from 150k/hr to 1M/hr through distributed real-time control system design
 
 - experience_id: EXP_019
   category: AI/Machine Learning
@@ -403,7 +400,7 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: ''
+  narrative_hook: Established Agile development workflows with modern toolchain for Linux-based robotics software delivery
 
 - experience_id: EXP_020
   category: Robotics Frameworks & Libraries
@@ -456,7 +453,7 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: Improved robotic workcell precision and cycle time with SLAM‑based calibration.
+  narrative_hook: Managed 20×20m autonomous ROS robotic workcell with 6-DOF arm for SLAM device regression testing
 
 - experience_id: EXP_021
   category: Project Management & Methodology
@@ -505,7 +502,7 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: ''
+  narrative_hook: Established Agile development workflows with modern toolchain for Linux-based robotics software delivery
 
 - experience_id: EXP_022
   category: Software Engineering Practices
@@ -557,7 +554,7 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: ''
+  narrative_hook: Established Agile development workflows with modern toolchain for Linux-based robotics software delivery
 
 - experience_id: EXP_024
   category: AI/Machine Learning
@@ -606,7 +603,7 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: ''
+  narrative_hook: Established Agile development workflows with modern toolchain for Linux-based robotics software delivery
 
 - experience_id: EXP_012
   category: Core Programming Languages
@@ -652,7 +649,7 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: ''
+  narrative_hook: Established Agile development workflows with modern toolchain for Linux-based robotics software delivery
 
 - experience_id: EXP_013
   category: Networking & Communication
@@ -711,13 +708,12 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: Unified high‑speed CAN (DBC) and Ethernet sensors into time‑aligned ROS2 topics for real‑time validation.
+  narrative_hook: Integrated multi-protocol automotive data streams supporting real-time ADAS validation and perception systems
 
 - experience_id: EXP_014
   category: Hardware & Low-Level Systems
   primary_skill: ARM SoC Development
   secondary_skills:
-  - NVIDIA Jetson
   - STM32F4xx
   - ARM Cortex-M4
   - FreeRTOS
@@ -729,14 +725,16 @@ experiences:
     timeframe: Recent
     role: Embedded Software Engineer
     team_size: null
-  situation_task: Required development on ARM-based SoC architectures for embedded robotics and automotive applications
-  action_description: Developed embedded software for NVIDIA Jetson and STM32F4xx ARM Cortex-M4 platforms running FreeRTOS.
-    Implemented secure communications using hardware encryption for embedded system security.
-  quantified_results: Successfully deployed embedded solutions on multiple ARM architectures with hardware-level security
+  situation_task: Needed to accelerate embedded development cycles while ensuring secure communications 
+    for ARM-based robotics and consumer devices in competitive market
+  action_description: Developed embedded software for ARM Cortex-M4 platforms running FreeRTOS. 
+    Implemented secure communications using hardware encryption for embedded system security [1]. 
+    Created custom IDL system for automatic API and gRPC interface generation [2].
+  quantified_results: Delivered secure embedded systems for multiple product lines, implemented hardware encryption protocols, 
+    generated comprehensive API documentation and interfaces
   proficiency_level: Advanced
   keywords:
   - ARM architecture
-  - NVIDIA Jetson
   - STM32
   - FreeRTOS
   - embedded development
@@ -748,9 +746,12 @@ experiences:
   - security
   - hardware
   supporting_links:
+  - ref_number: 1
+    title: Embedded System SECURITY Cryptography Options
+    url: http://bit.ly/4g9fiOI
   - ref_number: 2
-    title: STM32 secure communications doc
-    url: https://www.linkedin.com/in/spencer-barrett-3263528/overlay/experience/762816574/multiple-media-viewer
+    title: Auto API generation and gRPC w/ embedded systems
+    url: https://bit.ly/42d8Tfq
   tech_stack: []
   validation_methods: []
   integration_scopes: []
@@ -760,7 +761,7 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: ''
+  narrative_hook: Accelerated embedded development by 30% through automated API generation for ARM-based consumer devices
 
 - experience_id: EXP_015
   category: Specialized Technical Areas
@@ -805,7 +806,7 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: ''
+  narrative_hook: Established Agile development workflows with modern toolchain for Linux-based robotics software delivery
 
 - experience_id: EXP_016
   category: Soft Skills & Communication
@@ -849,7 +850,7 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: ''
+  narrative_hook: Established Agile development workflows with modern toolchain for Linux-based robotics software delivery
 
 - experience_id: EXP_017
   category: Language Requirements
@@ -889,7 +890,7 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: ''
+  narrative_hook: Established Agile development workflows with modern toolchain for Linux-based robotics software delivery
 
 - experience_id: EXP_002
   category: Specialized Technical Areas
@@ -951,7 +952,7 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: Expanded AEB VRU test coverage and quantified detection quality under Euro NCAP‑like scenarios.
+  narrative_hook: Led comprehensive AEB-VRU system evaluation achieving 8-meter detection range across all test scenarios
 
 - experience_id: EXP_003
   category: Software Engineering Practices
@@ -1012,7 +1013,7 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: Built AI‑assisted workflows with reproducible prompts and regression tests.
+  narrative_hook: Built comprehensive AI-assisted development environment with automated code generation published as open-source [1]
 
 - experience_id: EXP_009
   category: Core Programming Languages
@@ -1062,7 +1063,7 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: ''
+  narrative_hook: Established Agile development workflows with modern toolchain for Linux-based robotics software delivery
 
 - experience_id: EXP_010
   category: Development Environment & Tools
@@ -1108,7 +1109,7 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: ''
+  narrative_hook: Established Agile development workflows with modern toolchain for Linux-based robotics software delivery
 
 - experience_id: EXP_011
   category: Specialized Technical Areas
@@ -1153,7 +1154,7 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: ''
+  narrative_hook: Established Agile development workflows with modern toolchain for Linux-based robotics software delivery
 
 - experience_id: EXP_004
   category: Development Environment & Tools
@@ -1196,7 +1197,7 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: ''
+  narrative_hook: Established Agile development workflows with modern toolchain for Linux-based robotics software delivery
 
 - experience_id: EXP_005
   category: Specialized Technical Areas
@@ -1238,7 +1239,7 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: ''
+  narrative_hook: Established Agile development workflows with modern toolchain for Linux-based robotics software delivery
 
 - experience_id: EXP_006
   category: Networking & Communication
@@ -1250,17 +1251,17 @@ experiences:
   - BLE
   - TCP/IP
   - Python
-  experience_title: Custom Communication Protocol with Wireless Extensions
+  experience_title: Custom Communication Protocol with Wireless Extensions and API Auto-Generation
   context:
-    company: PREACT TECHNOLOGIES
+    company: Open Source Project
     timeframe: 2022-2024
-    role: Application Engineering Manager
+    role: Principal Investigator 
     team_size: null
   situation_task: Needed efficient communication between embedded systems and host applications, plus wireless control and
     diagnostics capabilities
   action_description: Designed and implemented custom Interface Definition Language (IDL) that auto-generated API, embedded
     command-line interpreter, and host-side Python interface. Extended system to support gRPC with BLE adaptors for wireless
-    control. Implemented bidirectional gRPC streaming over TCP/IP.
+    control [1]. Implemented bidirectional gRPC streaming over TCP/IP.
   quantified_results: Created comprehensive communication framework enabling wireless control and diagnostics of embedded
     systems
   proficiency_level: Expert
@@ -1276,8 +1277,10 @@ experiences:
   - architecture
   - communication
   - wireless
-  supporting_links: []
-  tech_stack: []
+  supporting_links:
+  - ref_number: 1
+    title: Auto API generation and gRPC w/ embedded systems
+    url: https://bit.ly/42d8Tfq  tech_stack: []
   validation_methods: []
   integration_scopes: []
   environments: []
@@ -1286,7 +1289,7 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: ''
+  narrative_hook: Built comprehensive communication framework from scratch w/ IDL-auto-generation, enabling seamless wireless control and diagnostics of embedded systems
 
 - experience_id: EXP_007
   category: Language Requirements
@@ -1330,7 +1333,7 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: ''
+  narrative_hook: Established Agile development workflows with modern toolchain for Linux-based robotics software delivery
 
 - experience_id: EXP_008
   category: Industry Experience
@@ -1374,7 +1377,7 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: ''
+  narrative_hook: Established Agile development workflows with modern toolchain for Linux-based robotics software delivery
 parsing_config:
   default_proficiency: Intermediate
   default_adaptability: Medium

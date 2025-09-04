@@ -22,24 +22,25 @@ review_experience [--experience_id=EXP_XXX] [--check-redundancy] [--suggest-impr
 
 ## Review Criteria
 
-The command uses the **Experience Database Reference** section from `write_cover_letter.md` as its review standard, including:
+This command applies the complete **Experience Database Reference** section from `write_cover_letter.md`:
 
-### Field Definition Compliance
-- **narrative_hook**: One sentence, <25 words, strongest achievement with impact
-- **situation_task**: Context and challenge, no numbers (save for results)
-- **action_description**: Specific methods and approaches, no outcomes
-- **quantified_results**: All metrics, percentages, and measurable proof
+### Field Requirements
+- **narrative_hook**: Compelling opening (15-25 words, Tier 1 impact)
+- **situation_task**: Context and objectives (Tier 2 setup)
+- **action_description**: Specific actions taken (Tier 3 methods)
+- **quantified_results**: Measurable outcomes (Tier 4 evidence)
 
-### Anti-Redundancy Rules
-- Each fact appears in only ONE field
-- No metric repetition across fields
-- Each field adds NEW information
-- Numbers in narrative_hook not repeated in quantified_results
+### Quality Standards
+- **STAR Method Structure**: Situation → Task → Action → Result flow
+- **Anti-Redundancy**: Each fact appears in only one field
+- **Evidence Linking**: All claims backed by inline references [1], [2], etc.
+- **Supporting Links Validation**: Referenced sources must exist and be accessible
 
-### Evidence Integration
-- Inline [1], [2] references properly placed in text
-- Supporting links have corresponding inline references
-- Reference numbers unique within each experience_id
+### Best Practices
+- Use active voice and specific metrics
+- Include patent numbers, publication titles, or other verifiable evidence
+- Maintain professional tone while showcasing impact
+- Ensure logical progression from context to results
 
 ## Sample Output
 
@@ -58,15 +59,42 @@ RECOMMENDATIONS:
 QUALITY SCORE: 85/100
 ```
 
-## Integration with write_cover_letter.md
+## Quality Score Methodology
 
-This command references the comprehensive **Experience Database Reference** section in `write_cover_letter.md` which contains:
+**Score Breakdown (0-100 points):**
+- **Field Completeness** (25 pts): All required fields present and properly formatted
+- **STAR Structure** (20 pts): Clear progression from situation to results
+- **Anti-Redundancy** (20 pts): No duplicate information across fields
+- **Evidence Quality** (20 pts): Inline references match supporting_links
+- **Impact Clarity** (15 pts): Quantified results and compelling narrative hook
 
-- Field Definition Rules (narrative_hook, situation_task, action_description, quantified_results)
-- Information Hierarchy Rules (Tier 1-4 structure)  
-- Anti-Redundancy Rules
-- Best Practices for Experience Entries
-- Complete example entry with proper structure
+**Score Ranges:**
+- **90-100**: Excellent, ready for high-impact applications
+- **80-89**: Good, minor improvements needed
+- **70-79**: Adequate, moderate improvements required
+- **60-69**: Poor, significant revision needed
+- **Below 60**: Requires complete restructuring
+
+## Example Commands
+
+```bash
+# Review all experiences for redundancy
+review_experience --check-redundancy
+
+# Get improvement suggestions for specific experience
+review_experience --experience_id=EXP_001 --suggest-improvements
+
+# Full analysis of single experience
+review_experience --experience_id=EXP_026 --check-redundancy --suggest-improvements
+```
+
+## Troubleshooting
+
+**Common Issues:**
+- **Missing references**: Add [1], [2] citations after claims
+- **Redundant metrics**: Move duplicate numbers to single appropriate field
+- **Weak narrative hooks**: Start with quantified impact or notable achievement
+- **Vague actions**: Replace generic terms with specific technical methods
 
 ## Benefits
 
