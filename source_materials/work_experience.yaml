@@ -1,4 +1,5 @@
 experiences:
+
 - experience_id: EXP_001
   category: Industry Experience
   primary_skill: Autonomous Vehicle Systems Management
@@ -24,7 +25,7 @@ experiences:
     data analysis, and contributed embedded programming and GPU acceleration on NVIDIA platforms. Coordinated data flows over
     5G networks. Negotiated and executed $50k+ contracts with infrastructure vendors supporting 3D perception stack deployment.
   quantified_results: Successfully deployed collision alert system to pilot fleet, negotiated multiple $50k+ vendor contracts
-    while maintaining cost targets
+    while maintaining cost targets; tuned perception 8→15fps (87.5% improvement) by optimizing ROS2 node graph, CAN decoding, and telemetry feedback loops.
   proficiency_level: Expert
   keywords:
   - collision detection
@@ -83,8 +84,12 @@ experiences:
     result: 6
   stakeholders: []
   region_context: []
-  narrative_hook: Brought up a pilot fleet of 6 driverless vans; tuned perception 8→15 fps by optimizing ROS2 node graph,
-    CAN decoding, and telemetry feedback loops.
+  narrative_hook: Led collision detection system from prototype through client [1] demos to successful field deployment across 6-van fleet, achieving 87.5% perception performance improvement via ROS2 optimization
+  supporting_links:
+  - ref_number: 1
+    title: Vehicles that are best-in-class in safety
+    url: https://www.aboutamazon.com/news/transportation/amazon-will-spend-200-million-on-safety-technology-across-its-transportation-network-in-2023
+
 - experience_id: EXP_026
   category: Technical Documentation & Architecture
   primary_skill: Systems Engineering V-Model Leadership
@@ -98,19 +103,29 @@ experiences:
   - Acceptance Testing
   - TÜV Certification
   - Field Trials
-  experience_title: Ground-Up Manufacturing Workcell System Development
+  - Patent Development
+  - Market Analysis
+  experience_title: Technical Leadership in Product Development with Patent Generation
   context:
     company: ESI
     timeframe: Multiple multiyear projects
-    role: Lead System Engineer
-    team_size: null
-  situation_task: Required ground-up development of real-time electronic component manufacturing workcells following formal
-    systems engineering processes
-  action_description: Led several multiyear developments as lead system engineer for real-time manufacturing workcells. Elicited
-    customer requirements, wrote comprehensive system requirements, supported design tradeoffs to reduce risk uncovered in
-    FMEA analysis. Created verification matrix providing full traceability of requirements through testing.
-  quantified_results: Successfully delivered multiple manufacturing workcells from requirements through TÜV certification
-    and field trials using formal V-model process
+    role: Lead System Engineer / Technical Leader
+    team_size: 25
+  situation_task: Required technical leadership with high-level vision to balance project constraints, customer requirements, 
+    and market trends while bringing new products to market. Led ground-up development of MLCC testing platform and related 
+    manufacturing workcells following formal V-model systems engineering processes, managing 25-engineer development team 
+    across multiple multiyear projects to achieve market leadership position    
+  action_description: Served as technical leader balancing project constraints, customer requirements, and market trends to 
+    bring new products to market. Produced intellectual property with 9 patents filed and 6 issued, including keystone patent 
+    US6706999B1 [4] for ESI's Third Dynamics™ laser drilling system. Led systems engineering lifecycle from customer requirements 
+    elicitation through TÜV certification as principal engineer for multiple manufacturing workcells. Developed comprehensive 
+    system requirements, engineering specifications, and test plans while managing design tradeoffs using FMEA analysis. Created 
+    verification matrices ensuring full requirements traceability through testing. Coordinated closely with marketing and customer 
+    base to develop product roadmaps. Delivered systems capable of testing 1M+ MLCC devices per hour with real-time processing 
+    and high-bandwidth data collection.
+  quantified_results: Generated $30M+ in sales from MLCC testing platform while producing 9 patents filed with 6 issued [4]. 
+    Successfully delivered multiple manufacturing workcells from requirements through TÜV certification and field trials using 
+    formal V-model process, achieving market leadership position
   proficiency_level: Expert
   keywords:
   - systems engineering
@@ -121,11 +136,19 @@ experiences:
   - traceability
   - certification
   - manufacturing systems
+  - patent development
+  - technical leadership
+  - product development
+  - market analysis
+  - intellectual property
   story_adaptability: High
   tags:
   - systems-engineering
   - certification
   - leadership
+  - patents
+  - innovation
+  supporting_links:
   - ref_number: 4
     title: ESI Third Dynamics laser drilling system, US Patent 6706999B1
     url: https://patents.google.com/patent/US6706999B1/en
@@ -134,11 +157,27 @@ experiences:
   integration_scopes: []
   environments: []
   job_alignment: []
-  impact_type: []
-  metrics: []
+  impact_type:
+  - innovation
+  - revenue
+  - market-leadership
+  metrics:
+  - name: Patents filed
+    unit: count
+    result: 9
+  - name: Patents issued
+    unit: count
+    result: 6
+  - name: Revenue generated
+    unit: USD
+    result: 30000000
+  - name: Team size managed
+    unit: engineers
+    result: 25
   stakeholders: []
   region_context: []
-  narrative_hook: ''
+  narrative_hook: Technical leader who brought new products to market generating $30M+ in sales, produced 9 patents filed (6 issued) including keystone patent US6706999B1 [4], while managing 25-engineer team through full V-model development
+
 - experience_id: EXP_027
   category: Technical Documentation & Architecture
   primary_skill: AI-Assisted V-Model Software Development
@@ -202,6 +241,7 @@ experiences:
   stakeholders: []
   region_context: []
   narrative_hook: Automated tests and CI pipelines to accelerate safe iteration.
+
 - experience_id: EXP_025
   category: Technical Documentation & Architecture
   primary_skill: Technical Documentation & Requirements Management
@@ -253,6 +293,7 @@ experiences:
   stakeholders: []
   region_context: []
   narrative_hook: ''
+
 - experience_id: EXP_018
   category: Hardware & Low-Level Systems
   primary_skill: Distributed Real-Time Control Systems
@@ -315,6 +356,7 @@ experiences:
   stakeholders: []
   region_context: []
   narrative_hook: Scaled production throughput substantially via distributed control and high‑speed I/O.
+
 - experience_id: EXP_019
   category: AI/Machine Learning
   primary_skill: Computer Vision & Machine Learning
@@ -362,6 +404,7 @@ experiences:
   stakeholders: []
   region_context: []
   narrative_hook: ''
+
 - experience_id: EXP_020
   category: Robotics Frameworks & Libraries
   primary_skill: SLAM & ROS Robotics
@@ -414,6 +457,7 @@ experiences:
   stakeholders: []
   region_context: []
   narrative_hook: Improved robotic workcell precision and cycle time with SLAM‑based calibration.
+
 - experience_id: EXP_021
   category: Project Management & Methodology
   primary_skill: Agile Development with Modern Toolchain
@@ -462,6 +506,7 @@ experiences:
   stakeholders: []
   region_context: []
   narrative_hook: ''
+
 - experience_id: EXP_022
   category: Software Engineering Practices
   primary_skill: Open Source Development & AI Integration
@@ -513,48 +558,7 @@ experiences:
   stakeholders: []
   region_context: []
   narrative_hook: ''
-- experience_id: EXP_023
-  category: Soft Skills & Communication
-  primary_skill: Japanese Team Collaboration
-  secondary_skills:
-  - Consensus-Oriented Communication
-  - Toyota Culture Alignment
-  - Long-Term Relationships
-  - Cultural Adaptation
-  experience_title: 20+ Years Japanese Team Collaboration
-  context:
-    company: Multiple Organizations
-    timeframe: 20+ years
-    role: Various Engineering Roles
-    team_size: null
-  situation_task: Required effective collaboration with Japanese engineering teams using culturally appropriate communication
-    styles
-  action_description: Collaborated with Japanese teams for 20+ years using consensus-oriented communication aligned with Toyota's
-    collaborative culture. Developed deep understanding of Japanese business practices and relationship-building approaches.
-  quantified_results: Maintained successful 20+ year collaboration track record with Japanese engineering teams
-  proficiency_level: Expert
-  keywords:
-  - Japanese collaboration
-  - consensus communication
-  - Toyota culture
-  - long-term relationships
-  - cultural adaptation
-  story_adaptability: High
-  tags:
-  - collaboration
-  - cultural
-  - long-term
-  supporting_links: []
-  tech_stack: []
-  validation_methods: []
-  integration_scopes: []
-  environments: []
-  job_alignment: []
-  impact_type: []
-  metrics: []
-  stakeholders: []
-  region_context: []
-  narrative_hook: ''
+
 - experience_id: EXP_024
   category: AI/Machine Learning
   primary_skill: AI-Accelerated Diagnostic Systems
@@ -603,6 +607,7 @@ experiences:
   stakeholders: []
   region_context: []
   narrative_hook: ''
+
 - experience_id: EXP_012
   category: Core Programming Languages
   primary_skill: Modern C++ Development
@@ -648,6 +653,7 @@ experiences:
   stakeholders: []
   region_context: []
   narrative_hook: ''
+
 - experience_id: EXP_013
   category: Networking & Communication
   primary_skill: Automotive Communication Protocols
@@ -706,6 +712,7 @@ experiences:
   stakeholders: []
   region_context: []
   narrative_hook: Unified high‑speed CAN (DBC) and Ethernet sensors into time‑aligned ROS2 topics for real‑time validation.
+
 - experience_id: EXP_014
   category: Hardware & Low-Level Systems
   primary_skill: ARM SoC Development
@@ -754,6 +761,7 @@ experiences:
   stakeholders: []
   region_context: []
   narrative_hook: ''
+
 - experience_id: EXP_015
   category: Specialized Technical Areas
   primary_skill: Functional Safety & IEC 61010
@@ -798,6 +806,7 @@ experiences:
   stakeholders: []
   region_context: []
   narrative_hook: ''
+
 - experience_id: EXP_016
   category: Soft Skills & Communication
   primary_skill: International Team Leadership
@@ -841,6 +850,7 @@ experiences:
   stakeholders: []
   region_context: []
   narrative_hook: ''
+
 - experience_id: EXP_017
   category: Language Requirements
   primary_skill: Japanese Language Development
@@ -880,6 +890,7 @@ experiences:
   stakeholders: []
   region_context: []
   narrative_hook: ''
+
 - experience_id: EXP_002
   category: Specialized Technical Areas
   primary_skill: AEB/VRU System-Level Testing
@@ -941,6 +952,7 @@ experiences:
   stakeholders: []
   region_context: []
   narrative_hook: Expanded AEB VRU test coverage and quantified detection quality under Euro NCAP‑like scenarios.
+
 - experience_id: EXP_003
   category: Software Engineering Practices
   primary_skill: AI-Assisted Development Tooling
@@ -1001,6 +1013,7 @@ experiences:
   stakeholders: []
   region_context: []
   narrative_hook: Built AI‑assisted workflows with reproducible prompts and regression tests.
+
 - experience_id: EXP_009
   category: Core Programming Languages
   primary_skill: Multi-Language Software Development
@@ -1050,6 +1063,7 @@ experiences:
   stakeholders: []
   region_context: []
   narrative_hook: ''
+
 - experience_id: EXP_010
   category: Development Environment & Tools
   primary_skill: Scalable Data Ingestion Systems
@@ -1095,6 +1109,7 @@ experiences:
   stakeholders: []
   region_context: []
   narrative_hook: ''
+
 - experience_id: EXP_011
   category: Specialized Technical Areas
   primary_skill: Database & Data Storage Systems
@@ -1139,6 +1154,7 @@ experiences:
   stakeholders: []
   region_context: []
   narrative_hook: ''
+
 - experience_id: EXP_004
   category: Development Environment & Tools
   primary_skill: Docker & Git
@@ -1181,6 +1197,7 @@ experiences:
   stakeholders: []
   region_context: []
   narrative_hook: ''
+
 - experience_id: EXP_005
   category: Specialized Technical Areas
   primary_skill: OpenGL & Point Cloud Visualization
@@ -1222,6 +1239,7 @@ experiences:
   stakeholders: []
   region_context: []
   narrative_hook: ''
+
 - experience_id: EXP_006
   category: Networking & Communication
   primary_skill: Custom API & Protocol Development
@@ -1269,6 +1287,7 @@ experiences:
   stakeholders: []
   region_context: []
   narrative_hook: ''
+
 - experience_id: EXP_007
   category: Language Requirements
   primary_skill: Japanese Business Communication
@@ -1312,6 +1331,7 @@ experiences:
   stakeholders: []
   region_context: []
   narrative_hook: ''
+
 - experience_id: EXP_008
   category: Industry Experience
   primary_skill: Autonomous Vehicle Development

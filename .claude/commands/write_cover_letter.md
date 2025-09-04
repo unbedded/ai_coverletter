@@ -18,13 +18,13 @@ Example: `write_cover_letter --job_file=raw_jobs/google_swe_2025-08-30.md --haik
 ## Required Source Files
 The command requires these files in `source_materials/`:
 1. **resume.md** - Your resume in markdown format
-2. **work_experience.yaml** - Detailed skill:qualification database  
+2. **work_experience.yaml** - Detailed skill:qualification database (see Experience Database Reference at end)
 3. **personal_info.md** - Contact information and preferences
 
 ## Process
 1. Read the job description from the provided file path
 2. Extract company name, position, key REQUIRED and NICE TO HAVE requirements
-3. Load source materials (resume, work experience YAML, personal info)
+3. Load source materials (resume, work_experience YAML, personal info)
 4. Match job requirements with qualifications from work_experience.yaml
 5. Generate tailored cover letter using the specified template
 6. **FLAG missing coverage** for REQUIRED skills not adequately supported by YAML
@@ -42,22 +42,18 @@ The cover letter will be saved to the `output/` directory with the prefix `cvrlt
 Hiring Committee
 [JOB TITLE]
 [COMPANY]
-
 RE: [JOB TITLE]
 
-I am excited to apply for the [JOB TITLE] role at [COMPANY]. [3-4 sentences of why I am a great fit for this job].
+[LEAD WITH STRONGEST, MOST RELEVANT ACHIEVEMENT - Include specific metrics and direct connection to role requirements. Example: "Brought up a pilot fleet of 6 driverless vans and tuned perception performance from 8→15 fps (87% improvement) by optimizing ROS2 node graphs, CAN decoding, and telemetry feedback loops. This real-world autonomous vehicle deployment experience directly aligns with [COMPANY]'s [SPECIFIC PROJECT/CHALLENGE] integration challenges."]
 
-I am eager to support [COMPANY] mission to [MISSION]. With over 20 years of experience working both in-country and remotely with Japanese engineering teams, I bring integration expertise, strong cross-cultural communication skills, and a deep respect for Japanese business practices. I exceed the minimum and nice-to-have qualifications with the following experience:
+With over 20 years of systems integration experience, including extensive collaboration with Japanese engineering teams, I am excited to contribute to [COMPANY]'s [MISSION] through [SPECIFIC CONTRIBUTION RELEVANT TO ROLE].
 
-[EXPERIENCE TITLE - Pull the Requirement Directly from the Job Posting]
+[EXPERIENCE TITLE 1 - Pull the Requirement Directly from the Job Posting]
 - [bullet list Demonstrating You Meet Requirements, provide a Specific Example from Your Work, and Highlight the Result or Outcome]
-
-[EXPERIENCE TITLE 2]
-- [bullet list with specific examples and quantified results]
 
 [Additional experience sections as needed for REQUIRED qualifications, plus strong NICE TO HAVE matches]
 
-[Closing text] I am excited about the opportunity to contribute to [company/project], leveraging my experience in [3x of the required skills that are strongest] and cross-cultural collaboration. I look forward to discussing how my skills align with [company's mission].
+[Closing text] I look forward to the opportunity to contribute to [company/project], leveraging my experience in [3x of the required skills that are strongest] and cross-cultural collaboration. I look forward to discussing how my skills align with [company's mission].
 
 Sincerely,
 Spencer Barrett
@@ -65,10 +61,19 @@ Spencer Barrett
 LINKS AND REFERENCES:
 [1] [TITLE] : [HTML_LINK]
 [2] [TITLE] : [HTML_LINK]
+ ...
+[N] [TITLE] : [HTML_LINK]
 
----
+----------
 
 ## ANALYSIS & METRICS
+
+### GENERATION METADATA
+Generated: 2025-08-31 12:45:30 UTC
+Input tokens: 3,420 | Output tokens: 1,250 | Total: 4,670
+Estimated cost: $0.14 (Claude Sonnet 4)
+Session totals: 15,230 tokens | $0.46
+
 
 ### Document Size Metrics
 | Section | Lines | Words | Notes |
@@ -156,17 +161,6 @@ When using `--haiku` flag, apply these additional requirements to match Sonnet 4
 ## Token Usage Tracking
 The command tracks token usage and costs for each cover letter generation:
 
-### Generation Footer
-Each cover letter includes a footer with usage metrics:
-```
----
-GENERATION METADATA
-Generated: 2025-08-31 12:45:30 UTC
-Input tokens: 3,420 | Output tokens: 1,250 | Total: 4,670
-Estimated cost: $0.14 (Claude Sonnet 4)
-Session totals: 15,230 tokens | $0.46
-```
-
 ### Cost Calculation
 - **Claude Sonnet 4**: $3.00 per million input tokens, $15.00 per million output tokens
 - **Claude Haiku**: $0.25 per million input tokens, $1.25 per million output tokens (85% cost reduction)
@@ -185,3 +179,182 @@ Session totals: 15,230 tokens | $0.46
 - **High-stakes applications**: Use default Sonnet 4 with full analytics
 - **Bulk generation**: Use `--haiku --no-analytics` for maximum cost efficiency
 - **Quality review**: Use `--haiku` (with analytics) for cost-conscious quality assurance
+
+---
+
+# Experience Database Reference
+
+## YAML Structure: work_experience.yaml
+
+The `work_experience.yaml` file is the core database that powers intelligent experience matching. Each experience entry should follow this structure:
+
+### Required Fields (MUST have for matching to work):
+```yaml
+- experience_id: EXP_XXX  # Unique identifier (e.g., EXP_001)
+  category: [Category Name]  # One of: Industry Experience, Core Programming Languages, etc.
+  primary_skill: [Main Skill]  # Primary skill/capability demonstrated
+  experience_title: [Title]  # Concise title for this experience
+  action_description: [Description]  # What you did (past tense, specific actions)
+  quantified_results: [Results]  # Measurable outcomes achieved
+  proficiency_level: [Expert|Advanced|Intermediate]  # Your skill level
+  keywords: [list]  # Searchable terms for matching
+  story_adaptability: [High|Medium|Low]  # How flexible this story is for different contexts
+  tags: [list]  # Quick categorization tags
+```
+
+### Highly Recommended Fields (for better matching):
+```yaml
+  secondary_skills:  # Additional skills demonstrated
+    - [Skill 1]
+    - [Skill 2]
+  context:  # Where/when this happened
+    company: [Company Name]
+    timeframe: [Time Period]
+    role: [Your Role]
+    team_size: [number or null]
+  situation_task: [Background]  # Problem/challenge you faced (sets up the story)
+  narrative_hook: [One-liner]  # Catchy summary for cover letter opening
+  tech_stack:  # Specific technologies used
+    - [Technology 1]
+    - [Technology 2]
+  supporting_links:  # Evidence/portfolio links
+    - ref_number: [1-9]  # Use [1], [2] etc. inline in action_description or quantified_results
+      title: [Link Title]
+      url: [URL]
+```
+
+### Optional Fields (for comprehensive documentation):
+```yaml
+  job_alignment: [list]  # Specific job requirements this addresses
+  impact_type: [list]  # Type of impact (performance, quality, scale, etc.)
+  metrics:  # Detailed performance metrics
+    - name: [Metric Name]
+      unit: [Unit of Measure]
+      baseline: [Starting Value]
+      result: [Final Value]
+      delta_percent: [Percentage Change]
+  validation_methods: [list]  # How results were validated
+  integration_scopes: [list]  # Integration aspects covered
+  environments: [list]  # Development/deployment environments
+  stakeholders: [list]  # Who benefited from this work
+  region_context: [list]  # Geographic/cultural relevance
+```
+
+## Field Definition Rules
+
+### narrative_hook:
+- **Purpose**: One-sentence elevator pitch / cover letter opener
+- **Content**: Your #1 achievement + scale + impact
+- **Format**: [Action] + [Scale/Context] + [Quantified Impact]
+- **Length**: 1 sentence, <25 words
+- **Example**: "Led MLCC platform generating $30M+ sales, produced 9 patents filed (6 issued) [4], managed 25-engineer team"
+
+### situation_task:
+- **Purpose**: Set the stage - what challenge needed solving?
+- **Content**: Business context, constraints, why this was hard
+- **Format**: The problem/opportunity that required your intervention
+- **No numbers**: Save metrics for results
+- **Example**: "Required ground-up development of testing platform following formal V-model processes to achieve market leadership"
+
+### action_description:
+- **Purpose**: What you specifically did (the "how")
+- **Content**: Your methods, processes, decisions, leadership actions
+- **Format**: Specific verbs + technical approaches + management actions
+- **No outcomes**: Save results for quantified_results
+- **Include references**: Add [1], [2] where evidence supports specific actions
+- **Example**: "Implemented ROS2 architecture [1], designed custom IDL for API generation, led FMEA analysis sessions"
+
+### quantified_results:
+- **Purpose**: Measurable proof of success
+- **Content**: All numbers, percentages, dollar figures, patents, certifications
+- **Format**: Metric + context + business impact
+- **Include references**: Add [1], [2] for proven results
+- **Example**: "Achieved 87.5% performance improvement (8→15 fps), deployed to 6 vehicles, generated $30M+ revenue [4]"
+
+## Information Hierarchy Rules
+- **Tier 1 (Hook)** → narrative_hook: Single biggest win that makes someone want to hire you
+- **Tier 2 (Context)** → situation_task: Why this mattered / what made it challenging  
+- **Tier 3 (Process)** → action_description: Your specific contributions and methods
+- **Tier 4 (Proof)** → quantified_results: All the numbers that validate your success
+
+## Anti-Redundancy Rules
+- Each fact appears in only ONE field
+- No metric should be repeated across fields
+- Each field should add NEW information
+- If a number appears in narrative_hook, don't repeat it in quantified_results
+
+## Best Practices for Experience Entries
+1. **Quantify Everything**: Use numbers, percentages, time saved, cost reduced
+2. **Be Specific**: Name technologies, frameworks, methodologies used
+3. **Front-load Impact**: Lead with your strongest achievement in narrative_hook
+4. **Match Job Language**: Use keywords from job descriptions in your keywords list
+5. **Provide Evidence**: Include supporting_links to portfolios, papers, or projects
+6. **Link Evidence Inline**: Add [1], [2] etc. directly in text where that specific evidence applies
+7. **Eliminate Redundancy**: Each fact should appear exactly once across all fields
+8. **Use STAR Method**: Situation → Task → Action → Result flow across the four main fields
+
+## Example Entry:
+```yaml
+- experience_id: EXP_001
+  category: Industry Experience
+  primary_skill: Autonomous Vehicle Systems Management
+  secondary_skills:
+    - ROS2
+    - LiDAR Integration
+    - AWS Cloud
+    - Linux
+  experience_title: 3D Collision Alert System with Fleet Deployment
+  context:
+    company: PREACT TECHNOLOGIES
+    timeframe: 2022-2024
+    role: Application Engineering Manager
+    team_size: null
+  situation_task: Required Linux-based collision alert system advancement from proof-of-concept through integration and field deployment in pilot delivery van fleet while managing vendor relationships
+  action_description: Managed sensor integration using ROS2 and FLASH LiDAR [1], implemented cloud connectivity via AWS for real-time data analysis, negotiated and executed $50k+ infrastructure vendor contracts
+  quantified_results: Successfully deployed to 6-vehicle pilot fleet, achieved 87.5% performance improvement (8→15 fps) through ROS2 optimization [1]  
+  proficiency_level: Expert
+  keywords:
+    - collision detection
+    - autonomous vehicles
+    - sensor fusion
+    - real-time systems
+    - fleet deployment
+  story_adaptability: High
+  tags:
+    - management
+    - deployment
+    - real-time
+  narrative_hook: Brought up pilot fleet of 6 driverless vans, tuned perception 8→15 fps by optimizing ROS2 node graph and CAN decoding [1]
+  tech_stack:
+    - ROS2
+    - C++17
+    - Ubuntu
+    - CAN
+    - AWS
+  supporting_links:
+    - ref_number: 1
+      title: Fleet Deployment Technical Documentation
+      url: https://example.com/fleet-deployment
+  job_alignment:
+    - ROS2
+    - Linux
+    - C++
+    - field testing
+  impact_type:
+    - integration
+    - performance
+  metrics:
+    - name: Frame rate
+      unit: fps
+      baseline: 8
+      result: 15
+      delta_percent: 87.5
+    - name: Vehicles deployed
+      unit: count
+      result: 6
+```
+
+## Reference Numbering
+- Reference numbers (`ref_number`) only need to be unique within each `experience_id`
+- Use [1], [2], etc. inline in your YAML text fields where that evidence applies
+- The cover letter generator will automatically renumber all references sequentially in the final output
