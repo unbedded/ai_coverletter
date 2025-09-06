@@ -1,0 +1,29 @@
+# Cover Letter Template
+
+## Header
+{YOUR_NAME}
+{YOUR_CONTACT_INFO}
+
+{DATE}
+
+{HIRING_MANAGER_INFO}
+{COMPANY_NAME}
+
+## Letter
+
+Dear {HIRING_MANAGER_NAME},
+
+**Opening:** {POSITION_INTEREST_AND_VALUE_HOOK}
+
+**Body 1:** {MATCHED_QUALIFICATIONS_WITH_SPECIFIC_EXAMPLES}
+
+**Body 2:** {ADDITIONAL_VALUE_AND_COMPANY_FIT}
+
+**Closing:** {CALL_TO_ACTION}
+
+Sincerely,
+{YOUR_NAME}
+
+---
+*Generated: {DATE}*
+*For: {COMPANY_NAME} - {JOB_TITLE}*
