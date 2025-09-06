@@ -1302,6 +1302,237 @@ experiences:
   stakeholders: []
   region_context: []
 
+- experience_id: EXP_028
+  category: AI/Machine Learning
+  primary_skill: End-to-End AI-Assisted Software Development Framework
+  secondary_skills:
+  - Agentic Workflows
+  - Requirements Translation
+  - Automated Code Generation
+  - Policy-Driven Development
+  - Regression Testing
+  - AI Workflow Design
+  - Open Source Development
+  experience_title: Comprehensive AI-Assisted Development Workflow (Pre-ClaudeCode)
+  context:
+    company: Open Source Innovation
+    timeframe: 2023-2024
+    role: Principal Developer
+    team_size: 1
+  situation_task: Required development of holistic AI-assisted software development workflow addressing limitations of existing AI tools, spanning entire lifecycle from requirements through testing with policy enforcement for coding standards
+  action_description: As Principal Developer, designed and implemented comprehensive agentic workflow that converts software requirements into production code with regression unit tests. Built working as Principal Developer policy-driven system enforcing company/project coding and testing standards. Created as Principal Developer well-documented artifacts at each development stage while supporting user intervention when needed, enabling holistic and efficient development process that predated similar commercial tools.
+  quantified_results: Successfully developed end-to-end AI development framework with automated code generation, regression testing, and policy enforcement - methodology later validated by ClaudeCode release using similar approach
+  narrative_hook: Principal Developer who built comprehensive AI-driven software development workflow converting requirements to tested code - approach later validated by ClaudeCode release [1]
+  proficiency_level: Expert
+  keywords:
+  - agentic workflows
+  - AI-assisted development
+  - automated code generation
+  - policy-driven development
+  - requirements translation
+  - regression testing
+  - software lifecycle
+  - AI workflow design
+  story_adaptability: High
+  tags:
+  - innovation
+  - ai-workflows
+  - automation
+  - open-source
+  - pioneering
+  supporting_links:
+  - ref_number: 1
+    title: End-to-End AI-Assisted Software Development Workflow
+    url: https://github.com/unbedded/ai_sw_workflow
+  tech_stack:
+  - OpenAI/Anthropic APIs
+  - Python
+  - YAML
+  - Policy engines
+  - Test automation
+  validation_methods: []
+  integration_scopes: []
+  environments: []
+  job_alignment: []
+  impact_type:
+  - innovation
+  - productivity
+  - quality
+  metrics: []
+  stakeholders: []
+  region_context: []
+
+- experience_id: EXP_029
+  category: AI/Machine Learning
+  primary_skill: AI-Integrated Signal Processing with Neural Networks
+  secondary_skills:
+  - Convolution Filters
+  - Neural Networks
+  - Signal Processing
+  - Probabilistic Detection
+  - Low SNR Processing
+  - Morse Code Decoding
+  - AI Workflow Validation
+  experience_title: Morse Code Decoder with Novel AI-Integrated Approach
+  context:
+    company: Open Source Demonstration
+    timeframe: 2023-2024
+    role: Principal Developer
+    team_size: 1
+  situation_task: Required practical demonstration of ai_sw_workflow methodology by developing novel robust Morse code decoder using convolution-based approach feeding probabilistic detection into neural network leveraging a-priori information for decoding in noisy environments
+  action_description: As Principal Developer, applied end-to-end AI-assisted development workflow to create robust convolution-based Morse decoder. Designed working as Principal Developer novel approach combining convolution filters with neural network processing for probabilistic detection in low SNR environments. Implemented as Principal Developer complete signal processing pipeline leveraging a-priori information to improve decoding accuracy in challenging noise conditions.
+  quantified_results: Successfully validated AI development workflow methodology through practical implementation, achieved robust Morse decoding in noisy environments using novel convolution + neural network approach
+  narrative_hook: Principal Developer who validated AI-assisted development workflow by creating novel convolution-based Morse decoder with neural network enhancement for noisy environments [1]
+  proficiency_level: Expert
+  keywords:
+  - signal processing
+  - neural networks
+  - convolution filters
+  - probabilistic detection
+  - low SNR processing
+  - AI workflow validation
+  - morse code decoding
+  - noise resistance
+  story_adaptability: High
+  tags:
+  - signal-processing
+  - neural-networks
+  - validation
+  - innovation
+  supporting_links:
+  - ref_number: 1
+    title: Morse Code Decoder with AI Integration
+    url: https://github.com/unbedded/morsecode
+  tech_stack:
+  - Python
+  - Neural networks
+  - Signal processing libraries
+  - Convolution algorithms
+  validation_methods: []
+  integration_scopes: []
+  environments: []
+  job_alignment: []
+  impact_type:
+  - innovation
+  - validation
+  metrics: []
+  stakeholders: []
+  region_context: []
+
+- experience_id: EXP_030
+  category: AI/Machine Learning
+  primary_skill: RAG-Based Agentic Cover Letter Generation
+  secondary_skills:
+  - RAG (Retrieval-Augmented Generation)
+  - Experience Database Design
+  - Quality Assessment Algorithms
+  - Gap Analysis
+  - YAML Data Management
+  - Agentic Workflow Design
+  - Job Requirements Parsing
+  experience_title: Agentic Cover Letter Workflow with Quality Assessment
+  context:
+    company: Personal Career Tool
+    timeframe: 2024
+    role: Principal Developer
+    team_size: 1
+  situation_task: Required automated cover letter generation system using structured experience database and RAG methodology to match qualifications with job requirements while providing quality assessment and gap analysis
+  action_description: As Principal Developer, designed and implemented agentic workflow for cover letter generation using RAG database of structured work experiences. Built working as Principal Developer quality assessment system showing qualification coverage and identifying gaps between candidate profile and job requirements. Created as Principal Developer comprehensive YAML-based experience database with intelligent matching algorithms.
+  quantified_results: Successfully created automated cover letter generation system with quality assessment, enabling rapid creation of tailored applications with gap analysis for continuous improvement
+  narrative_hook: Principal Developer who built comprehensive agentic cover letter workflow using RAG methodology with quality assessment and gap analysis capabilities [1]
+  proficiency_level: Expert
+  keywords:
+  - RAG methodology
+  - agentic workflows
+  - quality assessment
+  - gap analysis
+  - experience matching
+  - job requirements parsing
+  - YAML databases
+  - automated generation
+  story_adaptability: High
+  tags:
+  - rag
+  - automation
+  - quality-assessment
+  - career-tools
+  supporting_links:
+  - ref_number: 1
+    title: AI Cover Letter Generation with Quality Assessment
+    url: https://github.com/unbedded/ai_coverletter
+  tech_stack:
+  - RAG frameworks
+  - YAML
+  - Python
+  - Claude API
+  - Quality metrics
+  validation_methods: []
+  integration_scopes: []
+  environments: []
+  job_alignment: []
+  impact_type:
+  - automation
+  - quality
+  metrics: []
+  stakeholders: []
+  region_context: []
+
+- experience_id: EXP_031
+  category: AI/Machine Learning
+  primary_skill: Domain-Specific RAG Technical Support System
+  secondary_skills:
+  - RAG Database Design
+  - Technical Documentation Processing
+  - Domain-Specific Knowledge Management
+  - Agentic Workflow Implementation
+  - HAM Radio Technical Expertise
+  - Community Support Automation
+  experience_title: QMX HAM Radio Technical Support RAG System
+  context:
+    company: Open Source Community Tool
+    timeframe: 2024
+    role: Principal Developer
+    team_size: 1
+  situation_task: Required development of specialized RAG-based agentic workflow to answer complex technical electrical questions for QMX HAM radio forum using domain-specific knowledge database
+  action_description: As Principal Developer, built comprehensive RAG database system for technical electrical engineering questions specific to QMX HAM radio community. Implemented working as Principal Developer agentic workflow that processes technical documentation and provides accurate answers to specialized electrical engineering questions. Created as Principal Developer domain-specific knowledge management system optimized for complex technical queries.
+  quantified_results: Successfully deployed RAG-based technical support system for HAM radio community, providing automated answers to complex electrical engineering questions
+  narrative_hook: Principal Developer who built domain-specific RAG system for automated technical support in specialized electrical engineering community [1]
+  proficiency_level: Expert
+  keywords:
+  - RAG systems
+  - domain-specific knowledge
+  - technical documentation
+  - electrical engineering
+  - community support
+  - agentic workflows
+  - knowledge management
+  - HAM radio
+  story_adaptability: Medium
+  tags:
+  - rag
+  - technical-support
+  - domain-expertise
+  - community
+  supporting_links:
+  - ref_number: 1
+    title: QMX HAM Radio Technical Support RAG System
+    url: https://github.com/unbedded/ai_qmx_helpdesk
+  tech_stack:
+  - RAG frameworks
+  - Technical documentation processing
+  - Python
+  - Vector databases
+  validation_methods: []
+  integration_scopes: []
+  environments: []
+  job_alignment: []
+  impact_type:
+  - automation
+  - community
+  metrics: []
+  stakeholders: []
+  region_context: []
+
 parsing_config:
   default_proficiency: Intermediate
   default_adaptability: Medium
