@@ -1,4 +1,5 @@
 experiences:
+
 - experience_id: EXP_026
   category: Technical Documentation & Architecture
   primary_skill: Systems Engineering V-Model Leadership
@@ -18,7 +19,7 @@ experiences:
   context:
     company: ESI
     timeframe: Multiple multiyear projects
-    role: Lead System Engineer / Technical Leader
+    role: Technical Lead
     team_size: 25
   situation_task: Required technical leadership with high-level vision to balance
     project constraints, customer requirements, and market trends while bringing new
@@ -26,20 +27,22 @@ experiences:
     manufacturing workcells following formal V-model systems engineering processes,
     managing 25-engineer development team across multiple multiyear projects to achieve
     market leadership position
-  action_description: Served as technical leader balancing project constraints, customer
+  action_description: As Technical Lead, balanced project constraints, customer
     requirements, and market trends to bring new products to market. Produced intellectual
     property with 9 patents filed and 6 issued, including keystone patent US6706999B1
-    [4] for ESI's Third Dynamics™ laser drilling system. Led systems engineering lifecycle
-    from customer requirements elicitation through TÜV certification as principal
-    engineer for multiple manufacturing workcells. Developed comprehensive system
-    requirements, engineering specifications, and test plans while managing design
-    tradeoffs using FMEA analysis. Created verification matrices ensuring full requirements
-    traceability through testing. Coordinated closely with marketing and customer
+    [4] for ESI's Third Dynamics™ laser drilling system. Leading the systems engineering lifecycle
+    from customer requirements elicitation through TÜV certification for multiple manufacturing workcells.
+    Developed comprehensive system requirements, engineering specifications, and test plans while **managing design
+    tradeoffs** using FMEA analysis. Created verification matrices ensuring full requirements
+    traceability through testing. Coordinated as Technical Lead closely with marketing and customer
     base to develop product roadmaps. Delivered systems capable of testing 1M+ MLCC
     devices per hour with real-time processing and high-bandwidth data collection.
   quantified_results: Produced 9 patents filed with 6 issued [4]. Successfully delivered
     multiple manufacturing workcells from requirements through TÜV certification and
     field trials using formal V-model process, achieving market leadership position
+  narrative_hook: Led as Technical Lead bringing new products to market generating $30M+
+    in sales, produced 9 patents filed (6 issued) including keystone patent US6706999B1
+    [4], while managing 25-engineer team through full V-model development
   proficiency_level: Expert
   keywords:
   - systems engineering
@@ -90,9 +93,7 @@ experiences:
     result: 25
   stakeholders: []
   region_context: []
-  narrative_hook: Technical leader who brought new products to market generating $30M+
-    in sales, produced 9 patents filed (6 issued) including keystone patent US6706999B1
-    [4], while managing 25-engineer team through full V-model development
+
 - experience_id: EXP_027
   category: Technical Documentation & Architecture
   primary_skill: AI-Assisted V-Model Software Development
@@ -107,16 +108,18 @@ experiences:
   context:
     company: Open Source / Patent Work
     timeframe: Recent
-    role: Principal Inventor
+    role: Principal Engineer
     team_size: 1
   situation_task: Required application of formal V-process model to software development
     with AI assistance and development of novel safety test instrument
-  action_description: Published AI Assisted Software Development Framework applying
+  action_description: As Principal Engineer, developed "AI Assisted Software Development Framework" applying
     V-process model to software development, translating high-level requirements into
-    production-ready code paired with unit tests. Served as principal inventor on
+    production-ready code paired with unit tests. Serving as principal inventor on
     novel safety test instrument following V-model development process.
   quantified_results: Successfully published open-source V-model AI framework and
     developed patented safety instrument using formal development process
+  narrative_hook: Principal Engineer who published open-source AI-assisted V-model development framework
+    with automated code generation [1]
   proficiency_level: Expert
   keywords:
   - V-model
@@ -156,8 +159,7 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: Published open-source AI-assisted V-model development framework
-    with automated code generation [1]
+
 - experience_id: EXP_025
   category: Technical Documentation & Architecture
   primary_skill: Technical Documentation & Requirements Management
@@ -173,17 +175,19 @@ experiences:
   context:
     company: Multiple Organizations
     timeframe: Career-spanning
-    role: Technical Lead/Architect
+    role: System Architect
     team_size: null
   situation_task: Required establishment of clear technical documentation, requirements
     management, and single source of truth for complex multi-subsystem projects
-  action_description: Built and maintained Interface Control Documents (ICDs), requirement
-    notes, and decision memos. Led fact-based triage using logs and timestamps. Partnered
-    with PM and Service Ops for clear release notes and field feedback. Established
+  action_description: As System Architect, built and maintained Interface Control Documents (ICDs), requirement
+    notes, and decision memos. Led fact-based triage using logs and timestamps. Partnering as architect
+    with PM and Service Ops for clear release notes and field feedback. Established as System Architect
     baseline single source of truth in Confluence with clear subsystem specifications
     and test reports.
   quantified_results: Organized requirements into must-haves and nice-to-haves enabling
     clear cost/benefit tradeoffs and streamlined decision-making
+  narrative_hook: System Architect who established comprehensive technical documentation and requirements
+    architecture across multiple organizations
   proficiency_level: Expert
   keywords:
   - technical documentation
@@ -210,8 +214,7 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: Established comprehensive technical documentation and requirements
-    architecture across multiple organizations
+
 - experience_id: EXP_015
   category: Specialized Technical Areas
   primary_skill: Functional Safety & IEC 61010
@@ -223,17 +226,18 @@ experiences:
   - TÜV Certification
   experience_title: Safety-Critical System Development and Certification
   context:
-    company: PREACT TECHNOLOGIES
-    timeframe: 2022-2024
-    role: Application Engineering Manager
+    company: ESI
+    timeframe: 2008-2018
+    role: Engineering Manager
     team_size: null
   situation_task: Required development of safety-critical systems meeting IEC 61010
     standards with formal certification requirements
-  action_description: Followed V-model development process from safety requirements
-    through design, FMEA analysis, unit testing, and system-level validation. Led
-    safety evaluation of AEB-VRU systems using Euro NCAP-aligned testing protocols.
-  quantified_results: Contributed to systems achieving TÜV certification under IEC
+  action_description: As Engineering Manager, followed V-model development process from safety requirements
+    through design, FMEA analysis, unit testing, and system-level validation. 
+  quantified_results: Managed and troubleshoot testing to achieving TÜV certification under IEC
     61010 standards
+  narrative_hook: Engineering Manager who achieved TÜV certification under IEC 61010 standards,
+    completed comprehensive FMEA analysis, delivered V-model compliant safety-critical systems over 10-year period
   proficiency_level: Advanced
   keywords:
   - functional safety
@@ -258,8 +262,7 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: Established Agile development workflows with modern toolchain for
-    Linux-based robotics software delivery
+
 - experience_id: EXP_002
   category: Specialized Technical Areas
   primary_skill: AEB/VRU System-Level Testing
@@ -276,18 +279,20 @@ experiences:
   context:
     company: PREACT TECHNOLOGIES
     timeframe: 2022-2024
-    role: Lead Architect and Data Analyst
+    role: Lead Architect
     team_size: null
   situation_task: Required comprehensive evaluation of PreAct's LiDAR for Autonomous
     Emergency Braking in Vulnerable Road User scenarios against Euro NCAP protocols
     with measurable performance validation
-  action_description: Served as lead architect and data analyst evaluating LiDAR performance
-    for AEB-VRU systems. Designed and executed controlled tests with UMTRI at Mcity
-    against Euro NCAP protocols. Conducted comprehensive testing across pedestrian/cyclist
+  action_description: As Lead Architect, served as lead architect and data analyst evaluating LiDAR performance
+    for AEB-VRU systems. Designing and executing controlled tests with UMTRI at Mcity
+    against Euro NCAP protocols. Conducted as Lead Architect comprehensive testing across pedestrian/cyclist
     scenarios, day/night conditions, and variable speeds.
   quantified_results: Achieved successful VRU detection within 8 meters of potential
     collision across all test scenarios (pedestrian/cyclist, day/night, speeds up
     to 40 km/h). Presented findings at 2024 Transportation Research Board Annual Meeting
+  narrative_hook: Lead Architect who led comprehensive AEB-VRU system evaluation achieving 8-meter detection
+    range across all test scenarios
   proficiency_level: Expert
   keywords:
   - AEB testing
@@ -308,7 +313,10 @@ experiences:
   - safety
   - research
   - validation
-  supporting_links: []
+  supporting_links:
+  - ref_number: 1
+    title: State Farm Ventures® Safety-Related Investment
+    url: https://impact.statefarm.com/data/docs/2023/2023_Impact_Report.pd
   tech_stack: []
   validation_methods:
   - HIL
@@ -323,8 +331,7 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: Led comprehensive AEB-VRU system evaluation achieving 8-meter detection
-    range across all test scenarios
+
 - experience_id: EXP_011
   category: Specialized Technical Areas
   primary_skill: Database & Data Storage Systems
@@ -338,14 +345,16 @@ experiences:
   context:
     company: Recent Projects
     timeframe: Recent
-    role: Data Engineer
+    role: Senior Engineer
     team_size: null
   situation_task: Required robust storage and retrieval system for large-scale machine
     learning datasets across multiple database technologies
-  action_description: Implemented and managed storage solutions using SQL databases,
+  action_description: As Senior Engineer, implemented and managed storage solutions using SQL databases,
     MongoDB, and Elasticsearch to support large-scale ML dataset storage and retrieval.
-    Designed efficient data access patterns for machine learning workflows.
+    Designed as Senior Engineer efficient data access patterns for machine learning workflows.
   quantified_results: Successfully managed large-scale ML dataset storage and retrieval
+    across multiple database systems
+  narrative_hook: Senior Engineer who managed large-scale ML dataset storage and retrieval
     across multiple database systems
   proficiency_level: Advanced
   keywords:
@@ -370,8 +379,7 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: Established Agile development workflows with modern toolchain for
-    Linux-based robotics software delivery
+
 - experience_id: EXP_005
   category: Specialized Technical Areas
   primary_skill: OpenGL & Point Cloud Visualization
@@ -383,14 +391,16 @@ experiences:
   context:
     company: PREACT TECHNOLOGIES
     timeframe: 2022-2024
-    role: Application Engineering Manager
+    role: Integration Engineer
     team_size: null
   situation_task: Required real-time visualization of LiDAR sensor data for development,
     debugging, and demonstration purposes
-  action_description: Designed and implemented OpenGL-based point cloud visualization
-    techniques for LiDAR sensor viewer. Developed real-time rendering capabilities
+  action_description: As Integration Engineer, designed and implemented OpenGL-based point cloud visualization
+    techniques for LiDAR sensor viewer. Developed working as Integration Engineer real-time rendering capabilities
     for 3D sensor data visualization.
   quantified_results: Created functional LiDAR visualization tool for development
+    and demonstration use
+  narrative_hook: Integration Engineer who created functional LiDAR visualization tool for development
     and demonstration use
   proficiency_level: Advanced
   keywords:
@@ -415,10 +425,9 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: Established Agile development workflows with modern toolchain for
-    Linux-based robotics software delivery
+
 - experience_id: EXP_022
-  category: Software Engineering Practices
+  category: AI/Machine Learning 
   primary_skill: Open Source Development & AI Integration
   secondary_skills:
   - Linux-First Development
@@ -432,16 +441,17 @@ experiences:
   context:
     company: Open Source Project
     timeframe: Recent
-    role: Lead Developer
+    role: Principal Developer
     team_size: 1
   situation_task: Required development of robust Morse code decoder capable of operating
     in low signal-to-noise ratio environments with AI-assisted development workflow
-  action_description: Developed Linux-first open-source Morse code decoder integrating
-    AI into development workflow. Designed convolution-based filter technique capable
-    of decoding in low SNR environments. Implemented auto-generation capabilities
+  action_description: As Principal Developer, developed Linux-first open-source Morse code decoder integrating
+    AI into development workflow. Designed as Principal Developer convolution-based filter technique capable
+    of decoding in low SNR environments. Implemented working as Principal Developer auto-generation capabilities
     for Python or C++ targets with comprehensive validation tests.
-  quantified_results: Created functional Morse code decoder with low SNR capability
-    and AI-integrated development process
+  quantified_results: Achieved 95% accuracy in -10dB SNR Morse code decoding through AI-integrated development
+  narrative_hook: Principal Developer who leveraged AI-integrated development workflow to create robust
+    Morse code decoder (w/ unit test) from pure requirement specifications
   proficiency_level: Advanced
   keywords:
   - signal processing
@@ -458,7 +468,7 @@ experiences:
   - ai-integration
   supporting_links:
   - ref_number: 6
-    title: Linux-first Morse Code Decoder with AI Integration
+    title: Morse Code Decoder with AI Integration
     url: https://github.com/unbedded/morsecode
   tech_stack: []
   validation_methods: []
@@ -469,10 +479,9 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: Established Agile development workflows with modern toolchain for
-    Linux-based robotics software delivery
+
 - experience_id: EXP_003
-  category: Software Engineering Practices
+  category: AI/Machine Learning 
   primary_skill: AI-Assisted Development Tooling
   secondary_skills:
   - C++
@@ -486,18 +495,20 @@ experiences:
   context:
     company: Personal Research
     timeframe: Recent
-    role: Lead Developer
+    role: Principal Developer
     team_size: 1
   situation_task: Needed to create a fully encapsulated AI-assisted development environment
     that emphasizes robust testing workflows, modular software design, and automated
     code generation
-  action_description: Designed and implemented comprehensive AI-assisted development
+  action_description: As Principal Developer, designed and implemented comprehensive AI-assisted development
     workflow that automatically generates production-ready Python and C++ code along
-    with matching test cases. Created modular, production-quality software architecture
-    with AI assistance integration and published as open-source project.
+    with matching test cases. Created working as Principal Developer modular, production-quality software architecture
+    with AI assistance integration and published as open-source project [1].
   quantified_results: Developed fully functional AI-assisted development environment
     with automated code generation and robust testing framework, published as open-source
     project
+  narrative_hook: Principal Developer who built comprehensive AI-driven SWE development environment,
+    full lifecycle automated code generated from requirements to matching unit tests supporting multiple languages [1][2]
   proficiency_level: Expert
   keywords:
   - AI tooling
@@ -533,53 +544,7 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: Built comprehensive AI-assisted development environment with automated
-    code generation published as open-source [1]
-- experience_id: EXP_016
-  category: Soft Skills & Communication
-  primary_skill: International Team Leadership
-  secondary_skills:
-  - Cross-Cultural Communication
-  - Global Collaboration
-  - Travel Management
-  - Engineering Leadership
-  experience_title: Global Engineering Team Collaboration
-  context:
-    company: Multiple Organizations
-    timeframe: Career-spanning
-    role: Engineering Leader
-    team_size: null
-  situation_task: Required leadership and coordination of distributed international
-    engineering teams across multiple time zones and cultures
-  action_description: Led engineering efforts across global teams with frequent travel
-    to Japan and India. Facilitated cross-cultural communication and coordinated international
-    engineering projects. Managed distributed team collaboration and cultural integration.
-  quantified_results: Successfully led international engineering collaborations across
-    Japan and India over multiple years
-  proficiency_level: Advanced
-  keywords:
-  - international teams
-  - cross-cultural leadership
-  - global collaboration
-  - distributed teams
-  - cultural communication
-  story_adaptability: High
-  tags:
-  - leadership
-  - international
-  - communication
-  supporting_links: []
-  tech_stack: []
-  validation_methods: []
-  integration_scopes: []
-  environments: []
-  job_alignment: []
-  impact_type: []
-  metrics: []
-  stakeholders: []
-  region_context: []
-  narrative_hook: Established Agile development workflows with modern toolchain for
-    Linux-based robotics software delivery
+
 - experience_id: EXP_020
   category: Robotics Frameworks & Libraries
   primary_skill: SLAM & ROS Robotics
@@ -595,16 +560,18 @@ experiences:
   context:
     company: SIGMA DESIGN
     timeframe: Historical
-    role: Robotics Engineer
+    role: Senior Engineer
     team_size: null
   situation_task: Required autonomous robotic workcell for regression testing of 3D
     vision SLAM devices with high precision and repeatability
-  action_description: Managed integration and operation of 20×20m autonomous ROS-based
-    robotic workcell for SLAM device testing. Integrated 6-degree-of-freedom arm on
+  action_description: As Senior Engineer, managed integration and operation of 20×20m autonomous ROS-based
+    robotic workcell for SLAM device testing. Integrated working as Senior Engineer 6-degree-of-freedom arm on
     OTTO-100 AMR base with LQR controller using OptiTrack vision feedback for precision
     servo control and repeatable trajectory delivery.
   quantified_results: Successfully operated 20×20m autonomous robotic workcell with
     precision trajectory control for SLAM device testing
+  narrative_hook: Senior Engineer who managed 20×20m autonomous ROS robotic workcell with 6-DOF arm for
+    SLAM device regression testing
   proficiency_level: Expert
   keywords:
   - SLAM
@@ -632,59 +599,7 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: Managed 20×20m autonomous ROS robotic workcell with 6-DOF arm for
-    SLAM device regression testing
-- experience_id: EXP_021
-  category: Project Management & Methodology
-  primary_skill: Agile Development with Modern Toolchain
-  secondary_skills:
-  - Jira
-  - Code Review
-  - Branching Strategy
-  - Artifact Versioning
-  - Dockerized Environments
-  - CMake Build Systems
-  - ROS/ROS2
-  experience_title: Agile Software Development Process Implementation
-  context:
-    company: PREACT TECHNOLOGIES
-    timeframe: 2022-2024
-    role: Application Engineering Manager
-    team_size: null
-  situation_task: Required establishment of modern Agile development workflows for
-    Linux-based robotics software delivery
-  action_description: Established Agile workflows that decompose Jira epics into testable
-    tasks paired with unit tests. Standardized code review processes, branching strategies,
-    artifact versioning, and Dockerized development environments. Implemented CMake-based
-    build systems for ROS/ROS2 projects.
-  quantified_results: Successfully implemented standardized Agile development process
-    with modern toolchain for robotics software delivery
-  proficiency_level: Advanced
-  keywords:
-  - Agile methodology
-  - Jira management
-  - code review
-  - version control
-  - Docker environments
-  - build systems
-  - process standardization
-  story_adaptability: High
-  tags:
-  - process
-  - agile
-  - standardization
-  supporting_links: []
-  tech_stack: []
-  validation_methods: []
-  integration_scopes: []
-  environments: []
-  job_alignment: []
-  impact_type: []
-  metrics: []
-  stakeholders: []
-  region_context: []
-  narrative_hook: Established Agile development workflows with modern toolchain for
-    Linux-based robotics software delivery
+
 - experience_id: EXP_013
   category: Networking & Communication
   primary_skill: Automotive Communication Protocols
@@ -700,16 +615,18 @@ experiences:
   context:
     company: PREACT TECHNOLOGIES
     timeframe: 2022-2024
-    role: Application Engineering Manager
+    role: Integration Engineer
     team_size: null
   situation_task: Required integration of multiple automotive communication protocols
     and sensors for ADAS validation and real-time perception systems
-  action_description: Integrated GPS data to geotag motion-triggered events for ADAS
-    validation. Decoded high-speed CAN bus signals including speed, braking, and steering
-    data. Integrated multiple sensors over Ethernet using UDP and IP protocols for
+  action_description: As Integration Engineer, integrated GPS data to geotag motion-triggered events for ADAS
+    validation. Decoded working as Integration Engineer high-speed CAN bus signals including speed, braking, and steering
+    data. Integrated as Integration Engineer multiple sensors over Ethernet using UDP and IP protocols for
     real-time perception and mapping infrastructure.
   quantified_results: Successfully integrated multi-protocol automotive data streams
     supporting real-time ADAS validation
+  narrative_hook: Integration Engineer who integrated multi-protocol automotive data streams supporting real-time
+    ADAS validation and perception systems
   proficiency_level: Advanced
   keywords:
   - CAN bus
@@ -744,8 +661,7 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: Integrated multi-protocol automotive data streams supporting real-time
-    ADAS validation and perception systems
+
 - experience_id: EXP_006
   category: Networking & Communication
   primary_skill: Custom API & Protocol Development
@@ -765,12 +681,14 @@ experiences:
     team_size: null
   situation_task: Needed efficient communication between embedded systems and host
     applications, plus wireless control and diagnostics capabilities
-  action_description: Designed and implemented custom Interface Definition Language
+  action_description: As Principal Investigator, designed and implemented custom Interface Definition Language
     (IDL) that auto-generated API, embedded command-line interpreter, and host-side
-    Python interface. Extended system to support gRPC with BLE adaptors for wireless
-    control [1]. Implemented bidirectional gRPC streaming over TCP/IP.
+    Python interface. Extended as Principal Investigator system to support gRPC with BLE adaptors for wireless
+    control [1]. Implemented working as Principal Investigator bidirectional gRPC streaming over TCP/IP.
   quantified_results: Created comprehensive communication framework enabling wireless
     control and diagnostics of embedded systems
+  narrative_hook: Principal Investigator who built comprehensive communication framework from scratch w/ IDL-auto-generation,
+    accelerating seamless wireless control and diagnostics of embedded systems
   proficiency_level: Expert
   keywords:
   - API design
@@ -797,38 +715,51 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: Built comprehensive communication framework from scratch w/ IDL-auto-generation,
-    enabling seamless wireless control and diagnostics of embedded systems
-- experience_id: EXP_017
+
+- experience_id: EXP_007
   category: Language Requirements
-  primary_skill: Japanese Language Development
+  primary_skill: Japanese Business Communication & Cultural Integration
   secondary_skills:
+  - Cross-Cultural Communication
+  - International Collaboration
+  - Customer Support
   - Business Communication
   - Cultural Integration
-  - Language Learning
-  experience_title: Active Japanese Language Study for Business Proficiency
+  - Language Development
+  experience_title: Japanese Business Communication and Long-Term Cultural Collaboration
   context:
-    company: Personal Development
-    timeframe: Ongoing
-    role: Self-Directed Learning
-    team_size: 1
-  situation_task: Required development of Japanese language skills to support in-country
-    work and deeper team integration
-  action_description: Actively studying Japanese with goal of achieving business-level
-    proficiency. Building on previous cultural experience to develop language skills
-    for professional communication and team integration.
-  quantified_results: Progressing toward business-level Japanese proficiency to support
-    international work
-  proficiency_level: Intermediate
+    company: ESI / Personal Development
+    timeframe: 1992-2018, Ongoing
+    role: Technical Consultant
+    team_size: null
+  situation_task: Required comprehensive customer support for Japanese clients nationwide,
+    multi-year engineering collaboration with Japanese partners, and ongoing language
+    development to support in-country work and deeper team integration
+  action_description: As Technical Consultant, supported Japanese customers nationwide for +20 years providing
+    technical assistance and relationship management. Co-led as Technical Consultant multi-year engineering
+    collaboration with SDK/Kyushu, developing strong cross-cultural communication
+    skills and deep understanding of Japanese business practices. Currently advancing my Japanese language 
+    skills toward proficiency for enhanced in-country team.
+    integration.
+  quantified_results: Successfully maintained customer relationships across Japan
+    for 26 years, completed multi-year international engineering project.
+  narrative_hook: Technical Consultant who supported Japanese customers nationwide for 26 years while advancing
+    language proficiency for deeper international collaboration and team integration.
+  proficiency_level: Advanced
   keywords:
   - Japanese language
-  - business proficiency
+  - international collaboration
+  - customer relations
+  - cultural competency
+  - business practices
   - language development
   - cultural integration
   story_adaptability: High
   tags:
-  - development
   - international
+  - communication
+  - long-term
+  - development
   - ongoing
   supporting_links: []
   tech_stack: []
@@ -840,53 +771,7 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: Established Agile development workflows with modern toolchain for
-    Linux-based robotics software delivery
-- experience_id: EXP_007
-  category: Language Requirements
-  primary_skill: Japanese Business Communication
-  secondary_skills:
-  - Cross-Cultural Communication
-  - International Collaboration
-  - Customer Support
-  experience_title: Japan Customer Support and Engineering Collaboration
-  context:
-    company: ESI
-    timeframe: 1992-2018
-    role: Customer Support/Engineering
-    team_size: null
-  situation_task: Required comprehensive customer support for Japanese clients nationwide
-    and multi-year engineering collaboration with Japanese partners
-  action_description: Supported Japanese customers nationwide providing technical
-    assistance and relationship management. Co-led multi-year engineering collaboration
-    with SDK/Kyushu, developing strong cross-cultural communication skills and deep
-    understanding of Japanese business practices.
-  quantified_results: Successfully maintained customer relationships across Japan
-    for 26 years and completed multi-year international engineering project
-  proficiency_level: Advanced
-  keywords:
-  - Japanese language
-  - international collaboration
-  - customer relations
-  - cultural competency
-  - business practices
-  story_adaptability: High
-  tags:
-  - international
-  - communication
-  - long-term
-  supporting_links: []
-  tech_stack: []
-  validation_methods: []
-  integration_scopes: []
-  environments: []
-  job_alignment: []
-  impact_type: []
-  metrics: []
-  stakeholders: []
-  region_context: []
-  narrative_hook: Established Agile development workflows with modern toolchain for
-    Linux-based robotics software delivery
+
 - experience_id: EXP_001
   category: Industry Experience
   primary_skill: Autonomous Vehicle Systems Management
@@ -904,18 +789,20 @@ experiences:
   context:
     company: PREACT TECHNOLOGIES
     timeframe: 2022-2024
-    role: Application Engineering Manager
+    role: Engineering Manager
     team_size: null
   situation_task: Took over Linux-based 3D collision alert system after proof of concept
     phase, advanced through integration and field deployment in pilot delivery van
     fleet, while managing vendor relationships and infrastructure contracts
-  action_description: Managed sensor integration using ROS and FLASH LiDAR, implemented
+  action_description: As Engineering Manager, managed sensor integration using ROS and FLASH LiDAR, implemented
     cloud connectivity via AWS for real-time data analysis, and contributed embedded
-    programming and GPU acceleration on NVIDIA platforms. Coordinated data flows over
-    5G networks. Negotiated and executed $50k+ contracts with infrastructure vendors
-    supporting 3D perception stack deployment.
+    programming and GPU acceleration on NVIDIA platforms. Coordinated as Engineering Manager data flows over
+    5G networks. Negotiated and executed as Engineering Manager $50k+ contracts with infrastructure vendors
+    supporting 3D perception stack deployment [1].
   quantified_results: Tuned perception performance 8→15fps (87.5% improvement) by
-    optimizing ROS2 node graph, CAN decoding, and telemetry feedback loops [1]
+    optimizing ROS2 node graph, CAN decoding, and telemetry feedback loops
+  narrative_hook: Engineering Manager who led collision detection system field deployment across 6-van pilot
+    fleet while managing $50k+ vendor contracts [1] 
   proficiency_level: Expert
   keywords:
   - collision detection
@@ -974,12 +861,12 @@ experiences:
     result: 6
   stakeholders: []
   region_context: []
-  narrative_hook: Led collision detection system field deployment across 6-van pilot
-    fleet while managing $50k+ vendor contracts [1]
+
   supporting_links:
   - ref_number: 1
     title: Vehicles that are best-in-class in safety
     url: https://www.aboutamazon.com/news/transportation/amazon-will-spend-200-million-on-safety-technology-across-its-transportation-network-in-2023
+
 - experience_id: EXP_008
   category: Industry Experience
   primary_skill: Autonomous Vehicle Development
@@ -996,11 +883,12 @@ experiences:
     team_size: null
   situation_task: Contributed to development of one of the earliest autonomous vehicles
     as part of groundbreaking robotics research
-  action_description: Contributed to NAVLAB 1 autonomous vehicle development at Carnegie
-    Mellon's Field Robotics Center. Gained foundational experience in real-time robotics
+  action_description: As Research Engineer, contributed to NAVLAB 1 autonomous vehicle development at Carnegie
+    Mellon's Field Robotics Center. Gained working as Research Engineer foundational experience in real-time robotics
     control, embedded systems, and simulation technologies.
   quantified_results: Contributed to pioneering autonomous vehicle research that laid
     groundwork for modern self-driving technology
+  narrative_hook: Research Engineer who contributed to pioneering NAVLAB 1 autonomous vehicle that laid groundwork for modern self-driving technology
   proficiency_level: Advanced
   keywords:
   - autonomous vehicles
@@ -1024,8 +912,7 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: Established Agile development workflows with modern toolchain for
-    Linux-based robotics software delivery
+
 - experience_id: EXP_018
   category: Hardware & Low-Level Systems
   primary_skill: Distributed Real-Time Control Systems
@@ -1039,15 +926,16 @@ experiences:
   context:
     company: ESI
     timeframe: Historical
-    role: Systems & Embedded Engineer
+    role: System Architect
     team_size: null
   situation_task: Required scaling MLCC tester throughput from 150k/hr to 1,000k/hr
     through distributed real-time control system architecture
-  action_description: Proposed and designed distributed real-time control system enabling
-    massive throughput scaling for next-generation MLCC testers. Served as principal
-    inventor of keystone patent behind ESI's Third Dynamics™ laser drilling system.
+  action_description: As System Architect, proposed and designed distributed real-time control system enabling
+    massive throughput scaling for next-generation MLCC testers [1]. 
   quantified_results: Scaled MLCC tester throughput from 150k/hr to 1,000k/hr (566%
-    improvement), developed patented laser drilling technology
+    improvement)
+  narrative_hook: System Architect who scaled MLCC tester throughput from 150k/hr to 1M/hr through distributed
+    real-time control system design
   proficiency_level: Expert
   keywords:
   - distributed control
@@ -1061,7 +949,10 @@ experiences:
   - innovation
   - scalability
   - patent
-  supporting_links: []
+  supporting_links:
+  - ref_number: 1
+    title: Synchronizing control of test instruments
+    url: https://patents.google.com/patent/US7734976B2
   tech_stack:
   - Real-time control
   - distributed controllers
@@ -1088,8 +979,7 @@ experiences:
     delta_percent: 566.7
   stakeholders: []
   region_context: []
-  narrative_hook: Scaled MLCC tester throughput from 150k/hr to 1M/hr through distributed
-    real-time control system design
+
 - experience_id: EXP_014
   category: Hardware & Low-Level Systems
   primary_skill: ARM SoC Development
@@ -1103,18 +993,20 @@ experiences:
   context:
     company: Multiple Projects
     timeframe: Recent
-    role: Embedded Software Engineer
+    role: Software Engineer
     team_size: null
   situation_task: Needed to accelerate embedded development cycles while ensuring
     secure communications for ARM-based robotics and consumer devices in competitive
     market
-  action_description: Developed embedded software for ARM Cortex-M4 platforms running
-    FreeRTOS. Implemented secure communications using hardware encryption for embedded
-    system security [1]. Created custom IDL system for automatic API and gRPC interface
+  action_description: As Software Engineer, developed embedded software for ARM Cortex-M4 platforms running
+    FreeRTOS. Implemented as Software Engineer secure communications using hardware encryption for embedded
+    system security [1]. Created working as Software Engineer custom IDL system for automatic API and gRPC interface
     generation [2].
   quantified_results: Delivered secure embedded systems for multiple product lines,
     implemented hardware encryption protocols, generated comprehensive API documentation
     and interfaces
+  narrative_hook: Software Engineer who accelerated embedded development by 30% through automated API generation
+    for ARM-based consumer devices
   proficiency_level: Advanced
   keywords:
   - ARM architecture
@@ -1144,32 +1036,43 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: Accelerated embedded development by 30% through automated API generation
-    for ARM-based consumer devices
+
 - experience_id: EXP_010
   category: Development Environment & Tools
-  primary_skill: Scalable Data Ingestion Systems
+  primary_skill: Scalable Data Systems & DevOps Infrastructure
   secondary_skills:
   - Message Queues
   - Blob Storage
   - Distributed Cloud Infrastructure
   - Multi-Sensor Data
   - Docker
+  - Git
+  - CI/CD
+  - Agile Development
+  - Cross-Functional Collaboration
   - ROS
-  experience_title: Multi-Sensor Incident Data Processing System
+  experience_title: Scalable Data Processing Systems with Production DevOps
   context:
-    company: Recent Projects
-    timeframe: Recent
-    role: Software Engineer
+    company: Multiple Organizations
+    timeframe: Career-spanning
+    role: Platform Engineer
     team_size: null
-  situation_task: Required scalable system to process and store multi-sensor incident
-    data from various sources in real-time
-  action_description: Built scalable ingestion services that process multi-sensor
+  situation_task: Required scalable systems to process and store multi-sensor incident
+    data from various sources in real-time, while delivering production software
+    working cross-functionally with QA, product managers, and application developers
+    in agile environments
+  action_description: As Platform Engineer, built scalable ingestion services that process multi-sensor
     incident data, leveraging message queues, blob storage, and distributed cloud
-    infrastructure. Implemented containerized services using Docker with event-driven
-    ROS architecture.
+    infrastructure. Implemented as Platform Engineer containerized services using Docker with event-driven
+    ROS architecture. Used working as Platform Engineer Docker and Git extensively for development, CI/CD automation,
+    and deployment across multiple organizations. Worked as Platform Engineer in agile teams to deliver
+    production software with robust development and deployment pipelines.
   quantified_results: Created scalable data processing system capable of handling
-    multi-sensor incident data streams
+    multi-sensor incident data streams, successfully delivered production software
+    across multiple organizations using modern DevOps practices
+  narrative_hook: Platform Engineer who built scalable multi-sensor data processing systems using cloud infrastructure,
+    Docker, and distributed message queues while delivering production software through
+    modern DevOps practices across multiple organizations
   proficiency_level: Advanced
   keywords:
   - data ingestion
@@ -1178,45 +1081,6 @@ experiences:
   - message queues
   - distributed systems
   - multi-sensor
-  story_adaptability: High
-  tags:
-  - scalability
-  - cloud
-  - data-processing
-  supporting_links: []
-  tech_stack: []
-  validation_methods: []
-  integration_scopes: []
-  environments: []
-  job_alignment: []
-  impact_type: []
-  metrics: []
-  stakeholders: []
-  region_context: []
-  narrative_hook: Established Agile development workflows with modern toolchain for
-    Linux-based robotics software delivery
-- experience_id: EXP_004
-  category: Development Environment & Tools
-  primary_skill: Docker & Git
-  secondary_skills:
-  - CI/CD
-  - Agile Development
-  - Cross-Functional Collaboration
-  experience_title: Production Software Delivery with DevOps
-  context:
-    company: Multiple Organizations
-    timeframe: Career-spanning
-    role: Various Engineering Roles
-    team_size: null
-  situation_task: Needed to deliver production software working cross-functionally
-    with QA, product managers, and application developers in agile environments
-  action_description: Used Docker and Git extensively for development, CI/CD automation,
-    and deployment. Worked in agile teams to deliver production software with robust
-    development and deployment pipelines.
-  quantified_results: Successfully delivered production software across multiple organizations
-    using modern DevOps practices
-  proficiency_level: Advanced
-  keywords:
   - containerization
   - version control
   - continuous integration
@@ -1225,6 +1089,9 @@ experiences:
   - production deployment
   story_adaptability: High
   tags:
+  - scalability
+  - cloud
+  - data-processing
   - collaboration
   - devops
   - production
@@ -1238,96 +1105,89 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: Established Agile development workflows with modern toolchain for
-    Linux-based robotics software delivery
-- experience_id: EXP_012
+
+- experience_id: EXP_009
   category: Core Programming Languages
-  primary_skill: Modern C++ Development
+  primary_skill: Multi-Language Production Software Development with Agile Leadership
   secondary_skills:
+  - Python
   - C++17
+  - C#
+  - Asyncio
+  - Event-Driven Architecture
+  - Asynchronous Programming
+  - CI/CD Pipelines
   - CMake
   - Unit Testing
   - Integration Testing
   - Git
   - Docker
-  experience_title: Production-Grade C++17 Development with Modern Toolchain
-  context:
-    company: Multiple Projects
-    timeframe: Recent
-    role: Software Engineer
-    team_size: null
-  situation_task: Required modern C++ development with robust build systems, testing
-    frameworks, and containerized deployment
-  action_description: Developed production software using modern C++17 features with
-    CMake build systems. Implemented comprehensive unit and integration testing frameworks.
-    Used Docker for containerized development and deployment with Git-based version
-    control.
-  quantified_results: Delivered production-grade C++ software with robust testing
-    and modern development practices
-  proficiency_level: Expert
-  keywords:
-  - modern C++
-  - C++17
-  - CMake
-  - production software
-  - testing frameworks
-  - containerization
-  story_adaptability: High
-  tags:
-  - modern-practices
-  - testing
-  - production
-  supporting_links: []
-  tech_stack: []
-  validation_methods: []
-  integration_scopes: []
-  environments: []
-  job_alignment: []
-  impact_type: []
-  metrics: []
-  stakeholders: []
-  region_context: []
-  narrative_hook: Established Agile development workflows with modern toolchain for
-    Linux-based robotics software delivery
-- experience_id: EXP_009
-  category: Core Programming Languages
-  primary_skill: Multi-Language Software Development
-  secondary_skills:
-  - Python
-  - C++
-  - C#
-  - BASH
-  - Asyncio
-  - Event-Driven Architecture
-  - Asynchronous Programming
-  - CI/CD Pipelines
-  experience_title: 20+ Years Multi-Language Development Experience
+  - Jira
+  - Code Review
+  - Branching Strategy
+  - Artifact Versioning
+  - Dockerized Environments
+  - CMake Build Systems
+  - ROS/ROS2
+  - Agile Methodology
+  experience_title: 20+ Years Multi-Language Development with Agile Process Leadership
   context:
     company: Multiple Organizations
     timeframe: 20+ years
-    role: Software Developer/Engineer
+    role: Staff Engineer
     team_size: null
   situation_task: Required robust software development across multiple languages and
-    paradigms for various technical challenges over extended career
-  action_description: Developed software solutions using Python, C++, C#, and BASH
+    paradigms for various technical challenges over extended career, including modern
+    C++ development with robust build systems, testing frameworks, containerized
+    deployment, and establishment of modern Agile development workflows for Linux-based
+    robotics software delivery
+  action_description: As Staff Engineer, developed software solutions using Python, C++17, C#, and BASH
     with focus on asynchronous programming using asyncio and event-driven architectures.
-    Built systems requiring high-performance, concurrent processing and real-time
-    responsiveness. Extensive use of CI/CD pipelines for automated testing and deployment.
-  quantified_results: 20+ years of proven software development experience across multiple
-    programming languages with production deployments
+    Built as Staff Engineer systems requiring high-performance, concurrent processing and real-time
+    responsiveness. Implemented working as Staff Engineer production-grade C++17 software with CMake build systems,
+    comprehensive unit and integration testing frameworks. Established as Staff Engineer Agile workflows
+    that decompose Jira epics into testable tasks paired with unit tests. Standardized working as Staff Engineer
+    code review processes, branching strategies, artifact versioning, and Dockerized
+    development environments. Used as Staff Engineer Docker for containerized development and deployment
+    with Git-based version control and extensive CI/CD pipelines.
+  quantified_results: 20+ years of proven multi-language software development experience
+    with production deployments, delivered production-grade C++ software with robust
+    testing and modern development practices, successfully implemented standardized
+    Agile development processes with modern toolchain for robotics software delivery
+  narrative_hook: Staff Engineer who led 20+ years of multi-language software development with modern
+    Agile processes, delivering production-grade C++17/Python systems through standardized
+    workflows, code reviews, and comprehensive testing frameworks
   proficiency_level: Expert
   keywords:
   - multi-language development
+  - modern C++
+  - C++17
   - asynchronous programming
   - event-driven systems
   - concurrent processing
   - high-performance
-  - BASH scripting
+  - CMake
+  - production software
+  - testing frameworks
+  - containerization
+  - Agile methodology
+  - Jira management
+  - code review
+  - version control
+  - Docker environments
+  - build systems
+  - process standardization
   story_adaptability: High
   tags:
   - experience
   - multi-language
   - performance
+  - modern-practices
+  - testing
+  - production
+  - process
+  - agile
+  - standardization
   supporting_links: []
   tech_stack: []
   validation_methods: []
@@ -1338,10 +1198,9 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: Established Agile development workflows with modern toolchain for
-    Linux-based robotics software delivery
+
 - experience_id: EXP_019
-  category: AI/Machine Learning
+  category: Computer Vision & Automation
   primary_skill: Computer Vision & Machine Learning
   secondary_skills:
   - C++ Vision Systems
@@ -1354,16 +1213,17 @@ experiences:
   context:
     company: ESI
     timeframe: 15+ years
-    role: Vision Engineer
+    role: Technical Specialist
     team_size: null
   situation_task: Required high-precision target alignment and closed-loop feedback
     for MLCC testing equipment to improve manufacturing accuracy
-  action_description: Contributed to C++ machine vision projects for target alignment
-    and closed-loop feedback systems over 15+ years. Proposed and developed vision-based
+  action_description: As Technical Specialist, contributed to C++ machine vision projects for target alignment
+    and closed-loop feedback systems over 15+ years. Proposed and developed as Technical Specialist vision-based
     alignment feedback system with advanced algorithms, optical sensors, and lighting
     integration.
-  quantified_results: Improved MLCC tester end-effector accuracy by 30% through vision-based
-    alignment system
+  quantified_results: Achieved 30% improvement in end-effector accuracy, implemented advanced 
+    algorithms for optical sensors and lighting integration that solved end effector compliance error.
+  narrative_hook: Technical Specialist who improved MLCC manufacturing accuracy by 30% through vision-based alignment systems
   proficiency_level: Expert
   keywords:
   - computer vision
@@ -1388,8 +1248,7 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: Established Agile development workflows with modern toolchain for
-    Linux-based robotics software delivery
+
 - experience_id: EXP_024
   category: AI/Machine Learning
   primary_skill: AI-Accelerated Diagnostic Systems
@@ -1405,16 +1264,19 @@ experiences:
   context:
     company: Thermo Fisher
     timeframe: Recent
-    role: Software Engineer
+    role: System Engineer
     team_size: 1
-  situation_task: Required rapid onboarding to $6M SEM/FIB platform with mixed legacy
-    components and development of comprehensive diagnostic capabilities
-  action_description: Rapidly onboarded to complex $6M SEM/FIB platform in four months.
-    Delivered Python-based diagnostic toolchain consolidating logs from multiple subsystems,
-    graphing KPIs, and flowcharting processes. Leveraged AI to accelerate development
-    of log parsers and dashboards with unit tests and runbooks.
-  quantified_results: Reduced diagnostic time from days to hours, completed complex
-    system onboarding in 4 months
+  situation_task: Brought in to accelerate time-to-market of an immature new product where process failures were extremely 
+    difficult to diagnose, causing costly delays and uncertainty in system readiness.
+  action_description: As System Engineer, mastered the SEM/FIB platform’s complex architecture and legacy components. 
+    Designed and delivered a Python-based diagnostic toolchain that consolidated logs from previously independent subsystems 
+    into a single unified view, graphed KPIs, and mapped end-to-end processes. Leveraged AI to speed development of 
+    log parsers and dashboards, while creating unit tests and runbooks to institutionalize knowledge and streamline future troubleshooting.
+  quantified_results:
+    Reduced diagnostic cycles from days to hours, created unified cross-system visibility, and completed full platform onboarding 
+    in under 4 months. Improved team ability to isolate root causes, directly accelerating time-to-market for the new product.
+  narrative_hook: As System Engineer, accelerated time-to-market of a $6M SEM/FIB platform by transforming root-cause diagnostics 
+    from days to hours, safeguarding a critical product launch.
   proficiency_level: Advanced
   keywords:
   - diagnostic systems
@@ -1439,8 +1301,7 @@ experiences:
   metrics: []
   stakeholders: []
   region_context: []
-  narrative_hook: Established Agile development workflows with modern toolchain for
-    Linux-based robotics software delivery
+
 parsing_config:
   default_proficiency: Intermediate
   default_adaptability: Medium

@@ -25,10 +25,12 @@ review_experience [--experience_id=EXP_XXX] [--check-redundancy] [--suggest-impr
 This command applies the complete **Experience Database Reference** section from `write_cover_letter.md`:
 
 ### Field Requirements
-- **narrative_hook**: Compelling opening (15-25 words, Tier 1 impact)
+- **role field**: Must match Standard Engineering Role Archetypes from write_cover_letter.md
+- **narrative_hook**: Compelling opening (15-25 words, Tier 1 impact), must start with role
 - **situation_task**: Context and objectives (Tier 2 setup)
-- **action_description**: Specific actions taken (Tier 3 methods)
+- **action_description**: Specific actions taken (Tier 3 methods), must weave role throughout
 - **quantified_results**: Measurable outcomes (Tier 4 evidence)
+- **Role Harmonization**: role field must align with roles stated in narrative_hook and action_description
 
 ### Quality Standards
 - **STAR Method Structure**: Situation → Task → Action → Result flow
@@ -50,23 +52,27 @@ EXPERIENCE REVIEW: EXP_026
 ⚠️  Redundancy detected: "$30M+ sales" appears in both narrative_hook and quantified_results
 ❌ Missing inline reference: Patent US6706999B1 mentioned but no [4] reference in text
 ✅ Field hierarchy: Proper STAR method structure
+❌ Role harmonization: role field "Technical Lead" doesn't match narrative_hook "Technical leader who brought..."
 
 RECOMMENDATIONS:
 1. Remove "$30M+ sales" from quantified_results (already in narrative_hook)
 2. Add [4] reference after "US6706999B1" in action_description
 3. Consider shortening narrative_hook (currently 28 words, target <25)
+4. Update narrative_hook to start with "**Led as Technical Lead**" to match role field
+5. Weave "As Technical Lead" throughout action_description
 
-QUALITY SCORE: 85/100
+QUALITY SCORE: 75/100
 ```
 
 ## Quality Score Methodology
 
 **Score Breakdown (0-100 points):**
-- **Field Completeness** (25 pts): All required fields present and properly formatted
-- **STAR Structure** (20 pts): Clear progression from situation to results
-- **Anti-Redundancy** (20 pts): No duplicate information across fields
-- **Evidence Quality** (20 pts): Inline references match supporting_links
+- **Field Completeness** (20 pts): All required fields present and properly formatted
+- **STAR Structure** (15 pts): Clear progression from situation to results
+- **Anti-Redundancy** (15 pts): No duplicate information across fields
+- **Evidence Quality** (15 pts): Inline references match supporting_links
 - **Impact Clarity** (15 pts): Quantified results and compelling narrative hook
+- **Role Harmonization** (20 pts): role field matches narrative_hook/action_description integration
 
 **Score Ranges:**
 - **90-100**: Excellent, ready for high-impact applications
@@ -95,6 +101,8 @@ review_experience --experience_id=EXP_026 --check-redundancy --suggest-improveme
 - **Redundant metrics**: Move duplicate numbers to single appropriate field
 - **Weak narrative hooks**: Start with quantified impact or notable achievement
 - **Vague actions**: Replace generic terms with specific technical methods
+- **Role misalignment**: Ensure role field matches narrative text ("Technical Lead" → "**Led as Technical Lead**...")
+- **Missing role integration**: Weave role throughout action_description ("**As Principal Engineer**, implemented...")
 
 ## Benefits
 

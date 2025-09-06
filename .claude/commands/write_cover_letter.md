@@ -39,12 +39,12 @@ The cover letter will be saved to the `output/` directory with the prefix `cvrlt
 
 ```
 [DATE]
-Hiring Committee
-[JOB TITLE]
-[COMPANY]
+
+Hiring Committee<br>
+[COMPANY]<br>
 RE: [JOB TITLE]
 
-[LEAD WITH STRONGEST, MOST RELEVANT ACHIEVEMENT - Include specific metrics and direct connection to role requirements. Example: "Brought up a pilot fleet of 6 driverless vans and tuned perception performance from 8→15 fps (87% improvement) by optimizing ROS2 node graphs, CAN decoding, and telemetry feedback loops. This real-world autonomous vehicle deployment experience directly aligns with [COMPANY]'s [SPECIFIC PROJECT/CHALLENGE] integration challenges."]
+[LEAD WITH STRONGEST, MOST RELEVANT ACHIEVEMENT - Include specific metrics and direct connection to role requirements. Example: "Led developer of a pilot fleet of 6 driverless vans and tuned perception performance from 8→15 fps (87% improvement) by optimizing ROS2 node graphs, CAN decoding, and telemetry feedback loops. This real-world autonomous vehicle deployment experience directly aligns with [COMPANY]'s [SPECIFIC PROJECT/CHALLENGE] integration challenges."]
 
 With over 20 years of systems integration experience, including extensive collaboration with Japanese engineering teams, I am excited to contribute to [COMPANY]'s [MISSION] through [SPECIFIC CONTRIBUTION RELEVANT TO ROLE].
 
@@ -58,11 +58,12 @@ With over 20 years of systems integration experience, including extensive collab
 Sincerely,
 Spencer Barrett
 
-LINKS AND REFERENCES:
-- [1] [TITLE] : [HTML_LINK]
-- [2] [TITLE] : [HTML_LINK]
+**LINKS AND REFERENCES:**
+
+ - [ 1 ] [TITLE] : [HTML_LINK]
+ - [ 2 ] [TITLE] : [HTML_LINK]
  ...
-- [N] [TITLE] : [HTML_LINK]
+ - [ N ] [TITLE] : [HTML_LINK]
 
 ----------
 
@@ -196,6 +197,7 @@ The `work_experience.yaml` file is the core database that powers intelligent exp
   experience_title: [Title]  # Concise title for this experience
   action_description: [Description]  # What you did (past tense, specific actions)
   quantified_results: [Results]  # Measurable outcomes achieved
+  role: [Your Role]
   proficiency_level: [Expert|Advanced|Intermediate]  # Your skill level
   keywords: [list]  # Searchable terms for matching
   story_adaptability: [High|Medium|Low]  # How flexible this story is for different contexts
@@ -210,7 +212,6 @@ The `work_experience.yaml` file is the core database that powers intelligent exp
   context:  # Where/when this happened
     company: [Company Name]
     timeframe: [Time Period]
-    role: [Your Role]
     team_size: [number or null]
   situation_task: [Background]  # Problem/challenge you faced (sets up the story)
   narrative_hook: [One-liner]  # Catchy summary for cover letter opening
@@ -240,15 +241,67 @@ The `work_experience.yaml` file is the core database that powers intelligent exp
   region_context: [list]  # Geographic/cultural relevance
 ```
 
+## Standard Engineering Role Archetypes
+
+Use these standardized roles for consistent role clarity across all experience entries:
+
+### **Leadership Roles** (Team/Project/Technical Direction)
+- **Technical Lead** - Led technical direction for team/project
+- **Engineering Manager** - Managed team of engineers  
+- **Principal Engineer** - Senior technical authority/architecture decisions
+- **Lead Architect** - Architected system design and technical strategy
+- **Project Lead** - Led cross-functional project delivery
+- **Team Lead** - Led small engineering team (3-8 people)
+
+### **Architecture & Design Roles** (System/Technical Design)
+- **System Architect** - Designed overall system architecture
+- **Software Architect** - Architected software systems and frameworks
+- **Solutions Architect** - Designed technical solutions for business problems
+- **Platform Architect** - Architected platform/infrastructure systems
+
+### **Senior Individual Contributor Roles** (High-Impact IC Work)
+- **Senior Engineer** - Advanced individual contributor with mentoring
+- **Staff Engineer** - High-impact individual contributor across teams
+- **Principal Developer** - Lead developer on critical systems
+- **Subject Matter Expert** - Domain expert consulted across teams
+- **Technical Specialist** - Deep specialist in specific technology area
+
+### **Individual Contributor Roles** (Direct Implementation)
+- **Software Engineer** - Individual contributor on development team
+- **Developer** - Individual software development work
+- **Engineer** - General individual contributor engineering work
+- **Research Engineer** - Individual contributor in research context
+
+### **Collaborative/Support Roles** (Cross-team/Consultative)
+- **Technical Consultant** - Provided technical guidance/recommendations
+- **Integration Engineer** - Focused on system integration aspects
+- **Platform Engineer** - Individual contributor to platform/infrastructure
+- **DevOps Engineer** - Infrastructure and deployment automation
+- **Field Engineer** - Customer-facing technical implementation
+
+### **Research & Innovation Roles** (Investigation/Development)
+- **Principal Investigator** - Led research initiative/study
+- **Research Lead** - Led research team or project
+- **Innovation Engineer** - Drove innovative technical solutions
+- **Prototype Developer** - Built proof-of-concept systems
+
 ## Field Definition Rules
 
+### Role Harmonization Requirements
+- The `role` field must match the role stated in `narrative_hook` and `action_description`
+- Example: If `role: Technical Lead`, then narrative_hook should start "**Led as Technical Lead**..."
+- Example: If `role: Principal Engineer`, then action_description should include "**As Principal Engineer**, implemented..."
+- This ensures consistency between structured data and narrative presentation
+- All roles must come from the Standard Engineering Role Archetypes list above
+
 ### narrative_hook:
-- **Purpose**: One-sentence elevator pitch / cover letter opener
-- **Content**: Your #1 achievement + scale + business impact
-- **Format**: [Action] + [Scale/Context] + [Single Most Impressive Business Outcome]
-- **Length**: 1 sentence, <25 words
+- **Purpose**: One-sentence elevator pitch / cover letter opener. Use a storytelling style.
+- **Content**: Your role + #1 achievement + scale + business impact
+- **Format**: **[Role] + [Action] + [Scale/Context] + [Single Most Impressive Business Outcome]**
+- **Length**: 1 sentence, <30 words
+- **Role Required**: MUST start with specific role from Standard Engineering Role Archetypes above
 - **Impact Type**: High-level business outcome (revenue, market leadership, team scale) - NOT technical metrics
-- **Example**: "Led MLCC platform generating $30M+ sales, managed 25-engineer team through market leadership achievement [4]"
+- **Example**: "**Led as Technical Lead** MLCC platform generating $30M+ sales while managing 25-engineer team through market leadership achievement [4]"
 
 ### situation_task:
 - **Purpose**: Set the stage - what challenge needed solving?
@@ -258,12 +311,13 @@ The `work_experience.yaml` file is the core database that powers intelligent exp
 - **Example**: "Required ground-up development of testing platform following formal V-model processes to achieve market leadership"
 
 ### action_description:
-- **Purpose**: What you specifically did (the "how")
-- **Content**: Your methods, processes, decisions, leadership actions
-- **Format**: Specific verbs + technical approaches + management actions
+- **Purpose**: What you specifically did (the "how") with role context
+- **Content**: Use a storytelling style. Your methods, processes, decisions, leadership actions with role woven throughout
+- **Format**: **[Role Context] + Specific verbs + technical approaches + management/individual scope**
+- **Role Integration**: Weave role throughout - "As Lead Architect, designed...", "Managing team, implemented...", "Working as Senior Engineer, developed..."
 - **No outcomes**: Save results for quantified_results
 - **Include references**: Add [1], [2] where evidence supports specific actions
-- **Example**: "Implemented ROS2 architecture [1], designed custom IDL for API generation, led FMEA analysis sessions"
+- **Example**: "**As Principal Engineer**, implemented ROS2 architecture [1], designed custom IDL for API generation, **led cross-team** FMEA analysis sessions"
 
 ### quantified_results:
 - **Purpose**: Measurable proof of success beyond the narrative_hook
@@ -360,5 +414,6 @@ The `work_experience.yaml` file is the core database that powers intelligent exp
 
 ## Reference Numbering
 - Reference numbers (`ref_number`) only need to be unique within each `experience_id`
-- Use [1], [2], etc. inline in your YAML text fields where that evidence applies
+- Use [ 1 ], [ 2 ], etc. inline in your YAML text fields where that evidence applies
 - The cover letter generator will automatically renumber all references sequentially in the final output
+- format the reference number callout with a space after the opening square bracket and a space before the closing bracket.
