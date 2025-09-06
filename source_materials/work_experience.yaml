@@ -18,15 +18,10 @@ experiences:
   experience_title: Technical Leadership in Product Development with Patent Generation
   context:
     company: ESI
-    timeframe: Multiple multiyear projects
+    timeframe: 1988-2016 (28-year career spanning entry-level to Technical Lead)
     role: Technical Lead
     team_size: 25
-  situation_task: Required technical leadership with high-level vision to balance
-    project constraints, customer requirements, and market trends while bringing new
-    products to market. Led ground-up development of MLCC testing platform and related
-    manufacturing workcells following formal V-model systems engineering processes,
-    managing 25-engineer development team across multiple multiyear projects to achieve
-    market leadership position
+  situation_task: 28-year career progression from entry-level engineer to Technical Lead, culminating in leading ground-up development of MLCC testing platform and related manufacturing workcells. Required technical leadership with high-level vision to balance project constraints, customer requirements, and market trends while bringing new products to market. Led formal V-model systems engineering processes, managing 25-engineer development team across multiple multiyear projects to achieve market leadership position. Completed Masters degree in Electrical Engineering while working full-time, demonstrating commitment to continuous learning and technical excellence
   action_description: As Technical Lead, balanced project constraints, customer
     requirements, and market trends to bring new products to market. Produced intellectual
     property with 9 patents filed and 6 issued, including keystone patent US6706999B1
@@ -40,9 +35,7 @@ experiences:
   quantified_results: Produced 9 patents filed with 6 issued [4]. Successfully delivered
     multiple manufacturing workcells from requirements through TÜV certification and
     field trials using formal V-model process, achieving market leadership position
-  narrative_hook: Led as Technical Lead bringing new products to market generating $30M+
-    in sales, produced 9 patents filed (6 issued) including keystone patent US6706999B1
-    [4], while managing 25-engineer team through full V-model development
+  narrative_hook: 28-year career progression from entry-level engineer to Technical Lead, culminating in bringing new products to market generating $30M+ in sales, producing 9 patents filed (6 issued) including keystone patent US6706999B1 [4], while managing 25-engineer team through full V-model development and completing Masters degree while working full-time
   proficiency_level: Expert
   keywords:
   - systems engineering
@@ -58,6 +51,10 @@ experiences:
   - product development
   - market analysis
   - intellectual property
+  - career progression
+  - team management
+  - continuous learning
+  - working professional masters degree
   story_adaptability: High
   tags:
   - systems-engineering
@@ -785,24 +782,19 @@ experiences:
   - Vendor Management
   - Contract Negotiation
   - 3D Perception Stack
+  - Stakeholder Management
+  - Customer-Facing Demonstrations
+  - Agile/Scrum Development
   experience_title: 3D Collision Alert System with Vendor Management
   context:
     company: PREACT TECHNOLOGIES
     timeframe: 2022-2024
     role: Engineering Manager
     team_size: null
-  situation_task: Took over Linux-based 3D collision alert system after proof of concept
-    phase, advanced through integration and field deployment in pilot delivery van
-    fleet, while managing vendor relationships and infrastructure contracts
-  action_description: As Engineering Manager, managed sensor integration using ROS and FLASH LiDAR, implemented
-    cloud connectivity via AWS for real-time data analysis, and contributed embedded
-    programming and GPU acceleration on NVIDIA platforms. Coordinated as Engineering Manager data flows over
-    5G networks. Negotiated and executed as Engineering Manager $50k+ contracts with infrastructure vendors
-    supporting 3D perception stack deployment [1].
-  quantified_results: Tuned perception performance 8→15fps (87.5% improvement) by
-    optimizing ROS2 node graph, CAN decoding, and telemetry feedback loops
-  narrative_hook: Engineering Manager who led collision detection system field deployment across 6-van pilot
-    fleet while managing $50k+ vendor contracts [1] 
+  situation_task: Took over immature Linux-based 3D vehicle collision alert system from proof-of-concept phase in resource-constrained startup environment and matured it through 5 customer-facing phase gate demonstrations into real-world pilot fleet deployment. Required project management leadership making critical urgency vs priority decisions with limited resources while integrating customer feedback between phases, advancing novel vehicle safety system from half-baked demo to production-ready field deployment across 6 delivery vans operating in unstructured environments, managing vendor relationships and infrastructure contracts throughout evolution
+  action_description: As Project Manager and Lead Architect in fast-paced startup environment, rallied cross-functional team through 5 customer-facing phase gate demonstrations, transforming setbacks into learning opportunities while making critical urgency vs priority decisions with constrained resources. Maintained team momentum by reframing challenges as problem-solving opportunities, integrating stakeholder feedback between each phase to collaboratively mature system architecture while balancing technical debt against delivery timelines. Led sensor integration using ROS and FLASH LiDAR, implemented cloud connectivity via AWS for real-time data analysis, and contributed embedded programming and GPU acceleration on NVIDIA platforms. Coordinated data flows over 5G networks while empowering team members to own vendor relationships under resource constraints. Negotiated and executed $50k+ contracts with infrastructure vendors supporting 3D perception stack deployment. Demonstrated resilient startup leadership by transforming half-baked demo into production-ready field deployment through systematic phase gate progression, maintaining team confidence despite resource limitations [1].
+  quantified_results: Successfully matured system through 5 customer-facing phase gate demonstrations from proof-of-concept to 6-vehicle production pilot fleet. Achieved 87.5% performance improvement (8→15fps) by optimizing ROS2 node graph, CAN decoding, and telemetry feedback loops. Managed $50k+ vendor contracts and infrastructure deployment across real-world fleet operations
+  narrative_hook: Startup Project Manager who transformed crude vehicle collision detection demo into production 6-vehicle pilot fleet through 5 customer-facing phase gate demonstrations, making critical urgency vs priority decisions in resource-constrained environment while achieving 87.5% performance gains and managing $50k+ vendor contracts [1] 
   proficiency_level: Expert
   keywords:
   - collision detection
@@ -814,6 +806,11 @@ experiences:
   - vendor management
   - contract negotiation
   - 3D perception
+  - stakeholder management
+  - customer-facing demonstrations
+  - agile development
+  - scrum methodology
+  - phase gate demonstrations
   story_adaptability: High
   tags:
   - management
@@ -1529,6 +1526,70 @@ experiences:
   impact_type:
   - automation
   - community
+  metrics: []
+  stakeholders: []
+  region_context: []
+
+- experience_id: EXP_032
+  category: Specialized Technical Areas
+  primary_skill: Novel Instrumentation Development
+  secondary_skills:
+  - IR Irradiance Measurement
+  - AR Glasses Safety Testing
+  - Eye Safety Standards
+  - Custom Instrumentation
+  - Market Gap Identification
+  - C++ GUI Development
+  - OpenCV Integration
+  - R Statistical Processing
+  experience_title: Novel IR Irradiance Instrument for AR Glasses Eye Safety
+  context:
+    company: SIGMA DESIGN
+    timeframe: 2016-2022
+    role: Systems Engineer
+    team_size: null
+  situation_task: Required development of novel IR irradiance measurement instrument for AR glasses eye safety testing where no commercial solution existed, creating critical capability needed to enable forward field testing of prototype augmented reality devices
+  action_description: As Systems Engineer, identified market gap where no commercial instrument existed for measuring IR irradiance exposure from AR glasses for eye safety compliance. Designed and developed novel measurement solution from requirements through implementation, creating custom instrumentation capability that enabled prototype AR device testing to proceed. Delivered comprehensive Windows GUI application with C++/C#/R/OpenCV backend providing statistical processing and measurement visualization.
+  quantified_results: Successfully created first-of-its-kind IR irradiance measurement instrument where no commercial solution existed, directly enabling forward progress on AR prototype testing and eye safety validation
+  narrative_hook: Systems Engineer who identified critical market gap and developed novel IR irradiance measurement instrument enabling AR glasses eye safety testing where no commercial solution existed
+  proficiency_level: Expert
+  keywords:
+  - novel instrumentation
+  - IR irradiance measurement
+  - AR glasses safety
+  - eye safety testing
+  - market gap identification
+  - custom instrument development
+  - augmented reality safety
+  - prototype testing enablement
+  - C++ GUI development
+  - OpenCV integration
+  - statistical processing
+  story_adaptability: High
+  tags:
+  - innovation
+  - safety
+  - instrumentation
+  - market-gap
+  - ar-vr
+  supporting_links:
+  - ref_number: 5
+    title: Instrument for measuring eye IR irradiance exposure
+    url: http://bit.ly/3JNMi2T
+  tech_stack:
+  - C++
+  - C#
+  - R
+  - OpenCV
+  - Windows GUI
+  validation_methods: []
+  integration_scopes: []
+  environments: []
+  job_alignment: []
+  impact_type:
+  - innovation
+  - safety
+  - market-enablement
   metrics: []
   stakeholders: []
   region_context: []
