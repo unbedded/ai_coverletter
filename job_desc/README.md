@@ -1,10 +1,9 @@
-![[Pasted image 20250830125752.png]]  https://www.tokyodev.com/companies/rapyuta-robotics/jobs/software-engineer-robotics-control-systems
+# Job Description files
 
-# Software Engineer - Robotics Control Systems
+Place MarkDown job_descriptions in this folder
 
- [![Rapyuta Robotics logo](https://www.tokyodev.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTQzMSwicHVyIjoiYmxvYl9pZCJ9fQ==--33ae0163542e0688f76edf14b84a8f8fad595e74/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwic2F2ZXIiOnsic3Vic2FtcGxlX21vZGUiOiJvbiIsInN0cmlwIjp0cnVlLCJpbnRlcmxhY2UiOnRydWUsImxvc3NsZXNzIjpmYWxzZSwicXVhbGl0eSI6ODB9LCJyZXNpemVfdG9fZmlsbCI6WzMyLDMyXX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--ee68ad0709f56d98216852d7db2ef01e5d0b0785/rapyuta-robotics-ee987dc8.png) Rapyuta Robotics](https://www.tokyodev.com/companies/rapyuta-robotics) Koto-ku, Tokyo
-- 💴 No salary range given - 🏢 No remote - 🧪 3+ years experience required
-- 💬 No Japanese required - 🌏 Apply from abroad - 🧳 Relocate to Japan
+
+Example: 
 
 ## About the position
 In this position, you will be working with our Robotics Control Systems team to help drive innovation and optimization in Multi-Robot Controls. You will manage key parts of our distributed intelligence system for ASRS and pick assist robots. You will be designing, implementing, testing and maintaining:
