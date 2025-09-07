@@ -3,18 +3,6 @@ experiences:
 - experience_id: EXP_026
   category: Technical Documentation & Architecture
   primary_skill: Systems Engineering V-Model Leadership
-  secondary_skills:
-  - Requirements Elicitation
-  - System Requirements
-  - Design Tradeoffs
-  - FMEA
-  - Verification Matrix
-  - Requirements Traceability
-  - Acceptance Testing
-  - TÜV Certification
-  - Field Trials
-  - Patent Development
-  - Market Analysis
   experience_title: Technical Leadership in Product Development with Patent Generation
   context:
     company: ESI
@@ -39,13 +27,12 @@ experiences:
   proficiency_level: Expert
   keywords:
   - systems engineering
-  - V-model
+  - V-model methodology
   - requirements elicitation
-  - FMEA
+  - FMEA analysis
   - verification matrix
-  - traceability
-  - certification
-  - manufacturing systems
+  - requirements traceability
+  - TÜV certification
   - patent development
   - technical leadership
   - product development
@@ -54,53 +41,21 @@ experiences:
   - career progression
   - team management
   - continuous learning
+  - manufacturing systems
+  - acceptance testing
+  - field trials
+  - design tradeoffs
   - working professional masters degree
   story_adaptability: High
-  tags:
-  - systems-engineering
-  - certification
-  - leadership
-  - patents
-  - innovation
   supporting_links:
   - ref_number: 4
     title: ESI Third Dynamics laser drilling system, US Patent 6706999B1
     url: https://patents.google.com/patent/US6706999B1/en
   tech_stack: []
-  validation_methods: []
-  integration_scopes: []
-  environments: []
-  job_alignment: []
-  impact_type:
-  - innovation
-  - revenue
-  - market-leadership
-  metrics:
-  - name: Patents filed
-    unit: count
-    result: 9
-  - name: Patents issued
-    unit: count
-    result: 6
-  - name: Revenue generated
-    unit: USD
-    result: 30000000
-  - name: Team size managed
-    unit: engineers
-    result: 25
-  stakeholders: []
-  region_context: []
 
 - experience_id: EXP_027
   category: Technical Documentation & Architecture
   primary_skill: AI-Assisted V-Model Software Development
-  secondary_skills:
-  - V-Process Model
-  - Requirements Translation
-  - Automated Code Generation
-  - Patent Development
-  - Safety Instrument Design
-  - Open Source
   experience_title: V-Model AI Development Framework and Safety Instrument
   context:
     company: Open Source / Patent Work
@@ -120,16 +75,17 @@ experiences:
   proficiency_level: Expert
   keywords:
   - V-model
+  - V-process model
   - AI-assisted development
   - requirements translation
+  - automated code generation
   - patent development
   - safety instruments
+  - safety instrument design
   - formal processes
-  story_adaptability: High
-  tags:
+  - open source
   - innovation
-  - patent
-  - formal-process
+  story_adaptability: High
   supporting_links:
   - ref_number: 1
     title: AI-Assisted Software Development Workflow
@@ -146,28 +102,10 @@ experiences:
   - GitHub Actions
   - Docker
   - colcon
-  validation_methods: []
-  integration_scopes: []
-  environments: []
-  job_alignment: []
-  impact_type:
-  - quality
-  - schedule
-  metrics: []
-  stakeholders: []
-  region_context: []
 
 - experience_id: EXP_025
   category: Technical Documentation & Architecture
   primary_skill: Technical Documentation & Requirements Management
-  secondary_skills:
-  - Interface Control Documents (ICDs)
-  - Requirements Analysis
-  - Decision Documentation
-  - Confluence
-  - Single Source of Truth
-  - Cross-Functional Collaboration
-  - Cost/Benefit Analysis
   experience_title: Technical Documentation and Requirements Architecture
   context:
     company: Multiple Organizations
@@ -190,27 +128,20 @@ experiences:
   - technical documentation
   - requirements management
   - interface control documents
+  - requirements analysis
+  - decision documentation
   - confluence
   - single source of truth
-  - decision documentation
   - cross-functional collaboration
+  - cost/benefit analysis
   - requirements prioritization
-  story_adaptability: High
-  tags:
   - documentation
   - architecture
   - process
   - collaboration
+  story_adaptability: High
   supporting_links: []
   tech_stack: []
-  validation_methods: []
-  integration_scopes: []
-  environments: []
-  job_alignment: []
-  impact_type: []
-  metrics: []
-  stakeholders: []
-  region_context: []
 
 - experience_id: EXP_015
   category: Specialized Technical Areas
@@ -251,14 +182,6 @@ experiences:
   - standards
   supporting_links: []
   tech_stack: []
-  validation_methods: []
-  integration_scopes: []
-  environments: []
-  job_alignment: []
-  impact_type: []
-  metrics: []
-  stakeholders: []
-  region_context: []
 
 - experience_id: EXP_002
   category: Specialized Technical Areas
@@ -315,19 +238,6 @@ experiences:
     title: State Farm Ventures® Safety-Related Investment
     url: https://impact.statefarm.com/data/docs/2023/2023_Impact_Report.pd
   tech_stack: []
-  validation_methods:
-  - HIL
-  - Closed-course
-  - Bench
-  integration_scopes: []
-  environments: []
-  job_alignment: []
-  impact_type:
-  - safety
-  - quality
-  metrics: []
-  stakeholders: []
-  region_context: []
 
 - experience_id: EXP_011
   category: Specialized Technical Areas
@@ -368,14 +278,6 @@ experiences:
   - storage
   supporting_links: []
   tech_stack: []
-  validation_methods: []
-  integration_scopes: []
-  environments: []
-  job_alignment: []
-  impact_type: []
-  metrics: []
-  stakeholders: []
-  region_context: []
 
 - experience_id: EXP_005
   category: Specialized Technical Areas
@@ -414,14 +316,6 @@ experiences:
   - sensors
   supporting_links: []
   tech_stack: []
-  validation_methods: []
-  integration_scopes: []
-  environments: []
-  job_alignment: []
-  impact_type: []
-  metrics: []
-  stakeholders: []
-  region_context: []
 
 - experience_id: EXP_022
   category: AI/Machine Learning 
@@ -468,14 +362,6 @@ experiences:
     title: Morse Code Decoder with AI Integration
     url: https://github.com/unbedded/morsecode
   tech_stack: []
-  validation_methods: []
-  integration_scopes: []
-  environments: []
-  job_alignment: []
-  impact_type: []
-  metrics: []
-  stakeholders: []
-  region_context: []
 
 - experience_id: EXP_003
   category: AI/Machine Learning 
@@ -533,14 +419,6 @@ experiences:
   - prompt tooling
   - YAML
   - OpenAI/Anthropic APIs
-  validation_methods: []
-  integration_scopes: []
-  environments: []
-  job_alignment: []
-  impact_type: []
-  metrics: []
-  stakeholders: []
-  region_context: []
 
 - experience_id: EXP_020
   category: Robotics Frameworks & Libraries
@@ -586,16 +464,6 @@ experiences:
   - precision
   supporting_links: []
   tech_stack: []
-  validation_methods: []
-  integration_scopes: []
-  environments: []
-  job_alignment: []
-  impact_type:
-  - quality
-  - performance
-  metrics: []
-  stakeholders: []
-  region_context: []
 
 - experience_id: EXP_013
   category: Networking & Communication
@@ -646,18 +514,6 @@ experiences:
   - UDP
   - SOME/IP
   - Python tooling
-  validation_methods:
-  - Bench
-  - HIL
-  integration_scopes: []
-  environments: []
-  job_alignment: []
-  impact_type:
-  - integration
-  - quality
-  metrics: []
-  stakeholders: []
-  region_context: []
 
 - experience_id: EXP_006
   category: Networking & Communication
@@ -704,14 +560,6 @@ experiences:
     title: Auto API generation and gRPC w/ embedded systems
     url: https://bit.ly/42d8Tfq
   tech_stack: []
-  validation_methods: []
-  integration_scopes: []
-  environments: []
-  job_alignment: []
-  impact_type: []
-  metrics: []
-  stakeholders: []
-  region_context: []
 
 - experience_id: EXP_007
   category: Language Requirements
@@ -760,14 +608,6 @@ experiences:
   - ongoing
   supporting_links: []
   tech_stack: []
-  validation_methods: []
-  integration_scopes: []
-  environments: []
-  job_alignment: []
-  impact_type: []
-  metrics: []
-  stakeholders: []
-  region_context: []
 
 - experience_id: EXP_001
   category: Industry Experience
@@ -827,37 +667,6 @@ experiences:
   - Docker
   - CMake
   - AWS
-  validation_methods:
-  - Bench
-  - SIL
-  - On-vehicle
-  integration_scopes:
-  - CAN decoding
-  - sensor time-sync
-  - node graph bring-up
-  - telemetry dashboards
-  environments: []
-  job_alignment:
-  - ROS2
-  - Linux
-  - C++
-  - CAN
-  - on-vehicle bring-up
-  - CI/CD
-  impact_type:
-  - integration
-  - performance
-  metrics:
-  - name: Frame rate
-    unit: fps
-    baseline: 8
-    result: 15
-    delta_percent: 87.5
-  - name: Vehicles deployed
-    unit: count
-    result: 6
-  stakeholders: []
-  region_context: []
 
   supporting_links:
   - ref_number: 1
@@ -901,14 +710,6 @@ experiences:
   - autonomous
   supporting_links: []
   tech_stack: []
-  validation_methods: []
-  integration_scopes: []
-  environments: []
-  job_alignment: []
-  impact_type: []
-  metrics: []
-  stakeholders: []
-  region_context: []
 
 - experience_id: EXP_018
   category: Hardware & Low-Level Systems
@@ -954,28 +755,6 @@ experiences:
   - Real-time control
   - distributed controllers
   - high-speed I/O
-  validation_methods: []
-  integration_scopes: []
-  environments: []
-  job_alignment: []
-  impact_type:
-  - performance
-  - scale
-  metrics:
-  - name: Performance metric
-    unit: units/hour
-    baseline: 150
-    result: 1000
-    multiple: 6.67
-    delta_percent: 566.7
-  - name: Performance metric
-    unit: units/hour
-    baseline: 150
-    result: 1000
-    multiple: 6.67
-    delta_percent: 566.7
-  stakeholders: []
-  region_context: []
 
 - experience_id: EXP_014
   category: Hardware & Low-Level Systems
@@ -1025,14 +804,6 @@ experiences:
     title: Auto API generation and gRPC w/ embedded systems
     url: https://bit.ly/42d8Tfq
   tech_stack: []
-  validation_methods: []
-  integration_scopes: []
-  environments: []
-  job_alignment: []
-  impact_type: []
-  metrics: []
-  stakeholders: []
-  region_context: []
 
 - experience_id: EXP_010
   category: Development Environment & Tools
@@ -1094,14 +865,6 @@ experiences:
   - production
   supporting_links: []
   tech_stack: []
-  validation_methods: []
-  integration_scopes: []
-  environments: []
-  job_alignment: []
-  impact_type: []
-  metrics: []
-  stakeholders: []
-  region_context: []
 
 - experience_id: EXP_009
   category: Core Programming Languages
@@ -1187,14 +950,6 @@ experiences:
   - standardization
   supporting_links: []
   tech_stack: []
-  validation_methods: []
-  integration_scopes: []
-  environments: []
-  job_alignment: []
-  impact_type: []
-  metrics: []
-  stakeholders: []
-  region_context: []
 
 - experience_id: EXP_019
   category: Computer Vision & Automation
@@ -1237,14 +992,6 @@ experiences:
   - manufacturing
   supporting_links: []
   tech_stack: []
-  validation_methods: []
-  integration_scopes: []
-  environments: []
-  job_alignment: []
-  impact_type: []
-  metrics: []
-  stakeholders: []
-  region_context: []
 
 - experience_id: EXP_024
   category: AI/Machine Learning
@@ -1290,14 +1037,6 @@ experiences:
   - rapid-delivery
   supporting_links: []
   tech_stack: []
-  validation_methods: []
-  integration_scopes: []
-  environments: []
-  job_alignment: []
-  impact_type: []
-  metrics: []
-  stakeholders: []
-  region_context: []
 
 - experience_id: EXP_028
   category: AI/Machine Learning
@@ -1347,17 +1086,6 @@ experiences:
   - YAML
   - Policy engines
   - Test automation
-  validation_methods: []
-  integration_scopes: []
-  environments: []
-  job_alignment: []
-  impact_type:
-  - innovation
-  - productivity
-  - quality
-  metrics: []
-  stakeholders: []
-  region_context: []
 
 - experience_id: EXP_029
   category: AI/Machine Learning
@@ -1405,16 +1133,6 @@ experiences:
   - Neural networks
   - Signal processing libraries
   - Convolution algorithms
-  validation_methods: []
-  integration_scopes: []
-  environments: []
-  job_alignment: []
-  impact_type:
-  - innovation
-  - validation
-  metrics: []
-  stakeholders: []
-  region_context: []
 
 - experience_id: EXP_030
   category: AI/Machine Learning
@@ -1463,16 +1181,6 @@ experiences:
   - Python
   - Claude API
   - Quality metrics
-  validation_methods: []
-  integration_scopes: []
-  environments: []
-  job_alignment: []
-  impact_type:
-  - automation
-  - quality
-  metrics: []
-  stakeholders: []
-  region_context: []
 
 - experience_id: EXP_031
   category: AI/Machine Learning
@@ -1519,16 +1227,6 @@ experiences:
   - Technical documentation processing
   - Python
   - Vector databases
-  validation_methods: []
-  integration_scopes: []
-  environments: []
-  job_alignment: []
-  impact_type:
-  - automation
-  - community
-  metrics: []
-  stakeholders: []
-  region_context: []
 
 - experience_id: EXP_032
   category: Specialized Technical Areas
@@ -1582,17 +1280,6 @@ experiences:
   - R
   - OpenCV
   - Windows GUI
-  validation_methods: []
-  integration_scopes: []
-  environments: []
-  job_alignment: []
-  impact_type:
-  - innovation
-  - safety
-  - market-enablement
-  metrics: []
-  stakeholders: []
-  region_context: []
 
 parsing_config:
   default_proficiency: Intermediate

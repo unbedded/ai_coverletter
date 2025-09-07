@@ -199,47 +199,82 @@ The `work_experience.yaml` file is the core database that powers intelligent exp
   quantified_results: [Results]  # Measurable outcomes achieved
   role: [Your Role]
   proficiency_level: [Expert|Advanced|Intermediate]  # Your skill level
-  keywords: [list]  # Searchable terms for matching
+  keywords: [list]  # Domain concepts, methodologies, high-level capabilities for job matching
   story_adaptability: [High|Medium|Low]  # How flexible this story is for different contexts
-  tags: [list]  # Quick categorization tags
 ```
 
 ### Highly Recommended Fields (for better matching):
 ```yaml
-  secondary_skills:  # Additional skills demonstrated
-    - [Skill 1]
-    - [Skill 2]
   context:  # Where/when this happened
     company: [Company Name]
     timeframe: [Time Period]
     team_size: [number or null]
   situation_task: [Background]  # Problem/challenge you faced (sets up the story)
   narrative_hook: [One-liner]  # Catchy summary for cover letter opening
-  tech_stack:  # Specific technologies used
+  tech_stack:  # Specific technologies/tools/frameworks used
     - [Technology 1]
-    - [Technology 2]
+    - [Framework 2] 
+    - [Tool 3]
   supporting_links:  # Evidence/portfolio links
     - ref_number: [1-9]  # Use [1], [2] etc. inline in action_description or quantified_results
       title: [Link Title]
       url: [URL]
 ```
 
-### Optional Fields (for comprehensive documentation):
+### Field Separation Guidelines
+
+**CRITICAL: Avoid Content Overlap Between Fields**
+
+#### `keywords:` - Domain Expertise & Business Concepts
+**Purpose:** High-level capabilities, methodologies, domain knowledge for job requirement matching
+**Include:**
+- Business domains (autonomous vehicles, manufacturing systems, financial services)
+- Methodologies & processes (V-model, FMEA, Agile, DevOps practices)  
+- High-level technical capabilities (system architecture, sensor fusion, distributed systems)
+- Leadership & management skills (technical leadership, team management, stakeholder management)
+- Certifications & standards (TÜV certification, ISO compliance, safety standards)
+- Business outcomes (patent development, market analysis, cost optimization)
+
+**Examples:**
 ```yaml
-  job_alignment: [list]  # Specific job requirements this addresses
-  impact_type: [list]  # Type of impact (performance, quality, scale, etc.)
-  metrics:  # Detailed performance metrics
-    - name: [Metric Name]
-      unit: [Unit of Measure]
-      baseline: [Starting Value]
-      result: [Final Value]
-      delta_percent: [Percentage Change]
-  validation_methods: [list]  # How results were validated
-  integration_scopes: [list]  # Integration aspects covered
-  environments: [list]  # Development/deployment environments
-  stakeholders: [list]  # Who benefited from this work
-  region_context: [list]  # Geographic/cultural relevance
+keywords:
+  - autonomous vehicles        # Domain
+  - V-model methodology       # Process  
+  - technical leadership      # Capability
+  - sensor fusion            # High-level tech concept
+  - patent development       # Business outcome
 ```
+
+#### `tech_stack:` - Specific Technologies & Tools
+**Purpose:** Concrete implementation tools, languages, frameworks, platforms
+**Include:**
+- Programming languages (C++17, Python, JavaScript, Rust)
+- Frameworks & libraries (ROS2, React, Django, OpenCV, TensorFlow)
+- Development tools (Docker, CMake, Git, Jira, Jenkins)
+- Platforms & services (AWS, Azure, Ubuntu, Windows)
+- Protocols & standards (CAN, TCP/IP, HTTP, MQTT)
+- Databases & storage (PostgreSQL, MongoDB, Redis)
+
+**Examples:**
+```yaml
+tech_stack:
+  - C++17                    # Language
+  - ROS2                     # Framework
+  - Docker                   # Tool
+  - AWS                      # Platform
+  - CAN                      # Protocol
+```
+
+#### **Migration Rules:**
+- **Remove from keywords:** Specific technologies, programming languages, tools → Move to `tech_stack`
+- **Keep in keywords:** Domain expertise, business concepts, methodologies
+- **No Duplication:** Each term appears in exactly ONE field
+
+### Removed Fields (Schema Simplification):
+The following fields have been removed for cleaner maintenance:
+- `secondary_skills` → Content merged into `keywords` and `tech_stack`  
+- `tags` → Content merged into `keywords`
+- `stakeholders`, `region_context`, `environments`, `job_alignment`, `integration_scopes`, `validation_methods`, `metrics`, `impact_type` → Removed due to sparse usage
 
 ## Standard Engineering Role Archetypes
 
@@ -356,60 +391,44 @@ Use these standardized roles for consistent role clarity across all experience e
 - experience_id: EXP_001
   category: Industry Experience
   primary_skill: Autonomous Vehicle Systems Management
-  secondary_skills:
-    - ROS2
-    - LiDAR Integration
-    - AWS Cloud
-    - Linux
   experience_title: 3D Collision Alert System with Fleet Deployment
   context:
     company: PREACT TECHNOLOGIES
     timeframe: 2022-2024
-    role: Application Engineering Manager
+    role: Engineering Manager
     team_size: null
   situation_task: Required Linux-based collision alert system advancement from proof-of-concept through integration and field deployment in pilot delivery van fleet while managing vendor relationships
-  action_description: Managed sensor integration using ROS2 and FLASH LiDAR [1], implemented cloud connectivity via AWS for real-time data analysis, negotiated and executed $50k+ infrastructure vendor contracts
+  action_description: As Engineering Manager, managed sensor integration using ROS2 and FLASH LiDAR [1], implemented cloud connectivity via AWS for real-time data analysis, negotiated and executed $50k+ infrastructure vendor contracts
   quantified_results: Successfully deployed to 6-vehicle pilot fleet, achieved 87.5% performance improvement (8→15 fps) through ROS2 optimization [1]  
   proficiency_level: Expert
   keywords:
+    # Domain expertise & business concepts (following separation guidelines)
     - collision detection
-    - autonomous vehicles
+    - autonomous vehicles  
     - sensor fusion
     - real-time systems
     - fleet deployment
+    - vendor management
+    - contract negotiation
+    - stakeholder management
+    - project management
   story_adaptability: High
-  tags:
-    - management
-    - deployment
-    - real-time
-  narrative_hook: Brought up pilot fleet of 6 driverless vans, tuned perception 8→15 fps by optimizing ROS2 node graph and CAN decoding [1]
+  narrative_hook: Engineering Manager who transformed crude vehicle collision detection demo into production 6-vehicle pilot fleet through 5 customer-facing phase gate demonstrations [1]
   tech_stack:
+    # Specific technologies, tools & platforms (following separation guidelines)
     - ROS2
     - C++17
     - Ubuntu
+    - Jetson
     - CAN
+    - UDP
+    - Docker
+    - CMake
     - AWS
   supporting_links:
     - ref_number: 1
       title: Fleet Deployment Technical Documentation
       url: https://example.com/fleet-deployment
-  job_alignment:
-    - ROS2
-    - Linux
-    - C++
-    - field testing
-  impact_type:
-    - integration
-    - performance
-  metrics:
-    - name: Frame rate
-      unit: fps
-      baseline: 8
-      result: 15
-      delta_percent: 87.5
-    - name: Vehicles deployed
-      unit: count
-      result: 6
 ```
 
 ## Reference Numbering
