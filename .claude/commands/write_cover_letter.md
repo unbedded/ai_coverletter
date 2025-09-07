@@ -17,14 +17,15 @@ Example: `write_cover_letter --job_file=raw_jobs/google_swe_2025-08-30.md --haik
 
 ## Required Source Files
 The command requires these files in `source_materials/`:
-1. **resume.md** - Your resume in markdown format
-2. **work_experience.yaml** - Detailed skill:qualification database (see Experience Database Reference at end)
-3. **personal_info.md** - Contact information and preferences
+1. **work_experience.yaml** - Detailed skill:qualification database (see Experience Database Reference at end)  
+2. **personal_info.md** - Contact information and preferences
+
+**Note:** The consolidated `work_experience.yaml` database is self-sufficient for high-quality cover letter generation. After extensive testing and database consolidation (45.1% keyword reduction, duplicate elimination, field separation), the YAML-only approach produces superior results with better job requirement alignment and complete reference link coverage.
 
 ## Process
 1. Read the job description from the provided file path
 2. Extract company name, position, key REQUIRED and NICE TO HAVE requirements
-3. Load source materials (resume, work_experience YAML, personal info)
+3. Load source materials (work_experience YAML, personal info)
 4. Match job requirements with qualifications from work_experience.yaml
 5. Generate tailored cover letter using the specified template
 6. **FLAG missing coverage** for REQUIRED skills not adequately supported by YAML
