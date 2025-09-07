@@ -1,0 +1,150 @@
+# Work History - Resume-Specific Information
+# Contains employment timeline, education, and resume formatting data
+# Used alongside work_experience.yaml for complete resume generation
+
+# Personal Info
+personal_info:
+  name: "Spencer Barrett"
+  location: "14850 NW Northumbria Lane • Beaverton, OR 97006"
+  email: "SpencerBarrett@gmail.com"
+  phone: "503.382.7117"
+  github: "https://github.com/unbedded"
+  linkedin: "https://www.linkedin.com/in/spencer-barrett-3263528/"
+
+# Professional Summary
+professional_summary: |
+  Systems engineer with **20+ years** experience delivering **$30M+ revenue products**, recently pioneering **AI-accelerated development workflows** that multiply productivity beyond traditional cycles. **9 patents filed (6 issued)** including market-securing keystone patent US6706999B1. Led teams up to **25 engineers** across autonomous vehicles, manufacturing systems, and safety-critical certifications.
+
+  Since 2022, combines deep technical fundamentals with cutting-edge AI tools to accelerate diagnostics, prototyping, and deployment. **Heavy investment in open-source AI projects** demonstrating practical AI-assisted development across multiple domains.
+
+# Employment History
+employment_history:
+  - company: "Thermo Fisher Scientific"
+    location: "OR"
+    positions:
+      - title: "Systems Engineer"
+        start_date: "2025"
+        end_date: "2025"
+        duration: "2025"
+        
+  - company: "PreAct Technologies"
+    location: "Portland, OR"
+    positions:
+      - title: "Application Engineering Manager"
+        start_date: "2022"
+        end_date: "2024"
+        duration: "2022–2024"
+
+  - company: "Sigma Design"
+    location: "Camas, WA"
+    positions:
+      - title: "Systems Engineer"
+        start_date: "2016"
+        end_date: "2022"
+        duration: "2016–2022"
+
+  - company: "Electro Scientific Industries"
+    location: "Portland, OR"
+    positions:
+      - title: "Systems Engineer"
+        start_date: "1988"
+        end_date: "2016"
+        duration: "1988–2016 (28-year career progression to Technical Lead)"
+
+  - company: "Carnegie Mellon Field Robotics Center"
+    location: "Pittsburgh, PA"
+    positions:
+      - title: "Research Engineer"
+        start_date: "Early Career"
+        end_date: "Early Career"
+        duration: "Early Career"
+
+# Education
+education:
+  - degree: "Master of Science in Electrical Engineering"
+    institution: "Oregon State University"
+    graduation_year: "1995"
+    thesis: "Closed-Loop Vision Feedback using Kalman Filter for Latency Compensation"
+    
+  - degree: "Bachelor of Science in Electrical and Computer Engineering"
+    institution: "Carnegie Mellon University"
+    graduation_year: "1987"
+
+# Key Achievements (Resume Format)
+key_achievements:
+  - "**Market-Securing Patent** - Keystone patent US6706999B1 securing ESI's Third Dynamics laser drilling system and competitive market position"
+  - "**$30M Revenue Generation** - Led 25-engineer team to market leadership with ground-up MLCC platform"
+  - "**AI-Accelerated Diagnostics (2025)** - Delivered $6M platform recovery using AI-assisted toolchain development reducing analysis time from days to hours"
+  - "**87.5% Performance Boost (2022-24)** - Optimized collision detection from 8→15 fps via ROS2 optimization while pioneering AI-assisted development workflows"
+  - "**566% Throughput Scaling** - MLCC tester from 150K to 1M+ devices/hour through distributed real-time control"
+  - "**AI Development Framework Pioneer (2023)** - Built comprehensive AI-assisted development workflow converting requirements to tested code - approach later validated by major commercial AI coding tools using similar methodology ([GitHub](https://github.com/unbedded/ai_sw_workflow))"
+  - "**Advanced RAG Systems** - Developed domain-specific technical support systems and agentic cover letter workflows with quality assessment and gap analysis ([Cover Letter System](https://github.com/unbedded/ai_coverletter), [HAM Radio Support](https://github.com/unbedded/ai_qmx_helpdesk))"
+
+# Technical Skills (Resume Categories)
+technical_skills:
+  ai_development:
+    - "RAG (Retrieval-Augmented Generation)"
+    - "Machine Learning"
+    - "Agentic Workflows"
+    - "Advanced Prompt Engineering"
+    - "Policy-Driven Code Generation"
+    - "Neural Network Integration"
+    - "Vector Databases"
+    
+  languages:
+    - "Python"
+    - "C++17"
+    - "C#"
+    - "MATLAB"
+    - "R"
+    
+  ai_ml_stack:
+    - "OpenAI/Anthropic APIs"
+    - "LLM Integration"
+    - "AI-Assisted Diagnostics"
+    - "Automated Code Generation"
+    - "Document Intelligence"
+    - "Signal Processing + ML"
+    
+  frameworks:
+    - "ROS/ROS2"
+    - "FreeRTOS"
+    - "OpenCV"
+    - "gRPC"
+    - "Protobuf"
+    - "Docker"
+    
+  systems:
+    - "Linux"
+    - "AWS"
+    - "Git"
+    - "CMake"
+    - "Jira"
+    - "CAN Bus"
+    - "ARM Cortex-M4"
+    
+  hardware:
+    - "NVIDIA GPU"
+    - "LiDAR"
+    - "STM32"
+    - "OptiTrack"
+    - "Laser Systems"
+    
+  methodologies:
+    - "V-Model"
+    - "Agile/Scrum"
+    - "Project Management"
+    - "Stakeholder Management"
+    - "FMEA"
+    - "TÜV Certification"
+    - "AI-Enhanced Development"
+    - "Requirements-to-Code Translation"
+
+# Resume Generation Instructions
+resume_formatting:
+  use_bullets: true
+  emphasize_quantified_results: true
+  highlight_recent_ai_work: true
+  include_patent_numbers: true
+  show_career_progression: true
+  separate_sections: true

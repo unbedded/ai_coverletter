@@ -5,11 +5,7 @@ __pycache__/
 .mypy_cache/
 .pytest_cache/
 
-# Data files (uncomment if you want to track them)
-# data/
-output/
-job_desc/
-_archive/
+output/cvrltr*.md
 
 # Personal/sensitive information
 config/personal/
@@ -38,16 +34,4 @@ Thumbs.db
 
 # Cover Letter Automation - Personal Data
 source_materials/personal_info.md
-source_materials/resume.md
 
-# Optional: Uncomment to avoid tracking generated files
-# applications/
-# cover_letters/
-
-# Cover Letter Automation - Personal Data
-source_materials/personal_info.md
-source_materials/resume.md
-
-# Optional: Uncomment to avoid tracking generated files
-# applications/
-# cover_letters/
