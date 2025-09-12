@@ -70,13 +70,13 @@ experiences:
     team_size: 1
   situation_task: Required application of formal V-process model to software development with AI assistance and development
     of novel safety test instrument
-  action_description: As Principal Engineer, developed "AI Assisted Software Development Framework" applying V-process model
+  action_description: As Principal Engineer, developed "AI Assisted Software Development Framework"[1][2] applying V-process model
     to software development, translating high-level requirements into production-ready code paired with unit tests. Serving
-    as principal inventor on novel safety test instrument following V-model development process.
+    as principal inventor on novel safety test instrument [5] following V-model development process.
   quantified_results: Successfully published open-source V-model AI framework and developed patented safety instrument using
     formal development process
   narrative_hook: Principal Engineer who published open-source AI-assisted V-model development framework with automated code
-    generation [1]
+    generation [1][2]
   proficiency_level: Expert
   keywords:
   - V-model methodology
@@ -90,9 +90,11 @@ experiences:
   - innovation
   story_adaptability: High
   supporting_links:
-  - ref_number: 1
-    title: AI-Assisted Software Development Workflow
-    url: https://www.linkedin.com/in/spencer-barrett-3263528/overlay/1520433082853/single-media-viewer
+    title: Open Source End-to-End AI-Assisted Software Development Workflow
+    url: https://github.com/unbedded/ai_sw_workflow
+  - ref_number: 2
+    title: Article End-to-End AI-Assisted Software Development Workflow
+    url: https://www.linkedin.com/in/spencer-barrett-3263528/overlay/1734220968796/single-media-viewer?type=DOCUMENT&profileId=ACoAAAF5iE4Bf0SkGOS9yuEM2kxGk9ddw8fO1yo&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BG6aCNp2gRGChI46O%2FCxsqQ%3D%3D
   - ref_number: 5
     title: Instrument for measuring eye IR irradiance exposure
     url: http://bit.ly/3JNMi2T
@@ -169,39 +171,39 @@ experiences:
   tech_stack: []
 
 - experience_id: EXP_002
-  category: Specialized Technical Areas
-  primary_skill: AEB/VRU System-Level Testing
-  experience_title: AEB/VRU System Testing and Performance Validation
+  category: Robotics Frameworks & Libraries
+  primary_skill: Robotics Systems Integration & Testing
+  experience_title: Robotics LiDAR Integration with AEB/VRU System Validation
   context:
     company: PREACT TECHNOLOGIES
     timeframe: 2022-2024
     role: Lead Architect
     team_size: null
-  situation_task: Required comprehensive evaluation of PreAct's LiDAR for Autonomous Emergency Braking in Vulnerable Road
-    User scenarios against Euro NCAP protocols with measurable performance validation
-  action_description: As Lead Architect, served as lead architect and data analyst evaluating LiDAR performance for AEB-VRU
-    systems. Designing and executing controlled tests with UMTRI at Mcity against Euro NCAP protocols. Conducted as Lead Architect
-    comprehensive testing across pedestrian/cyclist scenarios, day/night conditions, and variable speeds.
-  quantified_results: Achieved successful VRU detection within 8 meters of potential collision across all test scenarios (pedestrian/cyclist,
-    day/night, speeds up to 40 km/h). Presented findings at 2024 Transportation Research Board Annual Meeting
-  narrative_hook: Lead Architect who led comprehensive AEB-VRU system evaluation achieving 8-meter detection range across
-    all test scenarios
+  situation_task: Required comprehensive robotics systems integration and validation of LiDAR sensors for Autonomous Emergency Braking in Vulnerable Road User scenarios against Euro NCAP protocols with measurable performance validation across multiple robotics platforms
+  action_description: As Lead Architect, integrated LiDAR sensors into autonomous robotics platform for AEB-VRU systems validation. Designed and executed controlled robotics integration tests with UMTRI at Mcity against Euro NCAP protocols. Led systems integration across multiple robotics platforms conducting comprehensive testing across pedestrian/cyclist scenarios, day/night conditions, and variable speeds [1].
+  quantified_results: Achieved successful robotics integration with 8-meter VRU detection range across all test scenarios (pedestrian/cyclist, day/night, speeds up to 40 km/h). Presented robotics systems integration findings at 2024 Transportation Research Board Annual Meeting [1]
+  narrative_hook: Lead Architect who integrated LiDAR sensors into autonomous robotics platform achieving 8-meter detection range across all AEB-VRU test scenarios
   proficiency_level: Expert
   keywords:
+  # Domain expertise & business concepts (following separation guidelines)
+  - robotics systems integration
+  - sensor integration
+  - autonomous robotics platforms
+  - systems validation
+  - LiDAR integration
+  - collision detection
   - Autonomous Emergency Braking (AEB)
   - Vulnerable Road User (VRU) detection
   - Euro NCAP protocols
-  - LiDAR evaluation
   - system architecture
-  - data analysis
-  - UMTRI collaboration
-  - research presentation
   - performance validation
-  - collision detection
   - automotive safety
   - controlled testing
+  - research presentation
+  - UMTRI collaboration
   - Mcity testing facility
-  story_adaptability: Medium
+  - multi-platform integration
+  story_adaptability: High
   supporting_links:
   - ref_number: 1
     title: "State Farm Ventures\xAE Safety-Related Investment"
@@ -570,7 +572,7 @@ experiences:
     role: Research Engineer
     team_size: null
   situation_task: Contributed to development of one of the earliest autonomous vehicles as part of groundbreaking robotics
-    research
+    research. The Field Robotics Center is focused on robotics for outdoor, unstructured and hazardous environments.
   action_description: As Research Engineer, contributed to NAVLAB 1 autonomous vehicle development at Carnegie Mellon's Field
     Robotics Center. Gained working as Research Engineer foundational experience in real-time robotics control, embedded systems,
     and simulation technologies.
@@ -707,30 +709,45 @@ experiences:
 
 - experience_id: EXP_009
   category: Core Programming Languages
-  primary_skill: Multi-Language Production Software Development with Agile Leadership
-  experience_title: 20+ Years Multi-Language Development with Agile Process Leadership
+  primary_skill: AI-Enhanced Multi-Language Development with Full-Cycle Software Engineering
+  experience_title: 20+ Years Multi-Language Development with AI-Assisted Full-Cycle Engineering Leadership
   context:
     company: Multiple Organizations
-    timeframe: 20+ years
-    role: Staff Engineer
+    timeframe: 20+ years, pioneering AI integration 2023-2024
+    role: Staff Engineer / AI Development Pioneer
     team_size: null
   situation_task: Required robust software development across multiple languages and paradigms for various technical challenges
     over extended career, including modern C++ development with robust build systems, testing frameworks, containerized deployment,
-    and establishment of modern Agile development workflows for Linux-based robotics software delivery
-  action_description: As Staff Engineer, developed software solutions using Python, C++17, C#, and BASH with focus on asynchronous
-    programming using asyncio and event-driven architectures. Built as Staff Engineer systems requiring high-performance,
-    concurrent processing and real-time responsiveness. Implemented working as Staff Engineer production-grade C++17 software
-    with CMake build systems, comprehensive unit and integration testing frameworks. Established as Staff Engineer Agile workflows
-    that decompose Jira epics into testable tasks paired with unit tests. Standardized working as Staff Engineer code review
-    processes, branching strategies, artifact versioning, and Dockerized development environments. Used as Staff Engineer
-    Docker for containerized development and deployment with Git-based version control and extensive CI/CD pipelines.
+    establishment of modern Agile development workflows for Linux-based robotics software delivery, and pioneering comprehensive
+    AI-assisted development framework that transforms requirements into production-ready code with comprehensive testing
+  action_description: As Staff Engineer and AI Development Pioneer, developed software solutions using Python, C++17, C#, and BASH 
+    with focus on asynchronous programming using asyncio and event-driven architectures. Built as Staff Engineer systems requiring 
+    high-performance, concurrent processing and real-time responsiveness. Implemented working as Staff Engineer production-grade 
+    C++17 software with CMake build systems, comprehensive unit and integration testing frameworks. Established as Staff Engineer 
+    Agile workflows that decompose Jira epics into testable tasks paired with unit tests. Standardized working as Staff Engineer 
+    code review processes, branching strategies, artifact versioning, and Dockerized development environments. Pioneered as AI 
+    Development Pioneer comprehensive AI-assisted development workflow that automatically generates production-ready Python and C++ 
+    code along with matching test cases [1][2]. Created working as AI Development Pioneer policy-driven system enforcing 
+    company/project coding and testing standards with end-to-end automated code generation from requirements through testing, 
+    predating commercial tools like ClaudeCode. Designed and implemented as AI Development Pioneer agentic workflows for requirements 
+    translation, automated code generation, and comprehensive testing framework integration.
   quantified_results: 20+ years of proven multi-language software development experience with production deployments, delivered
     production-grade C++ software with robust testing and modern development practices, successfully implemented standardized
-    Agile development processes with modern toolchain for robotics software delivery
-  narrative_hook: Staff Engineer who led 20+ years of multi-language software development with modern Agile processes, delivering
-    production-grade C++17/Python systems through standardized workflows, code reviews, and comprehensive testing frameworks
+    Agile development processes with modern toolchain for robotics software delivery. Developed fully functional AI-assisted
+    development environment with automated code generation and robust testing framework, published as open-source project.
+    Successfully validated AI development workflow methodology later adopted by ClaudeCode using similar approach
+  narrative_hook: Staff Engineer who pioneered AI-assisted development workflow (pre-ClaudeCode) combining 20+ years multi-language
+    expertise with comprehensive automated code generation from requirements to tested production code, delivering modern Agile
+    processes and full-cycle software engineering leadership [1][2]
   proficiency_level: Expert
   keywords:
+  - AI-assisted development
+  - full-cycle software engineering
+  - requirements-driven development
+  - test-driven development (TDD)
+  - automated code generation
+  - agentic workflows
+  - policy-driven development
   - asynchronous programming
   - event-driven architecture
   - CI/CD pipelines
@@ -745,8 +762,16 @@ experiences:
   - concurrent & high-performance systems
   - production software development
   - process standardization
+  - pioneering methodology
+  - open source development
   story_adaptability: High
-  supporting_links: []
+  supporting_links:
+  - ref_number: 1
+    title: Open Source End-to-End AI-Assisted Software Development Workflow
+    url: https://github.com/unbedded/ai_sw_workflow
+  - ref_number: 2
+    title: Article End-to-End AI-Assisted Software Development Workflow
+    url: https://www.linkedin.com/in/spencer-barrett-3263528/overlay/1734220968796/single-media-viewer?type=DOCUMENT&profileId=ACoAAAF5iE4Bf0SkGOS9yuEM2kxGk9ddw8fO1yo&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BG6aCNp2gRGChI46O%2FCxsqQ%3D%3D
   tech_stack:
   - Python
   - C++17
@@ -756,6 +781,10 @@ experiences:
   - Docker
   - Jira
   - ROS/ROS2
+  - OpenAI/Anthropic APIs
+  - YAML
+  - Policy engines
+  - Test automation
 
 - experience_id: EXP_019
   category: Computer Vision & Automation
@@ -836,7 +865,7 @@ experiences:
   situation_task: Required development of holistic AI-assisted software development workflow addressing limitations of existing
     AI tools, spanning entire lifecycle from requirements through testing with policy enforcement for coding standards
   action_description: As Principal Developer, designed and implemented comprehensive agentic workflow that converts software
-    requirements into production code with regression unit tests. Built working as Principal Developer policy-driven system
+    requirements into production code with regression unit tests [1][2]. Built working as Principal Developer policy-driven system
     enforcing company/project coding and testing standards. Created as Principal Developer well-documented artifacts at each
     development stage while supporting user intervention when needed, enabling holistic and efficient development process
     that predated similar commercial tools.
@@ -860,8 +889,11 @@ experiences:
   story_adaptability: High
   supporting_links:
   - ref_number: 1
-    title: End-to-End AI-Assisted Software Development Workflow
+    title: Open Source End-to-End AI-Assisted Software Development Workflow
     url: https://github.com/unbedded/ai_sw_workflow
+  - ref_number: 2
+    title: Article End-to-End AI-Assisted Software Development Workflow
+    url: https://www.linkedin.com/in/spencer-barrett-3263528/overlay/1734220968796/single-media-viewer?type=DOCUMENT&profileId=ACoAAAF5iE4Bf0SkGOS9yuEM2kxGk9ddw8fO1yo&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BG6aCNp2gRGChI46O%2FCxsqQ%3D%3D
   tech_stack:
   - OpenAI/Anthropic APIs
   - Python
@@ -1078,3 +1110,64 @@ extraction_templates:
   - achieved X% accuracy/uptime/performance
   - delivered X weeks ahead of schedule
   - saved $X in costs
+
+● - experience_id: EXP_101
+    category: AI Development
+    primary_skill: AI-Enhanced Software Development
+    experience_title: Recipe Binder - Production AI Development Platform
+    context:
+      company: Personal Project (Open Source)
+      timeframe: 2024
+      role: Senior AI Engineer
+      team_size: 1
+    situation_task: Required development of comprehensive recipe digitization platform from scratch following rigorous engineering standards. Challenge involved parsing natural language ingredients,
+  integrating 350,000+ USDA nutrition database entries, generating professional PDF layouts with precise typography, and implementing robust error handling - all while maintaining production-quality
+  architecture and comprehensive test coverage throughout rapid AI-enhanced development cycles.
+    action_description: As Senior AI Engineer, designed multi-phase AI development strategy leveraging ChatGPT for exploration and Claude Code for implementation. Leading architecture decisions, established
+  CLAUDE.md framework defining coding standards, error handling patterns, and quality gates before writing code. Managing complex integrations, implemented async/await Python architecture with dependency
+  injection, designed comprehensive retry logic with exponential backoff, and orchestrating testing strategy, generated 238 parametrized pytest cases covering edge cases including Unicode handling and extreme
+   inputs.
+    quantified_results: Delivered 30-second processing pipeline from markdown to print-ready PDF, achieved 21 automated recipe categories with 95% accuracy, integrated complete 350,000+ ingredient USDA
+  nutrition database with intelligent fallback handling. Produced comprehensive documentation including installation guides and API reference, implemented professional git-flow with semantic versioning, and
+  demonstrated 10x productivity improvement through strategic AI tool usage while maintaining zero-tolerance production quality standards.
+    proficiency_level: Expert
+    keywords:
+      # Domain expertise & business concepts
+      - AI-enhanced development
+      - production software architecture
+      - test-driven development
+      - natural language processing
+      - nutrition data integration
+      - PDF generation
+      - workflow optimization
+      - open source development
+      - technical documentation
+      - quality assurance
+    story_adaptability: High
+    narrative_hook: Senior AI Engineer transformed Claude Code into game-changing development workflow tool through refined best practices, publishing open-source recipe platform with comprehensive AI
+  methodology that achieved 238/238 test coverage and 10x productivity gains.
+    tech_stack:
+      # Specific technologies, tools & platforms
+      - Python 3.13
+      - Claude Code
+      - ChatGPT
+      - pytest
+      - async/await
+      - Pydantic
+      - ReportLab
+      - USDA FoodData Central API
+      - YAML
+      - Markdown
+      - Git Flow
+      - Type Hints
+      - Dependency Injection
+    supporting_links:
+      - ref_number: 1
+        title: Recipe Binder GitHub Repository
+        url: https://github.com/user/recipe-binder
+      - ref_number: 2
+        title: LinkedIn Article - AI Development Best Practices
+        url: https://www.linkedin.com/in/spencer-barrett-3263528/overlay/1757686162540/single-media-viewer/?profileId=ACoAAAF5iE4Bf0SkGOS9yuEM2kxGk9ddw8fO1yo
+
+
+

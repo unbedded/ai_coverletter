@@ -1,6 +1,6 @@
 # Write Cover Letter
 
-Generate a tailored cover letter directly from a job description markdown file using source materials.
+Generate a tailored cover letter directly from a job description file using intelligent extraction and source materials matching.
 
 **Quick Help:** Use `write_cover_letter -h` or `write_cover_letter --help` to display usage information.
 
@@ -8,12 +8,23 @@ Generate a tailored cover letter directly from a job description markdown file u
 ```
 write_cover_letter --job_file=<job_description_file_path> [--haiku] [--no-analytics]
 ```
-Example: `write_cover_letter --job_file=raw_jobs/google_swe_2025-08-30.md --haiku --no-analytics`
+Example: `write_cover_letter --job_file=job_desc/Rapyuta_Robo.SysIntEng.md --haiku`
 
 ## Parameters
-- **job_file** (required): Path to the job description markdown file
+- **job_file** (required): Path to the job description markdown file - **THE SINGLE SOURCE OF TRUTH**
 - **--haiku** (optional): Use Claude Haiku model for cost optimization (~85% cost reduction)
 - **--no-analytics** (optional): Skip analysis section generation to reduce tokens and cost
+
+## Why Job-File-Centric Design Is Powerful
+
+The `--job_file` argument automatically extracts **everything needed** for perfect targeting:
+- ✅ **Company name & mission** - Direct from job posting
+- ✅ **Role title & responsibilities** - Exact job language  
+- ✅ **Required vs. preferred skills** - Weighted by importance
+- ✅ **Company-specific context** - Platform names, team structure, challenges
+- ✅ **Industry terminology** - Uses employer's own language
+
+**Result:** Superior targeting without manual specification or human error.
 
 ## Required Source Files
 The command requires these files in `source_materials/`:
@@ -26,15 +37,23 @@ The command requires these files in `source_materials/`:
 1. Read the job description from the provided file path
 2. Extract company name, position, key REQUIRED and NICE TO HAVE requirements
 3. Load source materials (work_experience YAML, personal info)
+3a. Make sure to include 1-2 company-specific initiative or recent news and look at --job_file to help make a powerful section "[directly aligns with [COMPANY]'s [SPECIFIC PROJECT/CHALLENGE] integration challenges."]"
 4. Match job requirements with qualifications from work_experience.yaml
 5. Generate tailored cover letter using the specified template
+  - Ensure all bullet points follow "As [Role], [action], [result] pattern
 6. **FLAG missing coverage** for REQUIRED skills not adequately supported by YAML
-7. Save to `output/` directory
+7. Save to `output/` directory both a markdown version and an ASCII version 
+  - The ASCII version uses ALL CAP for bold 
+8. Generate separate analysis file (`*_analysis.md`) with detailed gap analysis and metrics
 
 ## Output File Naming
-The cover letter will be saved to the `output/` directory with the prefix `cvrltr_`:
-- Input: `--job_file=raw_jobs/example_swe_2025-08-30.md`
-- Output: `output/cvrltr_example_swe_2025-08-30.md`
+The command generates three files in the `output/` directory based on the input job file name:
+- Input: `--job_file=job_desc/_Rapyuta_Robo.SysIntEng.md`
+- Output Markdown: `output/cvrltr_Rapyuta_Robo.SysIntEng.md`
+- Output ASCII: `output/cvrltr_Rapyuta_Robo.SysIntEng.txt`
+- Analysis File: `output/cvrltr_Rapyuta_Robo.SysIntEng_analysis.md`
+
+**Naming Logic:** `cvrltr_` + `[original_filename_without_extension]` + `.md/.txt/_analysis.md`
 
 ## Cover Letter Template Structure
 
@@ -65,19 +84,25 @@ Spencer Barrett
  - [ 2 ] [TITLE] : [HTML_LINK]
  ...
  - [ N ] [TITLE] : [HTML_LINK]
+```
 
-----------
+## Analysis File Template Structure
 
-## ANALYSIS & METRICS
+The separate `*_analysis.md` file should contain:
 
-### GENERATION METADATA
-Generated: 2025-08-31 12:45:30 UTC
-Input tokens: 3,420 | Output tokens: 1,250 | Total: 4,670
-Estimated cost: $0.14 (Claude Sonnet 4)
-Session totals: 15,230 tokens | $0.46
+```
+# Cover Letter Analysis Report
+**Generated:** [TIMESTAMP]  
+**Job File:** [JOB_FILE_PATH]  
+**Target:** [COMPANY] - [ROLE]
 
+## GENERATION METADATA
+**Model:** Claude [Sonnet 4/Haiku]  
+**Input tokens:** [X] | **Output tokens:** [X] | **Total:** [X]  
+**Estimated cost:** $[X.XX]  
+**Session totals:** [X] tokens | $[X.XX]
 
-### Document Size Metrics
+## Document Size Metrics
 | Section | Lines | Words | Notes |
 |---------|-------|-------|-------|
 | Header & Opening | X | X | Contact info, intro paragraph |
@@ -87,7 +112,7 @@ Session totals: 15,230 tokens | $0.46
 | Closing & Signature | X | X | Final paragraph, signature block |
 | **TOTAL DOCUMENT** | **X** | **X** | **Target: <50 lines, <600 words** |
 
-### Job Requirements Coverage Analysis
+## Job Requirements Coverage Analysis
 | Requirement | Type | Addressed | Quality | YAML Support | Notes |
 |-------------|------|-----------|---------|--------------|-------|
 | [Skill/Requirement 1] | REQUIRED | ✅/❌ | Strong/Good/Weak/None | ✅/⚠️/❌ | [Brief note] |
@@ -100,7 +125,7 @@ Session totals: 15,230 tokens | $0.46
 - **Weak**: General example, indirect skill connection
 - **None**: Skill mentioned but no supporting evidence
 
-### YAML Coverage Assessment
+## YAML Coverage Assessment
 #### ✅ WELL-SUPPORTED REQUIRED SKILLS
 - [Skill]: [Experience ID] - [Brief description of strong match]
 

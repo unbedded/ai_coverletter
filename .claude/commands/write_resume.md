@@ -10,6 +10,7 @@ write_resume [OPTIONS]
 
 ### Options
 
+- `--job_file=<job_description_file>` - Job description file for intelligent targeting (optional)
 - `--target_role=<role>` - Target job role/title for resume tailoring (optional)
 - `--company=<company>` - Target company for customization (optional)
 - `--format=<format>` - Output format: `standard`, `technical`, `executive`, `academic` (default: standard)
@@ -52,7 +53,7 @@ The command requires these source files to generate resumes:
 ### Step 1: Data Integration
 1. Load employment history and personal information from work_history.yaml
 2. Load detailed experiences from work_experience.yaml database
-3. Parse optional job description for targeting requirements
+3. Parse job description from --job_file for intelligent targeting requirements
 4. Extract contact information from personal_info.md
 
 ### Step 2: Content Selection and Prioritization
@@ -86,8 +87,9 @@ The command requires these source files to generate resumes:
 ### Step 4: Format and Output
 1. Apply specified format styling (standard/technical/executive/academic)
 2. Adjust length based on target (1/2/full pages)
-3. Generate output filename: `output/resume_[TargetRole]_[Company]_[Date].md`
+3. Generate output filename based on job_file or parameters
 4. Save formatted resume to output directory
+5. Generate separate analysis file (`*_analysis.md`) with detailed gap analysis and metrics
 
 ## Resume Formats
 
@@ -142,16 +144,23 @@ This command works in concert with:
 - `analyze_fit.md` - Uses similar job requirement parsing
 - `review_experience.md` - Relies on validated experience database
 
-## Output Location
+## Output File Naming
 
-Generated resumes are saved to:
-```
-output/resume_[TargetRole]_[Company]_[YYYYMMDD].md
-```
+### When using --job_file (preferred):
+Based on input job file name:
+- Input: `--job_file=job_desc/_Rapyuta_Robo.SysIntEng.md`
+- Output Resume: `output/resume_Rapyuta_Robo.SysIntEng.md`
+- Analysis File: `output/resume_Rapyuta_Robo.SysIntEng_analysis.md`
+
+**Naming Logic:** `resume_` + `[original_filename_without_extension]` + `.md/_analysis.md`
+
+### When using manual parameters:
+Traditional naming:
+- `output/resume_[TargetRole]_[Company]_[YYYYMMDD].md`
+- `output/resume_[TargetRole]_[Company]_[YYYYMMDD]_analysis.md`
 
 Example outputs:
 - `output/resume_SeniorAIEngineer_OpenAI_20250907.md`
-- `output/resume_EngineeringManager_Tesla_20250907.md`
 - `output/resume_standard_20250907.md`
 
 ## Field Mapping Reference
