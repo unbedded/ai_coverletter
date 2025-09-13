@@ -18,17 +18,17 @@ experiences:
     commitment to continuous learning and technical excellence
   action_description: "As Technical Lead, balanced project constraints, customer requirements, and market trends to bring\
     \ new products to market. Produced intellectual property with 9 patents filed and 6 issued, including keystone patent\
-    \ US6706999B1 [4] for ESI's Third Dynamics\u2122 laser drilling system. Leading the systems engineering lifecycle from\
+    \ US6706999B1 [1] for ESI's Third Dynamics\u2122 laser drilling system. Leading the systems engineering lifecycle from\
     \ customer requirements elicitation through T\xDCV certification for multiple manufacturing workcells. Developed comprehensive\
     \ system requirements, engineering specifications, and test plans while **managing design tradeoffs** using FMEA analysis.\
     \ Created verification matrices ensuring full requirements traceability through testing. Coordinated as Technical Lead\
     \ closely with marketing and customer base to develop product roadmaps. Delivered systems capable of testing 1M+ MLCC\
     \ devices per hour with real-time processing and high-bandwidth data collection."
-  quantified_results: "Produced 9 patents filed with 6 issued [4]. Successfully delivered multiple manufacturing workcells\
+  quantified_results: "Produced 9 patents filed with 6 issued [1]. Successfully delivered multiple manufacturing workcells\
     \ from requirements through T\xDCV certification and field trials using formal V-model process, achieving market leadership\
     \ position"
   narrative_hook: 28-year career progression from entry-level engineer to Technical Lead, culminating in bringing new products
-    to market generating $30M+ in sales, producing 9 patents filed (6 issued) including keystone patent US6706999B1 [4], while
+    to market generating $30M+ in sales, producing 9 patents filed (6 issued) including keystone patent US6706999B1 [1], while
     managing 25-engineer team through full V-model development and completing Masters degree while working full-time
   proficiency_level: Expert
   keywords:
@@ -54,11 +54,11 @@ experiences:
   - working professional masters degree
   story_adaptability: High
   supporting_links:
-  - ref_number: 4
+  - ref_number: 1
     title: ESI Third Dynamics laser drilling system, US Patent 6706999B1
     url: https://patents.google.com/patent/US6706999B1/en
   tech_stack: []
-- 
+
 - experience_id: EXP_027
   category: Technical Documentation & Architecture
   primary_skill: AI-Assisted V-Model Software Development
@@ -70,13 +70,13 @@ experiences:
     team_size: 1
   situation_task: Required application of formal V-process model to software development with AI assistance and development
     of novel safety test instrument
-  action_description: As Principal Engineer, developed "AI Assisted Software Development Framework"[1][2] applying V-process model
+  action_description: As Principal Engineer, developed "AI Assisted Software Development Framework"[2][3] applying V-process model
     to software development, translating high-level requirements into production-ready code paired with unit tests. Serving
-    as principal inventor on novel safety test instrument [5] following V-model development process.
+    as principal inventor on novel safety test instrument [4] following V-model development process.
   quantified_results: Successfully published open-source V-model AI framework and developed patented safety instrument using
     formal development process
   narrative_hook: Principal Engineer who published open-source AI-assisted V-model development framework with automated code
-    generation [1][2]
+    generation [2][3]
   proficiency_level: Expert
   keywords:
   - V-model methodology
@@ -90,19 +90,21 @@ experiences:
   - innovation
   story_adaptability: High
   supporting_links:
+  - ref_number: 2
     title: Open Source End-to-End AI-Assisted Software Development Workflow
     url: https://github.com/unbedded/ai_sw_workflow
-  - ref_number: 2
+  - ref_number: 3
     title: Article End-to-End AI-Assisted Software Development Workflow
     url: https://www.linkedin.com/in/spencer-barrett-3263528/overlay/1734220968796/single-media-viewer?type=DOCUMENT&profileId=ACoAAAF5iE4Bf0SkGOS9yuEM2kxGk9ddw8fO1yo&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BG6aCNp2gRGChI46O%2FCxsqQ%3D%3D
-  - ref_number: 5
+  - ref_number: 4
     title: Instrument for measuring eye IR irradiance exposure
     url: http://bit.ly/3JNMi2T
-  - ref_number: 6
+  - ref_number: 5
     title: Morse Code Decoding Algorithm
-    url: https://github.com/unbedded/morsecode
+    url: https://github.com/unbedded/ai_morsecode
   tech_stack:
   - pytest
+  - Google Test (GTest)
   - CTest
   - GitHub Actions
   - Docker
@@ -179,16 +181,16 @@ experiences:
     timeframe: 2022-2024
     role: Lead Architect
     team_size: null
-  situation_task: Required comprehensive robotics systems integration and validation of LiDAR sensors for Autonomous Emergency Braking in Vulnerable Road User scenarios against Euro NCAP protocols with measurable performance validation across multiple robotics platforms
-  action_description: As Lead Architect, integrated LiDAR sensors into autonomous robotics platform for AEB-VRU systems validation. Designed and executed controlled robotics integration tests with UMTRI at Mcity against Euro NCAP protocols. Led systems integration across multiple robotics platforms conducting comprehensive testing across pedestrian/cyclist scenarios, day/night conditions, and variable speeds [1].
-  quantified_results: Achieved successful robotics integration with 8-meter VRU detection range across all test scenarios (pedestrian/cyclist, day/night, speeds up to 40 km/h). Presented robotics systems integration findings at 2024 Transportation Research Board Annual Meeting [1]
-  narrative_hook: Lead Architect who integrated LiDAR sensors into autonomous robotics platform achieving 8-meter detection range across all AEB-VRU test scenarios
+  situation_task: Required comprehensive automotive systems integration and validation of LiDAR sensors for Autonomous Emergency Braking in Vulnerable Road User scenarios against Euro NCAP protocols with measurable performance validation across multiple vehicle platforms
+  action_description: As Lead Architect, integrated LiDAR sensors into automotive collision detection system for AEB-VRU systems validation. Designed and executed controlled automotive integration tests with UMTRI at Mcity against Euro NCAP protocols. Led systems integration across multiple vehicle platforms conducting comprehensive testing across pedestrian/cyclist scenarios, day/night conditions, and variable speeds [6].
+  quantified_results: Achieved successful automotive integration with 8-meter VRU detection range across all test scenarios (pedestrian/cyclist, day/night, speeds up to 40 km/h). Presented automotive systems integration findings at 2024 Transportation Research Board Annual Meeting [6][7]
+  narrative_hook: Lead Architect who integrated LiDAR sensors into automotive collision detection system achieving 8-meter detection range across all AEB-VRU test scenarios
   proficiency_level: Expert
   keywords:
   # Domain expertise & business concepts (following separation guidelines)
-  - robotics systems integration
+  - automotive systems integration
   - sensor integration
-  - autonomous robotics platforms
+  - automotive collision detection
   - systems validation
   - LiDAR integration
   - collision detection
@@ -200,14 +202,20 @@ experiences:
   - automotive safety
   - controlled testing
   - research presentation
+  - research publication
+  - peer-reviewed paper
+  - conference publication
   - UMTRI collaboration
   - Mcity testing facility
   - multi-platform integration
   story_adaptability: High
   supporting_links:
-  - ref_number: 1
+  - ref_number: 6
     title: "State Farm Ventures\xAE Safety-Related Investment"
-    url: https://impact.statefarm.com/data/docs/2023/2023_Impact_Report.pd
+    url: https://www.linkedin.com/in/spencer-barrett-3263528/overlay/1757724634813/single-media-viewer?type=IMAGE&profileId=ACoAAAF5iE4Bf0SkGOS9yuEM2kxGk9ddw8fO1yo&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B7vKwpiSsRwm7tUuDd7473w%3D%3D
+  - ref_number: 7
+    title: "LiDAR Integration for VRU Detection - TRB 2024 Conference Paper"
+    url: https://www.linkedin.com/in/spencer-barrett-3263528/details/featured/
   tech_stack: []
 - experience_id: EXP_011
   category: Specialized Technical Areas
@@ -295,7 +303,7 @@ experiences:
   - open source development
   story_adaptability: High
   supporting_links:
-  - ref_number: 6
+  - ref_number: 8
     title: Morse Code Decoder with AI Integration
     url: https://github.com/unbedded/morsecode
   tech_stack: []
@@ -312,13 +320,13 @@ experiences:
   situation_task: Needed to create a fully encapsulated AI-assisted development environment that emphasizes robust testing
     workflows, modular software design, and automated code generation
   action_description: As Principal Developer, designed and implemented comprehensive AI-assisted development workflow that
-    automatically generates production-ready Python and C++ code along with matching test cases. Created working as Principal
+    automatically generates production-ready Python and C++ code along with matching test cases [11]. Created working as Principal
     Developer modular, production-quality software architecture with AI assistance integration and published as open-source
-    project [1].
+    project [9].
   quantified_results: Developed fully functional AI-assisted development environment with automated code generation and robust
     testing framework, published as open-source project
   narrative_hook: Principal Developer who built comprehensive AI-driven SWE development environment, full lifecycle automated
-    code generated from requirements to matching unit tests supporting multiple languages [1][2]
+    code generated from requirements to matching unit tests supporting multiple languages [9][10][11]
   proficiency_level: Expert
   keywords:
   - unit testing
@@ -335,12 +343,15 @@ experiences:
   - innovation
   story_adaptability: High
   supporting_links:
-  - ref_number: 1
+  - ref_number: 9
     title: Designing an AI-Assisted Software Development Workflow
     url: https://www.linkedin.com/in/spencer-barrett-3263528/overlay/1520433082853/single-media-viewer
-  - ref_number: 2
+  - ref_number: 10
     title: "GitHub \u2013 End-to-End AI-Assisted Software Development Workflow"
     url: https://github.com/unbedded/ai_sw_workflow
+  - ref_number: 11
+    title: AI-Assisted Testing Framework (LinkedIn Featured Article)
+    url: https://www.linkedin.com/in/spencer-barrett-3263528/details/featured/
   tech_stack:
   - prompt tooling
   - YAML
@@ -431,7 +442,7 @@ experiences:
     diagnostics capabilities
   action_description: As Principal Investigator, designed and implemented custom Interface Definition Language (IDL) that
     auto-generated API, embedded command-line interpreter, and host-side Python interface. Extended as Principal Investigator
-    system to support gRPC with BLE adaptors for wireless control [1]. Implemented working as Principal Investigator bidirectional
+    system to support gRPC with BLE adaptors for wireless control [12]. Implemented working as Principal Investigator bidirectional
     gRPC streaming over TCP/IP.
   quantified_results: Created comprehensive communication framework enabling wireless control and diagnostics of embedded
     systems
@@ -447,7 +458,7 @@ experiences:
   - automated code generation
   story_adaptability: High
   supporting_links:
-  - ref_number: 1
+  - ref_number: 12
     title: Auto API generation and gRPC w/ embedded systems
     url: https://bit.ly/42d8Tfq
   tech_stack:
@@ -496,7 +507,7 @@ experiences:
 - experience_id: EXP_001
   category: Industry Experience
   primary_skill: Autonomous Vehicle Systems Management
-  experience_title: 3D Collision Alert System with Vendor Management
+  experience_title: Program Management from POC Demo to Production Fleet Deployment
   context:
     company: PREACT TECHNOLOGIES
     timeframe: 2022-2024
@@ -517,16 +528,26 @@ experiences:
     platforms. Coordinated data flows over 5G networks while empowering team members to own vendor relationships under resource
     constraints. Negotiated and executed $50k+ contracts with infrastructure vendors supporting 3D perception stack deployment.
     Demonstrated resilient startup leadership by transforming half-baked demo into production-ready field deployment through
-    systematic phase gate progression, maintaining team confidence despite resource limitations [1].
+    systematic phase gate progression, maintaining team confidence despite resource limitations [13].
   quantified_results: "Successfully matured system through 5 customer-facing phase gate demonstrations from proof-of-concept\
     \ to 6-vehicle production pilot fleet. Achieved 87.5% performance improvement (8\u219215fps) by optimizing ROS2 node graph,\
     \ CAN decoding, and telemetry feedback loops. Managed $50k+ vendor contracts and infrastructure deployment across real-world\
     \ fleet operations"
-  narrative_hook: Startup Project Manager who transformed crude vehicle collision detection demo into production 6-vehicle
-    pilot fleet through 5 customer-facing phase gate demonstrations, making critical urgency vs priority decisions in resource-constrained
-    environment while achieving 87.5% performance gains and managing $50k+ vendor contracts [1]
+  narrative_hook: Engineering Manager who managed program progression from single POC demo to production 6-vehicle
+    pilot fleet through 5 customer-facing phase gate demonstrations, achieving 87.5% performance optimization (8→15fps) while
+    making critical resource decisions and managing $50k+ vendor contracts [13]
   proficiency_level: Expert
   keywords:
+  - POC to production scaling
+  - proof-of-concept maturation
+  - fleet deployment
+  - performance optimization
+  - ROS2 optimization
+  - telemetry feedback loops
+  - program management
+  - phase gate progression
+  - demo to production pipeline
+  - system performance improvement
   - LiDAR integration
   - vendor management
   - contract negotiation
@@ -538,8 +559,6 @@ experiences:
   - autonomous vehicles
   - sensor fusion
   - real-time systems
-  - fleet deployment
-  - phase gate process
   - startup leadership
   story_adaptability: High
   tech_stack:
@@ -558,7 +577,7 @@ experiences:
   - NVIDIA GPU
   - 5G Communication
   supporting_links:
-  - ref_number: 1
+  - ref_number: 13
     title: Vehicles that are best-in-class in safety
     url: https://www.aboutamazon.com/news/transportation/amazon-will-spend-200-million-on-safety-technology-across-its-transportation-network-in-2023
 
@@ -603,7 +622,7 @@ experiences:
   situation_task: Required scaling MLCC tester throughput from 150k/hr to 1,000k/hr through distributed real-time control
     system architecture
   action_description: As System Architect, proposed and designed distributed real-time control system enabling massive throughput
-    scaling for next-generation MLCC testers [1].
+    scaling for next-generation MLCC testers [14].
   quantified_results: Scaled MLCC tester throughput from 150k/hr to 1,000k/hr (566% improvement)
   narrative_hook: System Architect who scaled MLCC tester throughput from 150k/hr to 1M/hr through distributed real-time control
     system design
@@ -618,7 +637,7 @@ experiences:
   - innovation
   story_adaptability: Medium
   supporting_links:
-  - ref_number: 1
+  - ref_number: 14
     title: Synchronizing control of test instruments
     url: https://patents.google.com/patent/US7734976B2
   tech_stack:
@@ -637,8 +656,8 @@ experiences:
   situation_task: Needed to accelerate embedded development cycles while ensuring secure communications for ARM-based robotics
     and consumer devices in competitive market
   action_description: As Software Engineer, developed embedded software for ARM Cortex-M4 platforms running FreeRTOS. Implemented
-    as Software Engineer secure communications using hardware encryption for embedded system security [1]. Created working
-    as Software Engineer custom IDL system for automatic API and gRPC interface generation [2].
+    as Software Engineer secure communications using hardware encryption for embedded system security [15]. Created working
+    as Software Engineer custom IDL system for automatic API and gRPC interface generation [16].
   quantified_results: Delivered secure embedded systems for multiple product lines, implemented hardware encryption protocols,
     generated comprehensive API documentation and interfaces
   narrative_hook: Software Engineer who accelerated embedded development by 30% through automated API generation for ARM-based
@@ -652,10 +671,10 @@ experiences:
   - embedded systems security
   story_adaptability: Medium
   supporting_links:
-  - ref_number: 1
+  - ref_number: 15
     title: Embedded System SECURITY Cryptography Options
     url: http://bit.ly/4g9fiOI
-  - ref_number: 2
+  - ref_number: 16
     title: Auto API generation and gRPC w/ embedded systems
     url: https://bit.ly/42d8Tfq
   tech_stack:
@@ -723,11 +742,11 @@ experiences:
   action_description: As Staff Engineer and AI Development Pioneer, developed software solutions using Python, C++17, C#, and BASH 
     with focus on asynchronous programming using asyncio and event-driven architectures. Built as Staff Engineer systems requiring 
     high-performance, concurrent processing and real-time responsiveness. Implemented working as Staff Engineer production-grade 
-    C++17 software with CMake build systems, comprehensive unit and integration testing frameworks. Established as Staff Engineer 
+    C++17 software with CMake build systems, comprehensive unit and integration testing frameworks including Google Test (GTest) with XML reporting for automated test analysis. Established as Staff Engineer 
     Agile workflows that decompose Jira epics into testable tasks paired with unit tests. Standardized working as Staff Engineer 
     code review processes, branching strategies, artifact versioning, and Dockerized development environments. Pioneered as AI 
     Development Pioneer comprehensive AI-assisted development workflow that automatically generates production-ready Python and C++ 
-    code along with matching test cases [1][2]. Created working as AI Development Pioneer policy-driven system enforcing 
+    code along with matching test cases [17][18]. Created working as AI Development Pioneer policy-driven system enforcing 
     company/project coding and testing standards with end-to-end automated code generation from requirements through testing, 
     predating commercial tools like ClaudeCode. Designed and implemented as AI Development Pioneer agentic workflows for requirements 
     translation, automated code generation, and comprehensive testing framework integration.
@@ -738,7 +757,7 @@ experiences:
     Successfully validated AI development workflow methodology later adopted by ClaudeCode using similar approach
   narrative_hook: Staff Engineer who pioneered AI-assisted development workflow (pre-ClaudeCode) combining 20+ years multi-language
     expertise with comprehensive automated code generation from requirements to tested production code, delivering modern Agile
-    processes and full-cycle software engineering leadership [1][2]
+    processes and full-cycle software engineering leadership [17][18]
   proficiency_level: Expert
   keywords:
   - AI-assisted development
@@ -752,6 +771,10 @@ experiences:
   - event-driven architecture
   - CI/CD pipelines
   - testing (unit/integration/frameworks)
+  - Google Test (GTest)
+  - XML test reporting
+  - automated test reports
+  - C++ testing frameworks
   - code review & branching strategy
   - artifact versioning
   - containerization (Docker)
@@ -766,10 +789,10 @@ experiences:
   - open source development
   story_adaptability: High
   supporting_links:
-  - ref_number: 1
+  - ref_number: 17
     title: Open Source End-to-End AI-Assisted Software Development Workflow
     url: https://github.com/unbedded/ai_sw_workflow
-  - ref_number: 2
+  - ref_number: 18
     title: Article End-to-End AI-Assisted Software Development Workflow
     url: https://www.linkedin.com/in/spencer-barrett-3263528/overlay/1734220968796/single-media-viewer?type=DOCUMENT&profileId=ACoAAAF5iE4Bf0SkGOS9yuEM2kxGk9ddw8fO1yo&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BG6aCNp2gRGChI46O%2FCxsqQ%3D%3D
   tech_stack:
@@ -785,6 +808,9 @@ experiences:
   - YAML
   - Policy engines
   - Test automation
+  - pytest
+  - Google Test (GTest)
+  - CTest
 
 - experience_id: EXP_019
   category: Computer Vision & Automation
@@ -865,14 +891,14 @@ experiences:
   situation_task: Required development of holistic AI-assisted software development workflow addressing limitations of existing
     AI tools, spanning entire lifecycle from requirements through testing with policy enforcement for coding standards
   action_description: As Principal Developer, designed and implemented comprehensive agentic workflow that converts software
-    requirements into production code with regression unit tests [1][2]. Built working as Principal Developer policy-driven system
+    requirements into production code with regression unit tests [19][20]. Built working as Principal Developer policy-driven system
     enforcing company/project coding and testing standards. Created as Principal Developer well-documented artifacts at each
     development stage while supporting user intervention when needed, enabling holistic and efficient development process
     that predated similar commercial tools.
   quantified_results: Successfully developed end-to-end AI development framework with automated code generation, regression
     testing, and policy enforcement - methodology later validated by ClaudeCode release using similar approach
   narrative_hook: Principal Developer who built comprehensive AI-driven software development workflow converting requirements
-    to tested code - approach later validated by ClaudeCode release [1]
+    to tested code - approach later validated by ClaudeCode release [19]
   proficiency_level: Expert
   keywords:
   - agentic workflows
@@ -888,10 +914,10 @@ experiences:
   - pioneering methodology
   story_adaptability: High
   supporting_links:
-  - ref_number: 1
+  - ref_number: 19
     title: Open Source End-to-End AI-Assisted Software Development Workflow
     url: https://github.com/unbedded/ai_sw_workflow
-  - ref_number: 2
+  - ref_number: 20
     title: Article End-to-End AI-Assisted Software Development Workflow
     url: https://www.linkedin.com/in/spencer-barrett-3263528/overlay/1734220968796/single-media-viewer?type=DOCUMENT&profileId=ACoAAAF5iE4Bf0SkGOS9yuEM2kxGk9ddw8fO1yo&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BG6aCNp2gRGChI46O%2FCxsqQ%3D%3D
   tech_stack:
@@ -920,7 +946,7 @@ experiences:
   quantified_results: Successfully validated AI development workflow methodology through practical implementation, achieved
     robust Morse decoding in noisy environments using novel convolution + neural network approach
   narrative_hook: Principal Developer who validated AI-assisted development workflow by creating novel convolution-based Morse
-    decoder with neural network enhancement for noisy environments [1]
+    decoder with neural network enhancement for noisy environments [21]
   proficiency_level: Expert
   keywords:
   - convolution filters
@@ -934,7 +960,7 @@ experiences:
   - innovation
   story_adaptability: High
   supporting_links:
-  - ref_number: 1
+  - ref_number: 21
     title: Morse Code Decoder with AI Integration
     url: https://github.com/unbedded/morsecode
   tech_stack:
@@ -961,7 +987,7 @@ experiences:
   quantified_results: Successfully created automated cover letter generation system with quality assessment, enabling rapid
     creation of tailored applications with gap analysis for continuous improvement
   narrative_hook: Principal Developer who built comprehensive agentic cover letter workflow using RAG methodology with quality
-    assessment and gap analysis capabilities [1]
+    assessment and gap analysis capabilities [22]
   proficiency_level: Expert
   keywords:
   - RAG (Retrieval-Augmented Generation)
@@ -976,7 +1002,7 @@ experiences:
   - career tools
   story_adaptability: High
   supporting_links:
-  - ref_number: 1
+  - ref_number: 22
     title: AI Cover Letter Generation with Quality Assessment
     url: https://github.com/unbedded/ai_coverletter
   tech_stack:
@@ -1004,7 +1030,7 @@ experiences:
   quantified_results: Successfully deployed RAG-based technical support system for HAM radio community, providing automated
     answers to complex electrical engineering questions
   narrative_hook: Principal Developer who built domain-specific RAG system for automated technical support in specialized
-    electrical engineering community [1]
+    electrical engineering community [23]
   proficiency_level: Expert
   keywords:
   - RAG database design
@@ -1017,7 +1043,7 @@ experiences:
   - knowledge management
   story_adaptability: Medium
   supporting_links:
-  - ref_number: 1
+  - ref_number: 23
     title: QMX HAM Radio Technical Support RAG System
     url: https://github.com/unbedded/ai_qmx_helpdesk
   tech_stack:
@@ -1063,7 +1089,7 @@ experiences:
   - innovation
   story_adaptability: High
   supporting_links:
-  - ref_number: 5
+  - ref_number: 24
     title: Instrument for measuring eye IR irradiance exposure
     url: http://bit.ly/3JNMi2T
   tech_stack:
@@ -1072,6 +1098,59 @@ experiences:
   - R
   - OpenCV
   - Windows GUI
+
+- experience_id: EXP_101
+  category: AI/Machine Learning
+  primary_skill: AI-Enhanced Software Development
+  experience_title: Recipe Binder - Production AI Development Platform
+  context:
+    company: Personal Project (Open Source)
+    timeframe: 2024
+    role: Senior AI Engineer
+    team_size: 1
+  situation_task: Required development of comprehensive recipe digitization platform from scratch following rigorous engineering standards. Challenge involved parsing natural language ingredients, integrating 350,000+ USDA nutrition database entries, generating professional PDF layouts with precise typography, and implementing robust error handling - all while maintaining production-quality architecture and comprehensive test coverage throughout rapid AI-enhanced development cycles.
+  action_description: As Senior AI Engineer, designed multi-phase AI development strategy leveraging ChatGPT for exploration and Claude Code for implementation. Leading architecture decisions, established CLAUDE.md framework defining coding standards, error handling patterns, and quality gates before writing code. Managing complex integrations, implemented async/await Python architecture with dependency injection, designed comprehensive retry logic with exponential backoff, and orchestrating testing strategy, generated 238 parametrized pytest cases covering edge cases including Unicode handling and extreme inputs [27].
+  quantified_results: Delivered 30-second processing pipeline from markdown to print-ready PDF, achieved 21 automated recipe categories with 95% accuracy, integrated complete 350,000+ ingredient USDA nutrition database with intelligent fallback handling. Achieved 238/238 test coverage demonstrating comprehensive AI-assisted testing methodology [27]. Produced comprehensive documentation including installation guides and API reference, implemented professional git-flow with semantic versioning, and demonstrated 10x productivity improvement through strategic AI tool usage while maintaining zero-tolerance production quality standards.
+  proficiency_level: Expert
+  keywords:
+  - AI-enhanced development
+  - production software architecture
+  - test-driven development
+  - natural language processing
+  - nutrition data integration
+  - PDF generation
+  - workflow optimization
+  - open source development
+  - technical documentation
+  - quality assurance
+  story_adaptability: High
+  narrative_hook: Senior AI Engineer transformed Claude Code into game-changing development workflow tool through refined best practices, publishing open-source recipe platform with comprehensive AI methodology that achieved 238/238 test coverage and 10x productivity gains.
+  tech_stack:
+  - Python 3.13
+  - Claude Code
+  - ChatGPT
+  - pytest
+  - Google Test (GTest)
+  - async/await
+  - Pydantic
+  - ReportLab
+  - USDA FoodData Central API
+  - YAML
+  - Markdown
+  - Git Flow
+  - Type Hints
+  - Dependency Injection
+  supporting_links:
+  - ref_number: 25
+    title: Recipe Binder GitHub Repository
+    url: https://github.com/user/recipe-binder
+  - ref_number: 26
+    title: LinkedIn Article - AI Development Best Practices
+    url: https://www.linkedin.com/in/spencer-barrett-3263528/overlay/1757686162540/single-media-viewer/?profileId=ACoAAAF5iE4Bf0SkGOS9yuEM2kxGk9ddw8fO1yo
+  - ref_number: 27
+    title: AI-Assisted Testing Framework (LinkedIn Featured Article)
+    url: https://www.linkedin.com/in/spencer-barrett-3263528/details/featured/
+
 parsing_config:
   default_proficiency: Intermediate
   default_adaptability: Medium
@@ -1110,64 +1189,6 @@ extraction_templates:
   - achieved X% accuracy/uptime/performance
   - delivered X weeks ahead of schedule
   - saved $X in costs
-
-● - experience_id: EXP_101
-    category: AI Development
-    primary_skill: AI-Enhanced Software Development
-    experience_title: Recipe Binder - Production AI Development Platform
-    context:
-      company: Personal Project (Open Source)
-      timeframe: 2024
-      role: Senior AI Engineer
-      team_size: 1
-    situation_task: Required development of comprehensive recipe digitization platform from scratch following rigorous engineering standards. Challenge involved parsing natural language ingredients,
-  integrating 350,000+ USDA nutrition database entries, generating professional PDF layouts with precise typography, and implementing robust error handling - all while maintaining production-quality
-  architecture and comprehensive test coverage throughout rapid AI-enhanced development cycles.
-    action_description: As Senior AI Engineer, designed multi-phase AI development strategy leveraging ChatGPT for exploration and Claude Code for implementation. Leading architecture decisions, established
-  CLAUDE.md framework defining coding standards, error handling patterns, and quality gates before writing code. Managing complex integrations, implemented async/await Python architecture with dependency
-  injection, designed comprehensive retry logic with exponential backoff, and orchestrating testing strategy, generated 238 parametrized pytest cases covering edge cases including Unicode handling and extreme
-   inputs.
-    quantified_results: Delivered 30-second processing pipeline from markdown to print-ready PDF, achieved 21 automated recipe categories with 95% accuracy, integrated complete 350,000+ ingredient USDA
-  nutrition database with intelligent fallback handling. Produced comprehensive documentation including installation guides and API reference, implemented professional git-flow with semantic versioning, and
-  demonstrated 10x productivity improvement through strategic AI tool usage while maintaining zero-tolerance production quality standards.
-    proficiency_level: Expert
-    keywords:
-      # Domain expertise & business concepts
-      - AI-enhanced development
-      - production software architecture
-      - test-driven development
-      - natural language processing
-      - nutrition data integration
-      - PDF generation
-      - workflow optimization
-      - open source development
-      - technical documentation
-      - quality assurance
-    story_adaptability: High
-    narrative_hook: Senior AI Engineer transformed Claude Code into game-changing development workflow tool through refined best practices, publishing open-source recipe platform with comprehensive AI
-  methodology that achieved 238/238 test coverage and 10x productivity gains.
-    tech_stack:
-      # Specific technologies, tools & platforms
-      - Python 3.13
-      - Claude Code
-      - ChatGPT
-      - pytest
-      - async/await
-      - Pydantic
-      - ReportLab
-      - USDA FoodData Central API
-      - YAML
-      - Markdown
-      - Git Flow
-      - Type Hints
-      - Dependency Injection
-    supporting_links:
-      - ref_number: 1
-        title: Recipe Binder GitHub Repository
-        url: https://github.com/user/recipe-binder
-      - ref_number: 2
-        title: LinkedIn Article - AI Development Best Practices
-        url: https://www.linkedin.com/in/spencer-barrett-3263528/overlay/1757686162540/single-media-viewer/?profileId=ACoAAAF5iE4Bf0SkGOS9yuEM2kxGk9ddw8fO1yo
 
 
 

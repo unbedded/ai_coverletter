@@ -39,4 +39,5 @@ Thumbs.db
 
 # Cover Letter Automation - Personal Data
 source_materials/personal_info.md
-
+output/cvrltr_*
+output/resume_*

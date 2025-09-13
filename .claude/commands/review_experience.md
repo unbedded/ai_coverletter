@@ -4,13 +4,14 @@ Analyze and improve the work_experience.yaml database for better cover letter ge
 
 ## Usage
 ```
-review_experience [--experience_id=EXP_XXX] [--check-redundancy] [--suggest-improvements]
+review_experience [--experience_id=EXP_XXX] [--check-redundancy] [--suggest-improvements] [--renumber-refs]
 ```
 
 ## Parameters
 - **--experience_id** (optional): Review specific experience entry (e.g., EXP_001)
 - **--check-redundancy** (optional): Flag redundant information across fields
 - **--suggest-improvements** (optional): Provide enhancement recommendations
+- **--renumber-refs** (optional): Renumber all reference numbers globally for consistent footnoting
 
 ## What This Command Does
 
@@ -19,6 +20,7 @@ review_experience [--experience_id=EXP_XXX] [--check-redundancy] [--suggest-impr
 3. **Quality Assessment**: Evaluates narrative hooks, quantified results, and evidence links
 4. **Structure Review**: Checks STAR method implementation (Situation → Task → Action → Result)
 5. **Reference Audit**: Validates inline [1], [2] references match supporting_links
+6. **Reference Renumbering**: Creates globally sequential reference numbers across all experiences
 
 ## Review Criteria
 
@@ -81,6 +83,48 @@ QUALITY SCORE: 75/100
 - **60-69**: Poor, significant revision needed
 - **Below 60**: Requires complete restructuring
 
+## Reference Renumbering Process (--renumber-refs)
+
+When using `--renumber-refs`, the command will:
+
+1. **Collect All References**: Scan all experiences and gather all supporting_links
+2. **Create Global Sequence**: Assign new sequential numbers (1, 2, 3, 4, ...) across entire database
+3. **Update ref_number Fields**: Modify all `ref_number:` values in supporting_links
+4. **Update Inline Citations**: Replace all [X] references in text fields to match new numbering
+5. **Preserve Link Order**: Maintain logical grouping while ensuring global uniqueness
+
+### Before Renumbering (Current Problem):
+```yaml
+# EXP_026
+supporting_links:
+  - ref_number: 4    # US Patent
+# EXP_027  
+supporting_links:
+  - ref_number: 1    # GitHub (conflicts!)
+  - ref_number: 2    # Article (conflicts!)
+# EXP_002
+supporting_links:
+  - ref_number: 1    # Investment (conflicts!)
+  - ref_number: 2    # Conference (conflicts!)
+```
+
+### After Renumbering (Fixed):
+```yaml
+# EXP_026
+supporting_links:
+  - ref_number: 1    # US Patent (renumbered)
+# EXP_027  
+supporting_links:
+  - ref_number: 2    # GitHub 
+  - ref_number: 3    # Article
+# EXP_002
+supporting_links:
+  - ref_number: 4    # Investment
+  - ref_number: 5    # Conference
+```
+
+**Result**: Cover letter generators can now use footnotes [1], [2], [3]... without conflicts.
+
 ## Example Commands
 
 ```bash
@@ -92,6 +136,12 @@ review_experience --experience_id=EXP_001 --suggest-improvements
 
 # Full analysis of single experience
 review_experience --experience_id=EXP_026 --check-redundancy --suggest-improvements
+
+# Fix reference numbering conflicts across entire database
+review_experience --renumber-refs
+
+# Complete database cleanup and optimization
+review_experience --check-redundancy --suggest-improvements --renumber-refs
 ```
 
 ## Troubleshooting
@@ -103,6 +153,8 @@ review_experience --experience_id=EXP_026 --check-redundancy --suggest-improveme
 - **Vague actions**: Replace generic terms with specific technical methods
 - **Role misalignment**: Ensure role field matches narrative text ("Technical Lead" → "**Led as Technical Lead**...")
 - **Missing role integration**: Weave role throughout action_description ("**As Principal Engineer**, implemented...")
+- **Reference number conflicts**: Use `--renumber-refs` to fix footnote numbering issues
+- **Broken footnote links**: After renumbering, cover letters will have correct sequential [1], [2], [3]... references
 
 ## Benefits
 
@@ -111,5 +163,22 @@ review_experience --experience_id=EXP_026 --check-redundancy --suggest-improveme
 - **Evidence Tracking**: Validates that all supporting links are properly referenced
 - **Efficiency**: Identifies the most impactful experiences for specific job types
 - **Maintenance**: Keeps the experience database clean and optimized
+- **Fixed Footnoting**: Eliminates reference number conflicts for perfect cover letter footnotes
+
+## Reference Renumbering Implementation Details
+
+The `--renumber-refs` functionality follows this algorithm:
+
+1. **Scan Order**: Process experiences in the order they appear in the YAML file
+2. **Assignment Strategy**: Assign sequential numbers starting from 1
+3. **Text Field Updates**: Update inline [X] references in these fields:
+   - `action_description`
+   - `quantified_results` 
+   - `narrative_hook`
+   - `situation_task`
+4. **Preservation**: Maintain all URL links and titles exactly as they are
+5. **Validation**: Ensure all inline references have matching supporting_links entries
+
+**Expected Outcome**: After running `review_experience --renumber-refs`, all cover letters generated will have correct, sequential footnote numbering without conflicts.
 
 Use this command regularly when adding new experiences or preparing for important application campaigns.

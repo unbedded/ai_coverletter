@@ -146,6 +146,8 @@ This command works in concert with:
 
 ## Output File Naming
 
+The command generates files in the `output/` directory based on the input job file name:
+
 ### When using --job_file (preferred):
 Based on input job file name:
 - Input: `--job_file=job_desc/_Rapyuta_Robo.SysIntEng.md`

@@ -37,14 +37,17 @@ The command requires these files in `source_materials/`:
 1. Read the job description from the provided file path
 2. Extract company name, position, key REQUIRED and NICE TO HAVE requirements
 3. Load source materials (work_experience YAML, personal info)
-3a. Make sure to include 1-2 company-specific initiative or recent news and look at --job_file to help make a powerful section "[directly aligns with [COMPANY]'s [SPECIFIC PROJECT/CHALLENGE] integration challenges."]"
 4. Match job requirements with qualifications from work_experience.yaml
-5. Generate tailored cover letter using the specified template
-  - Ensure all bullet points follow "As [Role], [action], [result] pattern
-6. **FLAG missing coverage** for REQUIRED skills not adequately supported by YAML
-7. Save to `output/` directory both a markdown version and an ASCII version 
-  - The ASCII version uses ALL CAP for bold 
-8. Generate separate analysis file (`*_analysis.md`) with detailed gap analysis and metrics
+5. **Select diverse examples**: Choose opening achievement from best job-matching narrative_hook, then select DIFFERENT experiences for each section
+6. Generate tailored cover letter using the specified template:
+   - **Concise opening**: Use narrative_hook from strongest matching experience + company mission connection
+   - **Distinct experience sections**: Use different experiences than the opening narrative_hook
+   - **Target 350-400 words total**
+   - Ensure all bullet points follow "As [Role], [action], [result]" pattern
+7. **FLAG missing coverage** for REQUIRED skills not adequately supported by YAML
+8. Save to `output/` directory both a markdown version and an ASCII version
+   - The ASCII version uses ALL CAP for bold
+9. Generate separate analysis file (`*_analysis.md`) with detailed gap analysis and metrics
 
 ## Output File Naming
 The command generates three files in the `output/` directory based on the input job file name:
@@ -64,9 +67,10 @@ Hiring Committee<br>
 [COMPANY]<br>
 RE: [JOB TITLE]
 
-[LEAD WITH STRONGEST, MOST RELEVANT ACHIEVEMENT - Include specific metrics and direct connection to role requirements. Example: "Led developer of a pilot fleet of 6 driverless vans and tuned perception performance from 8→15 fps (87% improvement) by optimizing ROS2 node graphs, CAN decoding, and telemetry feedback loops. This real-world autonomous vehicle deployment experience directly aligns with [COMPANY]'s [SPECIFIC PROJECT/CHALLENGE] integration challenges."]
-
-With over 20 years of systems integration experience, including extensive collaboration with Japanese engineering teams, I am excited to contribute to [COMPANY]'s [MISSION] through [SPECIFIC CONTRIBUTION RELEVANT TO ROLE].
+[CONCISE OPENING - 1-2 sentences maximum connecting strongest achievement to company mission. Use the narrative_hook from your strongest matching experience, then connect to company mission. Examples:
+- "Engineering Manager who scaled autonomous collision system from POC demo to 6-vehicle production pilot fleet through 5 customer phase gates [1]. Excited to contribute to [COMPANY]'s [SPECIFIC MISSION/CHALLENGE]."
+- "Staff Engineer who pioneered AI-assisted development workflow combining 20+ years expertise with automated code generation [1]. Excited to contribute to [COMPANY]'s [SPECIFIC MISSION/CHALLENGE]."
+- "Technical Lead who brought new products to market generating $30M+ sales while managing 25-engineer team [1]. Excited to contribute to [COMPANY]'s [SPECIFIC MISSION/CHALLENGE]."]
 
 [EXPERIENCE TITLE 1 - Pull the Requirement Directly from the Job Posting]
 - [bullet list Demonstrating You Meet Requirements, provide a Specific Example from Your Work, and Highlight the Result or Outcome]
@@ -149,10 +153,11 @@ The separate `*_analysis.md` file should contain:
 ```
 
 ## Key Requirements
-- **Length**: Keep to 1 page maximum
+- **Length**: Target 350-400 words maximum (industry standard)
 - **Priority**: Focus on REQUIRED experience first, include NICE TO HAVE only when strong matches exist
 - **Specificity**: Pull experience titles directly from job posting requirements
 - **Evidence**: Each bullet must include specific example from work and quantified result/outcome
+- **Anti-Redundancy**: **NEVER repeat the opening achievement in experience sections - use different examples**
 - **Gap Detection**: **FLAG any REQUIRED skills where YAML lacks sufficient supporting evidence**
 - **User Notification**: Alert when YAML updates are needed for better coverage
 - **Links**: Include supporting links from work_experience.yaml when available
@@ -163,8 +168,8 @@ The separate `*_analysis.md` file should contain:
 When using `--haiku` flag, apply these additional requirements to match Sonnet 4 quality:
 
 ### Content Enhancement
-- **Target Length**: 600+ words (vs default ~400 for Haiku)
-- **Experience Sections**: Include 3-4 bullet points per section (vs 2 for basic)
+- **Target Length**: 350-400 words (industry standard, vs default ~250 for basic)
+- **Experience Sections**: Include 2-3 bullet points per section (focused and concise)
 - **Technical Detail**: Expand technical descriptions and context
 - **Quantified Results**: Always include specific metrics and outcomes
 
