@@ -1,9 +1,8 @@
-# Resume Generation Command
+# Write Resume
 
-**Purpose**: Generate tailored resumes from structured experience database and work history
+Generate tailored resumes from structured experience database and work history.
 
-## Command Usage
-
+## Usage
 ```bash
 write_resume [OPTIONS]
 ```
@@ -36,60 +35,35 @@ write_resume --target_role="Engineering Manager" --format=executive --emphasis=m
 write_resume --format=academic --length=full --include_references
 ```
 
-## Required Source Files
+## File Locations
+- **{WORK_EXP_DB}** = `source_materials/work_experience.yaml`
+- **{WORK_HISTORY}** = `source_materials/work_history.yaml`
+- **{PERSONAL_INFO}** = `source_materials/personal_info.md`
+- **{OUTPUT_DIR}** = `output/`
 
-The command requires these source files to generate resumes:
+## INPUTS (Required Files)
+1. **Experience Database**: {WORK_EXP_DB} - Detailed experience with quantified results
+2. **Work History**: {WORK_HISTORY} - Employment timeline, education, resume formatting
+3. **Personal Info**: {PERSONAL_INFO} - Contact details and preferences
+4. **Job Description** (optional): `--job_file` parameter for targeted generation
 
-### Primary Data Sources
-- `source_materials/work_experience.yaml` - Detailed experience database with quantified results
-- `source_materials/work_history.yaml` - Employment timeline, education, and resume formatting data
-- `source_materials/personal_info.md` - Contact details and preferences
+## OUTPUTS (Generated Files)
+All files saved to {OUTPUT_DIR} with naming pattern: `resume_{basename}*`
 
-### Optional Enhancement Files
-- `job_desc/[Company_Role].md` - Job description for targeted resume generation
+1. **Resume (Markdown)**: `resume_{basename}.md`
+2. **Analysis Report**: `resume_{basename}_analysis.md`
 
-## Process Overview
+**Example:** `--job_file=job_desc/Mujin_RoboSysEng_COPY.md` generates:
+- `{OUTPUT_DIR}/resume_Mujin_RoboSysEng_COPY.md`
+- `{OUTPUT_DIR}/resume_Mujin_RoboSysEng_COPY_analysis.md`
 
-### Step 1: Data Integration
-1. Load employment history and personal information from work_history.yaml
-2. Load detailed experiences from work_experience.yaml database
-3. Parse job description from --job_file for intelligent targeting requirements
-4. Extract contact information from personal_info.md
-
-### Step 2: Content Selection and Prioritization
-1. **Experience Matching**: Select most relevant experiences based on:
-   - Target role requirements (if provided)
-   - Specified emphasis area
-   - Quantified impact and results
-   - Recency and career progression
-
-2. **Skills Consolidation**: Aggregate technical skills from:
-   - work_history.yaml technical_skills sections
-   - work_experience.yaml tech_stack fields
-   - Prioritize based on target role relevance
-
-3. **Achievement Prioritization**: Select key achievements emphasizing:
-   - Revenue/business impact ($30M+, 566% improvements)
-   - Technical innovation (9 patents, AI frameworks)
-   - Leadership scope (25-engineer teams)
-   - Recent AI/automation work
-
-### Step 3: Resume Generation
-1. **Header Section**: Contact information and professional summary
-2. **Key Achievements**: 5-7 bullet points with quantified results
-3. **Technical Skills**: Categorized by domain (AI/ML, Languages, Systems, etc.)
-4. **Experience Section**: 
-   - Chronological employment history
-   - 3-5 bullets per role with quantified results
-   - Career progression narrative
-5. **Education Section**: Degrees, institutions, thesis details
-
-### Step 4: Format and Output
-1. Apply specified format styling (standard/technical/executive/academic)
-2. Adjust length based on target (1/2/full pages)
-3. Generate output filename based on job_file or parameters
-4. Save formatted resume to output directory
-5. Generate separate analysis file (`*_analysis.md`) with detailed gap analysis and metrics
+## Generation Process
+1. **Load Source Files**: Read {WORK_HISTORY}, {WORK_EXP_DB}, and {PERSONAL_INFO}
+2. **Parse Job File**: Extract target role requirements (if provided)
+3. **Select Content**: Match relevant experiences and skills to target role
+4. **Generate Resume**: Create formatted resume with quantified achievements
+5. **Create Analysis**: Generate gap analysis and metrics
+6. **Save Files**: Output to {OUTPUT_DIR} with consistent naming
 
 ## Resume Formats
 
@@ -144,42 +118,29 @@ This command works in concert with:
 - `analyze_fit.md` - Uses similar job requirement parsing
 - `review_experience.md` - Relies on validated experience database
 
-## Output File Naming
+## File Naming Convention
 
-The command generates files in the `output/` directory based on the input job file name:
+**Primary Pattern:** `resume_{basename}*` where `{basename}` comes from job file name
 
-### When using --job_file (preferred):
-Based on input job file name:
-- Input: `--job_file=job_desc/_Rapyuta_Robo.SysIntEng.md`
-- Output Resume: `output/resume_Rapyuta_Robo.SysIntEng.md`
-- Analysis File: `output/resume_Rapyuta_Robo.SysIntEng_analysis.md`
-
-**Naming Logic:** `resume_` + `[original_filename_without_extension]` + `.md/_analysis.md`
-
-### When using manual parameters:
-Traditional naming:
-- `output/resume_[TargetRole]_[Company]_[YYYYMMDD].md`
-- `output/resume_[TargetRole]_[Company]_[YYYYMMDD]_analysis.md`
-
-Example outputs:
-- `output/resume_SeniorAIEngineer_OpenAI_20250907.md`
-- `output/resume_standard_20250907.md`
+**Manual Parameters:** When no job file provided:
+- `resume_{target_role}_{company}_{date}.md`
+- `resume_standard_{date}.md` (fallback)
 
 ## Field Mapping Reference
 
-### From work_history.yaml
+### From {WORK_HISTORY}
 - Professional summary → Resume header
-- Employment history → Experience chronology  
+- Employment history → Experience chronology
 - Education → Education section
 - Key achievements → Achievement bullets
 - Technical skills → Skills taxonomy
 
-### From work_experience.yaml
+### From {WORK_EXP_DB}
 - Quantified results → Experience bullets
 - Tech stack → Skills consolidation
 - Keywords → Role targeting
 - Supporting links → References/citations
 
-### From personal_info.md
+### From {PERSONAL_INFO}
 - Contact details → Header information
 - Location preferences → Geographic targeting

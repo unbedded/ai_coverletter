@@ -41,3 +41,6 @@ Thumbs.db
 source_materials/personal_info.md
 output/cvrltr_*
 output/resume_*
+managed_context/
+test_suite_analysis/
+
