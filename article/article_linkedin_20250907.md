@@ -1,8 +1,10 @@
 # Spear Resuming - a Fresh AI Perspective
 
-*Unemployeed with too much time on my hands and a resume that says (He's a Problem-solver) - I am using AI to leverage this job hunt*
+*"The one thing worse than having to work is having to look for a job."*
 
-## Man vs. Machine — Or Man With Machine?
+Unemployed with too much time on my hands and a resume that says "I'm a problem-solver," I decided to use AI to leverage this job hunt. The result? A system that helped me land many interviews—and I hope it can do the same for you.
+
+## Man vs. Machine — Or Man WITH Machine?
 
 <div>
   <img src="./JohnHenry_RacingAgainst_AI.powered.steam.shovel.png" alt="A floating image" style="width: 300px; height: 200px; float: left; margin-right: 15px; margin-bottom: 10px;">
@@ -10,7 +12,7 @@
 
 Man against machine—it can feel like stepping into The Matrix. The system seems stacked against you, scanning, filtering, shutting you out. But here’s the twist: the real power comes when you learn to bend the rules from inside—using AI to outmaneuver AI.
 
-Because today, it’s not just recruiters you need to impress. Your first opponent is often an ATS (Applicant Tracking System)—a digital firewall that scans resumes and filters out up to 88% of applicants before a human ever sees them. That’s exactly where I felt stuck. Until I flipped the script. I stopped seeing AI as the gatekeeper and started using it as my amplifier—building targeted resumes and cover letters that finally broke through.
+Because today, it's not just recruiters you need to impress. Your first opponent is often an ATS (Applicant Tracking System)—a digital firewall that scans resumes and filters out up to 88% of applicants before a human ever sees them. That's exactly where I KEPT GETTING stuck—until I flipped the script. I stopped seeing AI as the gatekeeper and started using it as my amplifier—building targeted resumes and cover letters that finally broke through.
 
 
 ## "Spear Resuming": The Targeted Approach
@@ -21,7 +23,7 @@ Because today, it’s not just recruiters you need to impress. Your first oppone
 
 Most resumes are spam: generic, bloated, and destined for the discard pile. But what if you could *spear resume* instead? Precision-targeted applications that read like they were written for one job and one job only.
 
-That’s what I built: a system that takes structured work experience data, fuses it with AI-powered targeting, and produces professional documents that pass the ATS filter and resonate with hiring managers—in minutes, not hours.
+That's what I built: a system that takes structured work experience data, fuses it with AI-powered targeting, and produces professional documents that overcome the ATS filter and resonate with hiring managers—in minutes, not hours.
 
 
 ## The Problem: Career Documentation Chaos
@@ -30,7 +32,7 @@ For years, every job application felt like chaos. I’d dig through old resumes,
 
 Like many engineers, I had decades of rich experience—autonomous vehicles, manufacturing automation, AI, international collaboration—but it was scattered across Word docs, LinkedIn snippets, and fading memories.
 
-The result? Generic applications that neither ATS systems nor recruiters cared about. Worse, I was underselling myself. My resumes often failed to show how I contributed or what measurable impact I delivered. Saying “I worked on Project X” wasn’t enough. Without context and quantified results, it read like filler, not proof. Breaking experiences into Hook, Context, Process, and Proof later made these weaknesses abundantly clear—and showed me exactly which experiences were too weak to include without more work, and which were strong enough to anchor a resume.
+The result? Generic applications that IMPRESSED neither ATS systems nor recruiters. Worse, I was underselling myself. My resumes often failed to show how I contributed or what measurable impact I delivered. Saying “I worked on Project X” wasn’t enough. Without context and quantified results, it read like filler, not proof. Breaking experiences into Hook, Context, Process, and Proof later made these weaknesses abundantly clear—and showed me exactly which experiences were too weak to include without more work, and which were strong enough to anchor a resume.
 
 That weakness carried into interviews too. I would jump straight into solutions without setting the stage—missing the chance to tell a compelling story of challenge, action, and outcome. And that’s the bigger picture: the problem isn’t just getting a positive reply in your inbox. The real test is the interview room, where you need powerful, structured stories that demonstrate your value. This framework supports that.
 
@@ -50,7 +52,7 @@ That shift changed everything. Instead of juggling a cache of slightly different
 
 Here’s the truth: AI can’t help you if you don’t give it quality input. It’s the classic garbage in, garbage out problem. To get real results, I had to supply clear, well-structured data — not a mess of ad-hoc edits.
 
-So I extracted my qualifications and broke them down into a database of Experiences. Each one became a self-contained, well-defined qualification I could pull from. And to make those Experiences powerful, I built them around four tiers:
+So I extracted my qualifications and broke them down into a database of experiences. Each one became a self-contained, well-defined qualification I could pull from. And to make those experiences powerful, I built them around four tiers:
 
 Tier 1 (Hook) → narrative_hook: The single biggest win that makes someone want to hire you
 
@@ -61,59 +63,17 @@ Tier 3 (Process) → action_description: Your specific contributions and methods
 Tier 4 (Proof) → quantified_results: The numbers that validate your success
 
 
-## How the 4 Tiers Work
+## How the 4 tiers work
 
-1) NARRATIVE HOOK – Single biggest win that makes someone want to hire you
+* Improved pass-through rates
+* One source of truth
+* Tailored, keyword-matched resumes
 
-+--------------------------------------------------------------------------------------+
-| 1) NARRATIVE HOOK – Single biggest win that makes someone want to hire you           |
-+----------------------+----------------------------------------------------------------+
-| Purpose              | One-sentence elevator pitch / cover letter opener (story).     |
-| Content              | Role + #1 achievement + scale/context + business impact.       |
-| Format               | [Role] + [Action] + [Scale/Context] + [Single Best Outcome].   |
-| Constraints          | <30 words; MUST start with a specific role; use business       |
-|                      | impact (revenue/market/team scale), not technical metrics.     |
-| Example              | Led as Technical Lead MLCC platform generating $30M+ sales     |
-|                      | while managing 25-engineer team through market leadership [4]. |
-| Note                 | May look redundant, but leading with it gives narrative        |
-|                      | control in a cover letter.                                     |
-+----------------------+----------------------------------------------------------------+
+---
 
-	
+This isn't just about beating ATS—it's about engineering your professional story in the clearest and most favorable light possible.
 
-Purpose	One-sentence elevator pitch / cover letter opener (storytelling).
-Content	Role + #1 achievement + scale/context + business impact.
-Format	[Role] + [Action] + [Scale/Context] + [Single Most Impressive Business Outcome]
-Constraints	<30 words; MUST start with a specific role; impact = high-level business outcome (revenue, market leadership, team scale)—not technical metrics.
-Example	Led as Technical Lead MLCC platform generating $30M+ sales while managing 25‑engineer team through market leadership achievement [4].
-Note	May look redundant, but leading with it gives you narrative control in a cover letter.
-2) SITUATION TASK – Why this mattered / what made it challenging
-
-	
-
-Purpose	Set the stage — what challenge needed solving?
-Content	Business context, constraints, why it mattered.
-Format	The problem/opportunity that required your intervention.
-Constraints	No numbers here; save metrics for results. Focus on stakes and difficulty.
-Example	Required ground-up development of testing platform following formal V-model processes to achieve market leadership.
-3) ACTION DESCRIPTION – Your specific contributions and methods
-
-	
-
-Purpose	The “how” — what you specifically did.
-Content	Storytelling with role integrated: methods, processes, decisions, leadership actions.
-Format	[Role Context] + Strong Verbs + Specific Actions/Techniques
-Constraints	Weave role throughout (e.g., “As Lead Architect…”). No outcomes here; keep results for the next section.
-Example	As Principal Engineer, implemented ROS2 architecture [1], designed custom IDL for API generation, led cross-team FMEA analysis sessions.
-4) QUANTIFIED RESULTS – The numbers that validate your success
-
-	
-
-Purpose	Measurable proof of success beyond the hook.
-Content	Technical metrics, performance improvements, certifications, patents, outcomes.
-Format	Specific metrics + context + validation.
-Constraints	Include references where available; avoid repeating the #1 business impact already used in the hook.
-Example	Produced 9 patents filed with 6 issued [4], achieved 87.5% performance improvement (8→15 fps), obtained TÜV certification, delivered 1M+ devices/hour capability.
+---
 
 
 ### 1) NARRATIVE HOOK – Single biggest win that makes someone want to hire you
@@ -363,7 +323,7 @@ The system is open here: [AI Cover Letter & Resume Generator](https://github.com
 
 ## The Meta Lesson
 
-The act of structuring your experience is **as valuable as the documents themselves**. It’s not just about getting past the firewall—it’s about clarity, credibility, and control in an age where AI stands between you and your next role.
+The act of structuring your experience is **as valuable as the documents themselves**. It's not just about getting past the firewall—it's about clarity, credibility, and control in an age where AI stands between you and your ideal position.
 
 ---
 
@@ -389,5 +349,3 @@ You’re not just writing resumes. You’re engineering a system that adapts to 
 
 **About the Author**
 Spencer Barrett is a systems engineer with 20+ years in robotics, AI-accelerated development, and international collaboration. He believes the future of career success lies in learning to leverage machines—not fight them.
-
--- *"The one thing worse than having to work - is having to look for a job"* --

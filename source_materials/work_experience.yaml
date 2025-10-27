@@ -181,9 +181,9 @@ experiences:
     timeframe: 2022-2024
     role: Lead Architect
     team_size: null
-  situation_task: Required comprehensive automotive systems integration and validation of LiDAR sensors for Autonomous Emergency Braking in Vulnerable Road User scenarios against Euro NCAP protocols with measurable performance validation across multiple vehicle platforms
-  action_description: As Lead Architect, integrated LiDAR sensors into automotive collision detection system for AEB-VRU systems validation using existing ROS2 perception pipeline for real-time pedestrian and obstacle detection. Worked with and tuned existing computer vision algorithms for point cloud processing, operated object tracking with Kalman filters for prediction and noise reduction, and optimized real-time performance for vehicle safety systems. Configured and tuned existing algorithms for filtering noise from LiDAR point clouds, operated tracking algorithms for moving objects (pedestrians/cyclists), and tuned Kalman filter parameters for accurate trajectory prediction in dynamic environments. Executed controlled automotive integration tests with UMTRI at Mcity against Euro NCAP protocols across multiple vehicle platforms [6].
-  quantified_results: Achieved successful automotive integration with 8-meter VRU detection range across all test scenarios (pedestrian/cyclist, day/night, speeds up to 40 km/h). Optimized real-time processing to achieve 87.5% performance improvement (8→15fps) through algorithm tuning and Kalman filter optimization. Validated computer vision algorithms against Euro NCAP protocols with 95%+ detection accuracy in challenging conditions. Presented automotive systems integration findings at 2024 Transportation Research Board Annual Meeting [6][7]
+  situation_task: Required comprehensive automotive systems integration and validation of LiDAR sensors for Autonomous Emergency Braking in Vulnerable Road User scenarios against Euro NCAP protocols with measurable performance validation across multiple vehicle platforms using containerized development and deployment workflows
+  action_description: As Lead Architect, integrated LiDAR sensors into automotive collision detection system for AEB-VRU systems validation using existing ROS2 perception pipeline for real-time pedestrian and obstacle detection. Utilized Docker-based development environment for consistent cross-team builds and containerized deployments to vehicle fleet. Captured raw sensor data streams from LiDAR and camera systems for post-processing visualization and perception optimization using ROS2 visualization tools. Performed offline analysis and replay of recorded sensor data to iteratively tune perception algorithms and validate performance improvements. Worked with and tuned existing computer vision algorithms for point cloud processing, operated object tracking with Kalman filters for prediction and noise reduction, and optimized real-time performance for vehicle safety systems. Configured and tuned existing algorithms for filtering noise from LiDAR point clouds, operated tracking algorithms for moving objects (pedestrians/cyclists), and tuned Kalman filter parameters for accurate trajectory prediction in dynamic environments. Executed controlled automotive integration tests with UMTRI at Mcity against Euro NCAP protocols across multiple vehicle platforms [6].
+  quantified_results: Achieved successful automotive integration with 8-meter VRU detection range across all test scenarios (pedestrian/cyclist, day/night, speeds up to 40 km/h). Optimized real-time processing to achieve 87.5% performance improvement (8→15fps) through algorithm tuning and Kalman filter optimization. Validated computer vision algorithms against Euro NCAP protocols with 95%+ detection accuracy in challenging conditions. All systems deployed via Docker containers ensuring consistent runtime environments across fleet. Presented automotive systems integration findings at 2024 Transportation Research Board Annual Meeting [6][7]
   narrative_hook: Lead Architect who integrated and tuned real-time computer vision systems for automotive collision detection, achieving 8-meter VRU detection with 95%+ accuracy through Kalman filter tuning and point cloud processing
   proficiency_level: Expert
   keywords:
@@ -218,6 +218,14 @@ experiences:
   - UMTRI collaboration
   - Mcity testing facility
   - multi-platform integration
+  - containerization
+  - Docker deployment
+  - fleet deployment
+  - data visualization
+  - sensor data capture
+  - offline analysis
+  - perception optimization
+  - simulation and replay
   story_adaptability: High
   supporting_links:
   - ref_number: 6
@@ -228,6 +236,9 @@ experiences:
     url: https://www.linkedin.com/in/spencer-barrett-3263528/details/featured/
   tech_stack:
   - ROS2
+  - RViz
+  - rosbag
+  - Docker
   - C++17
   - Python
   - OpenCV
@@ -236,6 +247,7 @@ experiences:
   - Computer Vision
   - Point Cloud Processing
   - Real-time Processing
+  - Data Visualization
   - Ubuntu/Linux
 - experience_id: EXP_011
   category: Specialized Technical Areas
@@ -381,23 +393,20 @@ experiences:
 
 - experience_id: EXP_020
   category: Robotics Frameworks & Libraries
-  primary_skill: SLAM & ROS Robotics
-  experience_title: Autonomous ROS Robotic Workcell with SLAM Testing
+  primary_skill: SLAM & ROS1 Robotics
+  experience_title: Autonomous ROS1 Robotic Workcell with SLAM Testing
   context:
     company: SIGMA DESIGN
     timeframe: Historical
     role: Senior Engineer
     team_size: null
-  situation_task: Required autonomous robotic workcell for regression testing of 3D vision SLAM devices with high precision
-    and repeatability
+  situation_task: Required autonomous robotic workcell for regression testing of 3D vision SLAM devices with high precision and repeatability, including flexible path planning and navigation for arbitrary routes within the workcell
   action_description: "As Senior Engineer, managed integration and operation of 20\xD720m autonomous ROS-based robotic workcell\
-    \ for SLAM device testing using existing computer vision algorithms. Integrated working as Senior Engineer 6-degree-of-freedom arm on OTTO-100 AMR base with existing LQR\
-    \ controller using OptiTrack vision feedback for precision servo control. Operated real-time computer vision processing for 3D SLAM algorithms,\
+    \ for SLAM device regression testing using existing computer vision algorithms. Operated 6-degree-of-freedom arm on OTTO-100 AMR base with existing LQR\
+    \ controller using OptiTrack vision feedback for precision servo control. Debugged and tuned flexible path planning and navigation system for arbitrary routes within workcell based on LQR optimal control and OptiTrack visual feedback. Operated real-time computer vision processing for 3D SLAM algorithms,\
     \ worked with existing feature detection and matching algorithms for visual odometry, and tuned point cloud registration for precise trajectory delivery and repeatable testing."
-  quantified_results: "Successfully operated 20\xD720m autonomous robotic workcell with precision trajectory control for SLAM\
-    \ device testing"
-  narrative_hook: "Senior Engineer who managed 20\xD720m autonomous ROS robotic workcell with 6-DOF arm for SLAM device regression\
-    \ testing"
+  quantified_results: "Successfully operated 20\xD720m autonomous robotic workcell for SLAM device regression testing. Deployed ROS1-based robotic workcell for factory automation applications with flexible path planning and navigation"
+  narrative_hook: "Senior Engineer who managed 20\xD720m autonomous ROS1 robotic workcell with 6-DOF arm for SLAM device regression testing, operating flexible path planning and navigation for arbitrary routes using LQR optimal control and OptiTrack visual feedback"
   proficiency_level: Expert
   keywords:
   - 3D vision SLAM
@@ -413,10 +422,19 @@ experiences:
   - point cloud registration
   - real-time computer vision
   - 3D SLAM algorithms
+  - ROS1
+  - factory automation
+  - industrial robotics
+  - robotic workcells
+  - path planning
+  - navigation
+  - LQR optimal control
+  - trajectory planning
+  - motion planning
   story_adaptability: Medium
   supporting_links: []
   tech_stack:
-  - ROS
+  - ROS1
   - C++
   - Computer Vision
   - SLAM Algorithms
@@ -494,7 +512,7 @@ experiences:
   supporting_links:
   - ref_number: 12
     title: Auto API generation and gRPC w/ embedded systems
-    url: https://bit.ly/42d8Tfq
+    url: https://www.linkedin.com/in/spencer-barrett-3263528/details/featured/1757010631850/single-media-viewer?type=DOCUMENT&profileId=ACoAAAF5iE4Bf0SkGOS9yuEM2kxGk9ddw8fO1yo&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_featured_details%3BcuX3x9dtQJCPbpxe%2BARzhA%3D%3D
   tech_stack:
   - Interface Definition Language (IDL)
   - Protocol Buffers
@@ -1186,6 +1204,43 @@ experiences:
   - ref_number: 27
     title: AI-Assisted Testing Framework (LinkedIn Featured Article)
     url: https://www.linkedin.com/in/spencer-barrett-3263528/details/featured/
+
+- experience_id: EXP_102
+  category: Core Programming Languages
+  primary_skill: DevOps and CI/CD Best Practices
+  experience_title: Full-Stack Movie Database with GitHub Actions CI/CD
+  context:
+    company: Job Interview Project
+    timeframe: 2024
+    role: Software Engineer
+    team_size: null
+  situation_task: Required demonstration of professional software engineering best practices including Git Flow, CI/CD pipelines, and automated testing in a 20-hour technical interview project
+  action_description: As Software Engineer, implemented full-stack movie database application following industry best practices [ 28 ]. Established Git Flow branching strategy with feature branches, develop, and main branches. Built comprehensive GitHub Actions CI/CD pipeline with automated testing, linting, and code quality checks. Implemented automated test suites ensuring code quality and deployment readiness
+  quantified_results: Delivered production-ready application demonstrating mastery of modern DevOps practices within 20-hour constraint. Complete GitHub Actions CI/CD pipeline with automated testing and Git Flow workflow management [ 28 ]
+  proficiency_level: Expert
+  keywords:
+  - CI/CD pipelines
+  - Git Flow
+  - DevOps practices
+  - automated testing
+  - code quality
+  - version control
+  - deployment automation
+  - software engineering best practices
+  - GitHub Actions
+  story_adaptability: High
+  narrative_hook: Software Engineer who delivered production-ready movie database with complete GitHub Actions CI/CD pipeline and Git Flow best practices in 20-hour technical interview project
+  tech_stack:
+  - Git
+  - Git Flow
+  - CI/CD
+  - GitHub Actions
+  - Python
+  - Automated Testing
+  supporting_links:
+  - ref_number: 28
+    title: Open Source Example of CI/CD and Git Flow Capabilities
+    url: https://github.com/unbedded/movie_db_qa
 
 parsing_config:
   default_proficiency: Intermediate

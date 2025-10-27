@@ -15,7 +15,7 @@ write_cover_letter --job_file=<job_description_file_path> [--haiku] [--no-analyt
 - **--no-analytics** (optional): Skip analysis file generation
 
 ## File Locations
-- **{WORK_EXP_DB}** = `source_materials/work_experience_linkedin.yaml`
+- **{WORK_EXP_DB}** = `source_materials/work_experience.yaml`
 - **{PERSONAL_INFO}** = `source_materials/personal_info.md`
 - **{OUTPUT_DIR}** = `output/`
 
