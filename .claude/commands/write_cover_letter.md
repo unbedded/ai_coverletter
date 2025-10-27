@@ -1,40 +1,56 @@
 # Write Cover Letter
 
-Generate a tailored cover letter directly from a job description markdown file using source materials.
-
-**Quick Help:** Use `write_cover_letter -h` or `write_cover_letter --help` to display usage information.
+Generate a tailored cover letter from a job description file using intelligent extraction and source materials matching.
 
 ## Usage
-```
+```bash
 write_cover_letter --job_file=<job_description_file_path> [--haiku] [--no-analytics]
 ```
-Example: `write_cover_letter --job_file=raw_jobs/google_swe_2025-08-30.md --haiku --no-analytics`
+
+**Example:** `write_cover_letter --job_file=job_desc/Mujin_RoboSysEng.md --haiku`
 
 ## Parameters
-- **job_file** (required): Path to the job description markdown file
-- **--haiku** (optional): Use Claude Haiku model for cost optimization (~85% cost reduction)
-- **--no-analytics** (optional): Skip analysis section generation to reduce tokens and cost
+- **--job_file** (required): Path to job description markdown file
+- **--haiku** (optional): Use Claude Haiku for 85% cost reduction
+- **--no-analytics** (optional): Skip analysis file generation
 
-## Required Source Files
-The command requires these files in `source_materials/`:
-1. **work_experience.yaml** - Detailed skill:qualification database (see Experience Database Reference at end)  
-2. **personal_info.md** - Contact information and preferences
+## File Locations
+- **{WORK_EXP_DB}** = `source_materials/work_experience.yaml`
+- **{PERSONAL_INFO}** = `source_materials/personal_info.md`
+- **{OUTPUT_DIR}** = `output/`
 
-**Note:** The consolidated `work_experience.yaml` database is self-sufficient for high-quality cover letter generation. After extensive testing and database consolidation (45.1% keyword reduction, duplicate elimination, field separation), the YAML-only approach produces superior results with better job requirement alignment and complete reference link coverage.
+## INPUTS (Required Files)
+1. **Job Description**: `--job_file` parameter (e.g., `job_desc/Company_Role.md`)
+2. **Experience Database**: {WORK_EXP_DB} - Detailed skill and qualification database
+3. **Personal Info**: {PERSONAL_INFO} - Contact information and preferences
 
-## Process
-1. Read the job description from the provided file path
-2. Extract company name, position, key REQUIRED and NICE TO HAVE requirements
-3. Load source materials (work_experience YAML, personal info)
-4. Match job requirements with qualifications from work_experience.yaml
-5. Generate tailored cover letter using the specified template
-6. **FLAG missing coverage** for REQUIRED skills not adequately supported by YAML
-7. Save to `output/` directory
+## OUTPUTS (Generated Files)
+All files saved to {OUTPUT_DIR} with naming pattern: `cvrltr_{basename}*`
 
-## Output File Naming
-The cover letter will be saved to the `output/` directory with the prefix `cvrltr_`:
-- Input: `--job_file=raw_jobs/example_swe_2025-08-30.md`
-- Output: `output/cvrltr_example_swe_2025-08-30.md`
+1. **Cover Letter (Markdown)**: `cvrltr_{basename}.md`
+2. **Cover Letter (ASCII)**: `cvrltr_{basename}_ascii.txt` (ALL CAPS for bold)
+3. **Analysis Report**: `cvrltr_{basename}_analysis.md` (unless `--no-analytics`)
+
+**Example:** `--job_file=job_desc/Mujin_RoboSysEng_COPY.md` generates:
+- `{OUTPUT_DIR}/cvrltr_Mujin_RoboSysEng_COPY.md`
+- `{OUTPUT_DIR}/cvrltr_Mujin_RoboSysEng_COPY_ascii.txt`
+- `{OUTPUT_DIR}/cvrltr_Mujin_RoboSysEng_COPY_analysis.md`
+
+## Process Overview
+The command automatically extracts everything needed from the job file:
+- Company name, mission, and role details
+- Required vs. preferred skills (weighted by importance)
+- Company-specific terminology and context
+
+Then matches job requirements with qualifications from {WORK_EXP_DB} to generate a targeted cover letter.
+
+## Generation Process
+1. **Parse Job File**: Extract company, role, and requirements
+2. **Load Source Materials**: Read {WORK_EXP_DB} and {PERSONAL_INFO}
+3. **Match Requirements**: Find best experience matches for job requirements
+4. **Generate Cover Letter**: Create targeted 350-400 word letter
+5. **Create Analysis**: Generate gap analysis and metrics (unless `--no-analytics`)
+6. **Save Files**: Output to {OUTPUT_DIR} with consistent naming
 
 ## Cover Letter Template Structure
 
@@ -45,9 +61,10 @@ Hiring Committee<br>
 [COMPANY]<br>
 RE: [JOB TITLE]
 
-[LEAD WITH STRONGEST, MOST RELEVANT ACHIEVEMENT - Include specific metrics and direct connection to role requirements. Example: "Led developer of a pilot fleet of 6 driverless vans and tuned perception performance from 8→15 fps (87% improvement) by optimizing ROS2 node graphs, CAN decoding, and telemetry feedback loops. This real-world autonomous vehicle deployment experience directly aligns with [COMPANY]'s [SPECIFIC PROJECT/CHALLENGE] integration challenges."]
-
-With over 20 years of systems integration experience, including extensive collaboration with Japanese engineering teams, I am excited to contribute to [COMPANY]'s [MISSION] through [SPECIFIC CONTRIBUTION RELEVANT TO ROLE].
+[CONCISE OPENING - 1-2 sentences maximum connecting strongest achievement to company mission. Use the narrative_hook from your strongest matching experience, then connect to company mission. Examples:
+- "Engineering Manager who scaled autonomous collision system from POC demo to 6-vehicle production pilot fleet through 5 customer phase gates [1]. Excited to contribute to [COMPANY]'s [SPECIFIC MISSION/CHALLENGE]."
+- "Staff Engineer who pioneered AI-assisted development workflow combining 20+ years expertise with automated code generation [1]. Excited to contribute to [COMPANY]'s [SPECIFIC MISSION/CHALLENGE]."
+- "Technical Lead who brought new products to market generating $30M+ sales while managing 25-engineer team [1]. Excited to contribute to [COMPANY]'s [SPECIFIC MISSION/CHALLENGE]."]
 
 [EXPERIENCE TITLE 1 - Pull the Requirement Directly from the Job Posting]
 - [bullet list Demonstrating You Meet Requirements, provide a Specific Example from Your Work, and Highlight the Result or Outcome]
@@ -65,19 +82,25 @@ Spencer Barrett
  - [ 2 ] [TITLE] : [HTML_LINK]
  ...
  - [ N ] [TITLE] : [HTML_LINK]
+```
 
-----------
+# Analysis File Template Structure
 
-## ANALYSIS & METRICS
+The separate `*_analysis.md` file should contain:
 
-### GENERATION METADATA
-Generated: 2025-08-31 12:45:30 UTC
-Input tokens: 3,420 | Output tokens: 1,250 | Total: 4,670
-Estimated cost: $0.14 (Claude Sonnet 4)
-Session totals: 15,230 tokens | $0.46
+```
+# Cover Letter Analysis Report
+**Generated:** [TIMESTAMP]  
+**Job File:** [JOB_FILE_PATH]  
+**Target:** [COMPANY] - [ROLE]
 
+## GENERATION METADATA
+**Model:** Claude [Sonnet 4/Haiku]  
+**Input tokens:** [X] | **Output tokens:** [X] | **Total:** [X]  
+**Estimated cost:** $[X.XX]  
+**Session totals:** [X] tokens | $[X.XX]
 
-### Document Size Metrics
+## Document Size Metrics
 | Section | Lines | Words | Notes |
 |---------|-------|-------|-------|
 | Header & Opening | X | X | Contact info, intro paragraph |
@@ -87,7 +110,7 @@ Session totals: 15,230 tokens | $0.46
 | Closing & Signature | X | X | Final paragraph, signature block |
 | **TOTAL DOCUMENT** | **X** | **X** | **Target: <50 lines, <600 words** |
 
-### Job Requirements Coverage Analysis
+## Job Requirements Coverage Analysis
 | Requirement | Type | Addressed | Quality | YAML Support | Notes |
 |-------------|------|-----------|---------|--------------|-------|
 | [Skill/Requirement 1] | REQUIRED | ✅/❌ | Strong/Good/Weak/None | ✅/⚠️/❌ | [Brief note] |
@@ -100,7 +123,7 @@ Session totals: 15,230 tokens | $0.46
 - **Weak**: General example, indirect skill connection
 - **None**: Skill mentioned but no supporting evidence
 
-### YAML Coverage Assessment
+## YAML Coverage Assessment
 #### ✅ WELL-SUPPORTED REQUIRED SKILLS
 - [Skill]: [Experience ID] - [Brief description of strong match]
 
@@ -124,27 +147,28 @@ Session totals: 15,230 tokens | $0.46
 ```
 
 ## Key Requirements
-- **Length**: Keep to 1 page maximum
+- **Length**: Target 350-400 words maximum (industry standard)
 - **Priority**: Focus on REQUIRED experience first, include NICE TO HAVE only when strong matches exist
 - **Specificity**: Pull experience titles directly from job posting requirements
 - **Evidence**: Each bullet must include specific example from work and quantified result/outcome
+- **Anti-Redundancy**: **NEVER repeat the opening achievement in experience sections - use different examples**
 - **Gap Detection**: **FLAG any REQUIRED skills where YAML lacks sufficient supporting evidence**
 - **User Notification**: Alert when YAML updates are needed for better coverage
-- **Links**: Include supporting links from work_experience.yaml when available
+- **Links**: Include supporting links from {WORK_EXP_DB} when available
 - **Cultural Context**: Emphasize 20+ years Japanese engineering collaboration when relevant
-- **Matching**: Use work_experience.yaml categories, keywords, and story_adaptability ratings to select best examples
+- **Matching**: Use {WORK_EXP_DB} categories, keywords, and story_adaptability ratings to select best examples
 
 ## Enhanced Haiku Model Directives
 When using `--haiku` flag, apply these additional requirements to match Sonnet 4 quality:
 
 ### Content Enhancement
-- **Target Length**: 600+ words (vs default ~400 for Haiku)
-- **Experience Sections**: Include 3-4 bullet points per section (vs 2 for basic)
+- **Target Length**: 350-400 words (industry standard, vs default ~250 for basic)
+- **Experience Sections**: Include 2-3 bullet points per section (focused and concise)
 - **Technical Detail**: Expand technical descriptions and context
 - **Quantified Results**: Always include specific metrics and outcomes
 
 ### Required Sections
-- **LINKS AND REFERENCES**: Always include this section with 2+ relevant supporting links from work_experience.yaml
+- **LINKS AND REFERENCES**: Always include this section with 2+ relevant supporting links from {WORK_EXP_DB}
 - **Source Footnotes**: Insert footnote flags [1], [2] within experience bullets when referencing supporting links
 - **GENERATION METADATA**: Include cost and token tracking (already implemented)
 
@@ -186,9 +210,9 @@ The command tracks token usage and costs for each cover letter generation:
 
 # Experience Database Reference
 
-## YAML Structure: work_experience.yaml
+## YAML Structure: {WORK_EXP_DB}
 
-The `work_experience.yaml` file is the core database that powers intelligent experience matching. Each experience entry should follow this structure:
+The {WORK_EXP_DB} file is the core database that powers intelligent experience matching. Each experience entry should follow this structure:
 
 ### Required Fields (MUST have for matching to work):
 ```yaml

@@ -1,106 +1,3 @@
-# AI Cover Letter & Resume Generator
-
-![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
-
-*"The one thing worse than having to work is having to look for a job."*
-
-**Frustrated by AI filters that block your resume before a human ever sees it?** This project flips the script—using AI to outmaneuver the ATS systems that filter out 88% of applicants. Instead of sending generic resumes into the void, you'll generate precision-targeted applications from a structured database of your experiences.
-
-**The result?** I've cut application time by 85% (from 2-3 hours to 15 minutes), landed multiple interviews, and built a system that treats career documentation like code—structured, version-controlled, and maintainable.
-
-**This is "Career as Code"**: one source of truth that generates tailored cover letters, ATS-friendly resumes, and interview prep materials in minutes.
-
-📖 **[Read the full story](#why-this-exists---full-article)** about how this system was built and why it works.
-
----
-
-## Table of Contents
-
-- [⚡ Quick Start](#-quick-start)
-- [🚀 Features](#-features)
-- [🛠️ Commands](#-commands)
-- [📁 File Structure](#-file-structure)
-- [📖 Why This Exists - Full Article](#-why-this-exists---full-article)
-- [📋 Version Information](#-version-information)
-
----
-
-## ⚡ Quick Start
-
-### Generate Cover Letter
-```bash
-write_cover_letter --job_file=job_desc/Company_Role.md --no-analytics
-```
-
-### Generate Resume
-```bash
-# Standard resume
-write_resume
-
-# Technical resume for specific role
-write_resume --target_role="Senior AI Engineer" --format=technical --emphasis=ai
-
-# Executive format
-write_resume --format=executive --emphasis=management
-```
-
----
-
-## 🚀 Features
-
-### Dual Generation System
-- **Cover Letters**: Tailored to specific job descriptions with RAG-based matching
-- **Resumes**: Multiple formats (standard, technical, executive, academic) with role targeting
-
-### 📊 YAML Database Architecture
-- **Consolidated Experience Database**: `work_experience.yaml` with 28+ structured experiences
-- **Employment Timeline**: `work_history.yaml` with career progression and resume formatting
-- **Personal Information**: Contact details and preferences in `personal_info.md`
-
-### 🎯 Job Targeting
-- Parse job descriptions for requirements matching
-- Prioritize relevant experiences and skills
-- Generate role-specific content emphasis
-
-### 📈 Quantified Results
-- Emphasizes measurable achievements (566% throughput improvements, $30M revenue, etc.)
-- Patent citations and technical innovations
-- Team leadership scope and project impact
-
----
-
-## 🛠️ Commands
-
-| Command | Purpose | Key Options |
-|---------|---------|-------------|
-| `write_cover_letter` | Generate tailored cover letters | `--job_file`, `--haiku`, `--no-analytics` |
-| `write_resume` | Generate multi-format resumes | `--format`, `--target_role`, `--emphasis`, `--length` |
-| `review_experience` | Analyze and improve experience database | `--experience_id`, `--check-redundancy`, `--suggest-improvements` |
-
----
-
-## 📁 File Structure
-
-```
-├── source_materials/
-│   ├── work_experience.yaml    # Detailed experience database (28+ entries)
-│   ├── work_history.yaml       # Employment timeline & resume data
-│   └── personal_info.md        # Contact information
-├── job_desc/                   # Job description files
-├── output/                     # Generated documents (cover letters & resumes)
-├── article/                    # Article images and resources
-├── docs/                       # Documentation
-└── .claude/commands/           # Command definitions
-    ├── write_cover_letter.md
-    ├── write_resume.md
-    └── review_experience.md
-```
-
----
-
-## 📖 Why This Exists - Full Article
-
 # Spear Resuming - a Fresh AI Perspective
 
 *"The one thing worse than having to work is having to look for a job."*
@@ -110,10 +7,10 @@ Unemployed with too much time on my hands and a resume that says "I'm a problem-
 ## Man vs. Machine — Or Man WITH Machine?
 
 <div>
-  <img src="./article/JohnHenry_RacingAgainst_AI.powered.steam.shovel.png" alt="A floating image" style="width: 300px; height: 200px; float: left; margin-right: 15px; margin-bottom: 10px;">
+  <img src="./JohnHenry_RacingAgainst_AI.powered.steam.shovel.png" alt="A floating image" style="width: 300px; height: 200px; float: left; margin-right: 15px; margin-bottom: 10px;">
 </div>
 
-Man against machine—it can feel like stepping into The Matrix. The system seems stacked against you, scanning, filtering, shutting you out. But here's the twist: the real power comes when you learn to bend the rules from inside—using AI to outmaneuver AI.
+Man against machine—it can feel like stepping into The Matrix. The system seems stacked against you, scanning, filtering, shutting you out. But here’s the twist: the real power comes when you learn to bend the rules from inside—using AI to outmaneuver AI.
 
 Because today, it's not just recruiters you need to impress. Your first opponent is often an ATS (Applicant Tracking System)—a digital firewall that scans resumes and filters out up to 88% of applicants before a human ever sees them. That's exactly where I KEPT GETTING stuck—until I flipped the script. I stopped seeing AI as the gatekeeper and started using it as my amplifier—building targeted resumes and cover letters that finally broke through.
 
@@ -121,7 +18,7 @@ Because today, it's not just recruiters you need to impress. Your first opponent
 ## "Spear Resuming": The Targeted Approach
 
 <div>
-  <img src="./article/SpearResume.png" alt="A floating image" style="width: 150px; height: 200px; float: right; margin-right: 15px; margin-bottom: 10px;">
+  <img src="./SpearResume.png" alt="A floating image" style="width: 150px; height: 200px; float: right; margin-right: 15px; margin-bottom: 10px;">
 </div>
 
 Most resumes are spam: generic, bloated, and destined for the discard pile. But what if you could *spear resume* instead? Precision-targeted applications that read like they were written for one job and one job only.
@@ -131,29 +28,29 @@ That's what I built: a system that takes structured work experience data, fuses 
 
 ## The Problem: Career Documentation Chaos
 
-For years, every job application felt like chaos. I'd dig through old resumes, trying to recall quantified results, patch together phrasing, and end up with inconsistent, stitched-together documents.
+For years, every job application felt like chaos. I’d dig through old resumes, trying to recall quantified results, patch together phrasing, and end up with inconsistent, stitched-together documents.
 
 Like many engineers, I had decades of rich experience—autonomous vehicles, manufacturing automation, AI, international collaboration—but it was scattered across Word docs, LinkedIn snippets, and fading memories.
 
-The result? Generic applications that IMPRESSED neither ATS systems nor recruiters. Worse, I was underselling myself. My resumes often failed to show how I contributed or what measurable impact I delivered. Saying "I worked on Project X" wasn't enough. Without context and quantified results, it read like filler, not proof. Breaking experiences into Hook, Context, Process, and Proof later made these weaknesses abundantly clear—and showed me exactly which experiences were too weak to include without more work, and which were strong enough to anchor a resume.
+The result? Generic applications that IMPRESSED neither ATS systems nor recruiters. Worse, I was underselling myself. My resumes often failed to show how I contributed or what measurable impact I delivered. Saying “I worked on Project X” wasn’t enough. Without context and quantified results, it read like filler, not proof. Breaking experiences into Hook, Context, Process, and Proof later made these weaknesses abundantly clear—and showed me exactly which experiences were too weak to include without more work, and which were strong enough to anchor a resume.
 
-That weakness carried into interviews too. I would jump straight into solutions without setting the stage—missing the chance to tell a compelling story of challenge, action, and outcome. And that's the bigger picture: the problem isn't just getting a positive reply in your inbox. The real test is the interview room, where you need powerful, structured stories that demonstrate your value. This framework supports that.
+That weakness carried into interviews too. I would jump straight into solutions without setting the stage—missing the chance to tell a compelling story of challenge, action, and outcome. And that’s the bigger picture: the problem isn’t just getting a positive reply in your inbox. The real test is the interview room, where you need powerful, structured stories that demonstrate your value. This framework supports that.
 
-I tried off-the-shelf resume tools, but they felt shallow—expensive, generic, and incomplete. If AI was already powering those systems, why couldn't I build my own version to handle resume customization, cover letter generation, and even interview prep?
+I tried off-the-shelf resume tools, but they felt shallow—expensive, generic, and incomplete. If AI was already powering those systems, why couldn’t I build my own version to handle resume customization, cover letter generation, and even interview prep?
 
 ---
 
 ## The Insight: Work Experience as a Story Framework
 
 <div>
-  <img src="./article/4xTIER.png" alt="A floating image" style="width: 270px; height: 200px; float: left; margin-right: 15px; margin-bottom: 10px;">
+  <img src="./4xTIER.png" alt="A floating image" style="width: 270px; height: 200px; float: left; margin-right: 15px; margin-bottom: 10px;">
 </div>
 
-I realized I needed to begin with the end in mind. The goal wasn't just another cover letter — it was a story powerful enough to carry me through an ATS filter and resonate with a hiring manager.
+I realized I needed to begin with the end in mind. The goal wasn’t just another cover letter — it was a story powerful enough to carry me through an ATS filter and resonate with a hiring manager.
 
 That shift changed everything. Instead of juggling a cache of slightly different resumes for different jobs, I stepped back and looked at the bigger picture. I needed a story framework for my work history — a structured way to translate raw experience into compelling, reusable building blocks.
 
-Here's the truth: AI can't help you if you don't give it quality input. It's the classic garbage in, garbage out problem. To get real results, I had to supply clear, well-structured data — not a mess of ad-hoc edits.
+Here’s the truth: AI can’t help you if you don’t give it quality input. It’s the classic garbage in, garbage out problem. To get real results, I had to supply clear, well-structured data — not a mess of ad-hoc edits.
 
 So I extracted my qualifications and broke them down into a database of experiences. Each one became a self-contained, well-defined qualification I could pull from. And to make those experiences powerful, I built them around four tiers:
 
@@ -187,7 +84,7 @@ This isn't just about beating ATS—it's about engineering your professional sto
 * **Length**: One sentence, <30 words.
 * **Impact**: High-level business outcome (revenue, market leadership, team scale) — not technical metrics.
 * **Example**: **Led as Technical Lead** MLCC platform generating \$30M+ sales while managing 25-engineer team through market leadership achievement \[4].
-* **Note**: The hook can sometimes look redundant—but it's intentional. Your most powerful hook, when aligned with the job you're applying for, is often the first thing you highlight in a cover letter. Leading with it gives you narrative control: it sets the frame for how the recruiter or hiring manager understands the rest of your story.
+* **Note**: The hook can sometimes look redundant—but it’s intentional. Your most powerful hook, when aligned with the job you’re applying for, is often the first thing you highlight in a cover letter. Leading with it gives you narrative control: it sets the frame for how the recruiter or hiring manager understands the rest of your story.
 
 ### 2) SITUATION TASK – Why this mattered / what made it challenging
 
@@ -199,7 +96,7 @@ This isn't just about beating ATS—it's about engineering your professional sto
 
 ### 3) ACTION DESCRIPTION – Your specific contributions and methods
 
-* **Purpose**: The "how" — what you specifically did.
+* **Purpose**: The “how” — what you specifically did.
 * **Content**: Storytelling style with role integrated. Methods, processes, leadership, and technical actions.
 * **Format**: **\[Role Context] + Verbs + Actions**.
 * **Role Integration**: Weave role throughout — "As Lead Architect, designed...", "Managing team, implemented...", "Working as Senior Engineer, developed..."
@@ -231,7 +128,7 @@ This isn't just about beating ATS—it's about engineering your professional sto
 * Each field should add NEW information
 * **narrative\_hook gets the #1 business impact** (revenue, team size, market position)
 * **quantified\_results gets all other metrics** (technical performance, certifications, additional outcomes)
-* If \$30M revenue is in narrative\_hook, don't repeat it in quantified\_results
+* If \$30M revenue is in narrative\_hook, don’t repeat it in quantified\_results
 
 
 
@@ -241,7 +138,7 @@ The solution was obvious in hindsight: **treat experience like data.** One livin
 
 I kept it simple: a YAML file containing a **list** of experiences in a consistent format:
 
-```yaml
+```
 experience_id: EXP_XXX # Unique identifier (e.g., EXP_001)
 category: [Category Name] # One of: Industry Experience, Core Programming Languages, etc.
 primary_skill: [Main Skill] # Primary skill/capability demonstrated
@@ -267,7 +164,7 @@ tech_stack: [Tools/Frameworks]
 
 **1. Experience Database** (`work_experience.yaml`)
 
-* 28+ structured entries
+* 32+ structured entries
 * Quantified results, skills, adaptability ratings
 * Keywords and tech stacks for ATS and recruiter alignment
 
@@ -332,7 +229,7 @@ tech_stack: [Tools/Frameworks]
 * *Targeting*: Keyword emphasis for each role
 
 **3. Use AI as filter, not fabricator**
-AI doesn't invent your story—it curates and emphasizes what matters.
+AI doesn’t invent your story—it curates and emphasizes what matters.
 
 ---
 
@@ -343,10 +240,10 @@ AI doesn't invent your story—it curates and emphasizes what matters.
 write_cover_letter --job_file=job_desc/Company_Role.md
 
 # Create a role-specific resume
-write_resume --target_role="Senior AI Engineer" --format=technical --emphasis=ai
+write_resume --target_role="Senior AI Engineer" --format=ats
 
-# Review and improve experience database quality
-review_experience --check-redundancy --suggest-improvements
+# Analyze fit and gaps
+analyze_fit --job_file=job_desc/Company_Role.md
 ```
 
 **Evolution**
@@ -368,7 +265,7 @@ review_experience --check-redundancy --suggest-improvements
 * Git versioning of career progression
 * Open-source iteration
 
-**What Doesn't**
+**What Doesn’t**
 
 * Over-engineering schemas
 * Generic content
@@ -386,7 +283,7 @@ We already version control code, track deployments, automate testing. Why not ap
 * Quality metrics & gap analysis
 * Continuous integration of new skills
 
-This isn't just about beating ATS—it's about engineering your professional story.
+This isn’t just about beating ATS—it’s about engineering your professional story.
 
 ---
 
@@ -404,6 +301,8 @@ Even better: structuring my experiences surfaced growth patterns I never noticed
 ---
 
 ## Open Source and Next Steps
+
+The system is open here: [AI Cover Letter & Resume Generator](https://github.com/unbedded/ai_coverletter)
 
 **Highlights**
 
@@ -436,11 +335,11 @@ The act of structuring your experience is **as valuable as the documents themsel
 4. Automate step by step
 5. Version control everything
 
-You're not just writing resumes. You're engineering a system that adapts to the AI age.
+You’re not just writing resumes. You’re engineering a system that adapts to the AI age.
 
 ---
 
-*How are you navigating the AI disruption in hiring? Have you tried structuring your experiences? I'd love to hear in the comments.*
+*How are you navigating the AI disruption in hiring? Have you tried structuring your experiences? I’d love to hear in the comments.*
 
 ---
 
@@ -449,13 +348,4 @@ You're not just writing resumes. You're engineering a system that adapts to the 
 ---
 
 **About the Author**
-
 Spencer Barrett is a systems engineer with 20+ years in robotics, AI-accelerated development, and international collaboration. He believes the future of career success lies in learning to leverage machines—not fight them.
-
----
-
-## 📋 Version Information
-
-Current Version: **1.0.0**
-
-This project follows [Semantic Versioning](https://semver.org/) with [PEP 440](https://peps.python.org/pep-0440/) pre-release tags. See [CHANGELOG.md](CHANGELOG.md) for detailed release notes.

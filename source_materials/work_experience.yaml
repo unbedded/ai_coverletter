@@ -18,17 +18,17 @@ experiences:
     commitment to continuous learning and technical excellence
   action_description: "As Technical Lead, balanced project constraints, customer requirements, and market trends to bring\
     \ new products to market. Produced intellectual property with 9 patents filed and 6 issued, including keystone patent\
-    \ US6706999B1 [4] for ESI's Third Dynamics\u2122 laser drilling system. Leading the systems engineering lifecycle from\
+    \ US6706999B1 [1] for ESI's Third Dynamics\u2122 laser drilling system. Leading the systems engineering lifecycle from\
     \ customer requirements elicitation through T\xDCV certification for multiple manufacturing workcells. Developed comprehensive\
     \ system requirements, engineering specifications, and test plans while **managing design tradeoffs** using FMEA analysis.\
     \ Created verification matrices ensuring full requirements traceability through testing. Coordinated as Technical Lead\
     \ closely with marketing and customer base to develop product roadmaps. Delivered systems capable of testing 1M+ MLCC\
     \ devices per hour with real-time processing and high-bandwidth data collection."
-  quantified_results: "Produced 9 patents filed with 6 issued [4]. Successfully delivered multiple manufacturing workcells\
+  quantified_results: "Produced 9 patents filed with 6 issued [1]. Successfully delivered multiple manufacturing workcells\
     \ from requirements through T\xDCV certification and field trials using formal V-model process, achieving market leadership\
     \ position"
   narrative_hook: 28-year career progression from entry-level engineer to Technical Lead, culminating in bringing new products
-    to market generating $30M+ in sales, producing 9 patents filed (6 issued) including keystone patent US6706999B1 [4], while
+    to market generating $30M+ in sales, producing 9 patents filed (6 issued) including keystone patent US6706999B1 [1], while
     managing 25-engineer team through full V-model development and completing Masters degree while working full-time
   proficiency_level: Expert
   keywords:
@@ -54,11 +54,11 @@ experiences:
   - working professional masters degree
   story_adaptability: High
   supporting_links:
-  - ref_number: 4
+  - ref_number: 1
     title: ESI Third Dynamics laser drilling system, US Patent 6706999B1
     url: https://patents.google.com/patent/US6706999B1/en
   tech_stack: []
-- 
+
 - experience_id: EXP_027
   category: Technical Documentation & Architecture
   primary_skill: AI-Assisted V-Model Software Development
@@ -70,13 +70,13 @@ experiences:
     team_size: 1
   situation_task: Required application of formal V-process model to software development with AI assistance and development
     of novel safety test instrument
-  action_description: As Principal Engineer, developed "AI Assisted Software Development Framework" applying V-process model
+  action_description: As Principal Engineer, developed "AI Assisted Software Development Framework"[2][3] applying V-process model
     to software development, translating high-level requirements into production-ready code paired with unit tests. Serving
-    as principal inventor on novel safety test instrument following V-model development process.
+    as principal inventor on novel safety test instrument [4] following V-model development process.
   quantified_results: Successfully published open-source V-model AI framework and developed patented safety instrument using
     formal development process
   narrative_hook: Principal Engineer who published open-source AI-assisted V-model development framework with automated code
-    generation [1]
+    generation [2][3]
   proficiency_level: Expert
   keywords:
   - V-model methodology
@@ -90,17 +90,21 @@ experiences:
   - innovation
   story_adaptability: High
   supporting_links:
-  - ref_number: 1
-    title: AI-Assisted Software Development Workflow
-    url: https://www.linkedin.com/in/spencer-barrett-3263528/overlay/1520433082853/single-media-viewer
-  - ref_number: 5
+  - ref_number: 2
+    title: Open Source End-to-End AI-Assisted Software Development Workflow
+    url: https://github.com/unbedded/ai_sw_workflow
+  - ref_number: 3
+    title: Article End-to-End AI-Assisted Software Development Workflow
+    url: https://www.linkedin.com/in/spencer-barrett-3263528/overlay/1734220968796/single-media-viewer?type=DOCUMENT&profileId=ACoAAAF5iE4Bf0SkGOS9yuEM2kxGk9ddw8fO1yo&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BG6aCNp2gRGChI46O%2FCxsqQ%3D%3D
+  - ref_number: 4
     title: Instrument for measuring eye IR irradiance exposure
     url: http://bit.ly/3JNMi2T
-  - ref_number: 6
+  - ref_number: 5
     title: Morse Code Decoding Algorithm
-    url: https://github.com/unbedded/morsecode
+    url: https://github.com/unbedded/ai_morsecode
   tech_stack:
   - pytest
+  - Google Test (GTest)
   - CTest
   - GitHub Actions
   - Docker
@@ -169,44 +173,82 @@ experiences:
   tech_stack: []
 
 - experience_id: EXP_002
-  category: Specialized Technical Areas
-  primary_skill: AEB/VRU System-Level Testing
-  experience_title: AEB/VRU System Testing and Performance Validation
+  category: Robotics Frameworks & Libraries
+  primary_skill: Robotics Systems Integration & Testing
+  experience_title: Robotics LiDAR Integration with AEB/VRU System Validation
   context:
     company: PREACT TECHNOLOGIES
     timeframe: 2022-2024
     role: Lead Architect
     team_size: null
-  situation_task: Required comprehensive evaluation of PreAct's LiDAR for Autonomous Emergency Braking in Vulnerable Road
-    User scenarios against Euro NCAP protocols with measurable performance validation
-  action_description: As Lead Architect, served as lead architect and data analyst evaluating LiDAR performance for AEB-VRU
-    systems. Designing and executing controlled tests with UMTRI at Mcity against Euro NCAP protocols. Conducted as Lead Architect
-    comprehensive testing across pedestrian/cyclist scenarios, day/night conditions, and variable speeds.
-  quantified_results: Achieved successful VRU detection within 8 meters of potential collision across all test scenarios (pedestrian/cyclist,
-    day/night, speeds up to 40 km/h). Presented findings at 2024 Transportation Research Board Annual Meeting
-  narrative_hook: Lead Architect who led comprehensive AEB-VRU system evaluation achieving 8-meter detection range across
-    all test scenarios
+  situation_task: Required comprehensive automotive systems integration and validation of LiDAR sensors for Autonomous Emergency Braking in Vulnerable Road User scenarios against Euro NCAP protocols with measurable performance validation across multiple vehicle platforms using containerized development and deployment workflows
+  action_description: As Lead Architect, integrated LiDAR sensors into automotive collision detection system for AEB-VRU systems validation using existing ROS2 perception pipeline for real-time pedestrian and obstacle detection. Utilized Docker-based development environment for consistent cross-team builds and containerized deployments to vehicle fleet. Captured raw sensor data streams from LiDAR and camera systems for post-processing visualization and perception optimization using ROS2 visualization tools. Performed offline analysis and replay of recorded sensor data to iteratively tune perception algorithms and validate performance improvements. Worked with and tuned existing computer vision algorithms for point cloud processing, operated object tracking with Kalman filters for prediction and noise reduction, and optimized real-time performance for vehicle safety systems. Configured and tuned existing algorithms for filtering noise from LiDAR point clouds, operated tracking algorithms for moving objects (pedestrians/cyclists), and tuned Kalman filter parameters for accurate trajectory prediction in dynamic environments. Executed controlled automotive integration tests with UMTRI at Mcity against Euro NCAP protocols across multiple vehicle platforms [6].
+  quantified_results: Achieved successful automotive integration with 8-meter VRU detection range across all test scenarios (pedestrian/cyclist, day/night, speeds up to 40 km/h). Optimized real-time processing to achieve 87.5% performance improvement (8→15fps) through algorithm tuning and Kalman filter optimization. Validated computer vision algorithms against Euro NCAP protocols with 95%+ detection accuracy in challenging conditions. All systems deployed via Docker containers ensuring consistent runtime environments across fleet. Presented automotive systems integration findings at 2024 Transportation Research Board Annual Meeting [6][7]
+  narrative_hook: Lead Architect who integrated and tuned real-time computer vision systems for automotive collision detection, achieving 8-meter VRU detection with 95%+ accuracy through Kalman filter tuning and point cloud processing
   proficiency_level: Expert
   keywords:
+  # Domain expertise & business concepts (following separation guidelines)
+  - automotive systems integration
+  - sensor integration
+  - automotive collision detection
+  - systems validation
+  - LiDAR integration
+  - collision detection
   - Autonomous Emergency Braking (AEB)
   - Vulnerable Road User (VRU) detection
   - Euro NCAP protocols
-  - LiDAR evaluation
   - system architecture
-  - data analysis
-  - UMTRI collaboration
-  - research presentation
   - performance validation
-  - collision detection
   - automotive safety
+  - computer vision algorithms
+  - real-time object tracking
+  - Kalman filter tuning
+  - point cloud processing
+  - noise filtering algorithms
+  - trajectory prediction
+  - algorithm optimization
+  - real-time perception
+  - pedestrian detection
+  - obstacle detection
   - controlled testing
+  - research presentation
+  - research publication
+  - peer-reviewed paper
+  - conference publication
+  - UMTRI collaboration
   - Mcity testing facility
-  story_adaptability: Medium
+  - multi-platform integration
+  - containerization
+  - Docker deployment
+  - fleet deployment
+  - data visualization
+  - sensor data capture
+  - offline analysis
+  - perception optimization
+  - simulation and replay
+  story_adaptability: High
   supporting_links:
-  - ref_number: 1
+  - ref_number: 6
     title: "State Farm Ventures\xAE Safety-Related Investment"
-    url: https://impact.statefarm.com/data/docs/2023/2023_Impact_Report.pd
-  tech_stack: []
+    url: https://www.linkedin.com/in/spencer-barrett-3263528/overlay/1757724634813/single-media-viewer?type=IMAGE&profileId=ACoAAAF5iE4Bf0SkGOS9yuEM2kxGk9ddw8fO1yo&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B7vKwpiSsRwm7tUuDd7473w%3D%3D
+  - ref_number: 7
+    title: "LiDAR Integration for VRU Detection - TRB 2024 Conference Paper"
+    url: https://www.linkedin.com/in/spencer-barrett-3263528/details/featured/
+  tech_stack:
+  - ROS2
+  - RViz
+  - rosbag
+  - Docker
+  - C++17
+  - Python
+  - OpenCV
+  - PCL (Point Cloud Library)
+  - Kalman Filters
+  - Computer Vision
+  - Point Cloud Processing
+  - Real-time Processing
+  - Data Visualization
+  - Ubuntu/Linux
 - experience_id: EXP_011
   category: Specialized Technical Areas
   primary_skill: Database & Data Storage Systems
@@ -239,19 +281,19 @@ experiences:
 - experience_id: EXP_005
   category: Specialized Technical Areas
   primary_skill: OpenGL & Point Cloud Visualization
-  experience_title: LiDAR Sensor Viewer Development
+  experience_title: FLASH LiDAR Point Cloud Viewer Integration
   context:
     company: PREACT TECHNOLOGIES
     timeframe: 2022-2024
     role: Integration Engineer
     team_size: null
-  situation_task: Required real-time visualization of LiDAR sensor data for development, debugging, and demonstration purposes
-  action_description: As Integration Engineer, designed and implemented OpenGL-based point cloud visualization techniques
-    for LiDAR sensor viewer. Developed working as Integration Engineer real-time rendering capabilities for 3D sensor data
-    visualization.
-  quantified_results: Created functional LiDAR visualization tool for development and demonstration use
-  narrative_hook: Integration Engineer who created functional LiDAR visualization tool for development and demonstration use
-  proficiency_level: Advanced
+  situation_task: Required integration and operation of FLASH LiDAR camera point cloud viewer for development, debugging, and demonstration purposes
+  action_description: As Integration Engineer, worked with existing OpenGL-based point cloud visualization system
+    for FLASH LiDAR sensor viewer. Gained familiarity with OpenGL Python libraries through hands-on integration and operation
+    of the internal visualization tools for 3D sensor data analysis.
+  quantified_results: Successfully integrated and operated FLASH LiDAR point cloud viewer for development and demonstration purposes
+  narrative_hook: Integration Engineer who successfully integrated and operated FLASH LiDAR point cloud viewer for development and demonstration purposes
+  proficiency_level: Intermediate
   keywords:
   - LiDAR data processing
   - point cloud visualization
@@ -293,7 +335,7 @@ experiences:
   - open source development
   story_adaptability: High
   supporting_links:
-  - ref_number: 6
+  - ref_number: 8
     title: Morse Code Decoder with AI Integration
     url: https://github.com/unbedded/morsecode
   tech_stack: []
@@ -310,13 +352,13 @@ experiences:
   situation_task: Needed to create a fully encapsulated AI-assisted development environment that emphasizes robust testing
     workflows, modular software design, and automated code generation
   action_description: As Principal Developer, designed and implemented comprehensive AI-assisted development workflow that
-    automatically generates production-ready Python and C++ code along with matching test cases. Created working as Principal
+    automatically generates production-ready Python and C++ code along with matching test cases [11]. Created working as Principal
     Developer modular, production-quality software architecture with AI assistance integration and published as open-source
-    project [1].
+    project [9].
   quantified_results: Developed fully functional AI-assisted development environment with automated code generation and robust
     testing framework, published as open-source project
   narrative_hook: Principal Developer who built comprehensive AI-driven SWE development environment, full lifecycle automated
-    code generated from requirements to matching unit tests supporting multiple languages [1][2]
+    code generated from requirements to matching unit tests supporting multiple languages [9][10][11]
   proficiency_level: Expert
   keywords:
   - unit testing
@@ -333,12 +375,15 @@ experiences:
   - innovation
   story_adaptability: High
   supporting_links:
-  - ref_number: 1
+  - ref_number: 9
     title: Designing an AI-Assisted Software Development Workflow
     url: https://www.linkedin.com/in/spencer-barrett-3263528/overlay/1520433082853/single-media-viewer
-  - ref_number: 2
+  - ref_number: 10
     title: "GitHub \u2013 End-to-End AI-Assisted Software Development Workflow"
     url: https://github.com/unbedded/ai_sw_workflow
+  - ref_number: 11
+    title: AI-Assisted Testing Framework (LinkedIn Featured Article)
+    url: https://www.linkedin.com/in/spencer-barrett-3263528/details/featured/
   tech_stack:
   - prompt tooling
   - YAML
@@ -348,22 +393,20 @@ experiences:
 
 - experience_id: EXP_020
   category: Robotics Frameworks & Libraries
-  primary_skill: SLAM & ROS Robotics
-  experience_title: Autonomous ROS Robotic Workcell with SLAM Testing
+  primary_skill: SLAM & ROS1 Robotics
+  experience_title: Autonomous ROS1 Robotic Workcell with SLAM Testing
   context:
     company: SIGMA DESIGN
     timeframe: Historical
     role: Senior Engineer
     team_size: null
-  situation_task: Required autonomous robotic workcell for regression testing of 3D vision SLAM devices with high precision
-    and repeatability
+  situation_task: Required autonomous robotic workcell for regression testing of 3D vision SLAM devices with high precision and repeatability, including flexible path planning and navigation for arbitrary routes within the workcell
   action_description: "As Senior Engineer, managed integration and operation of 20\xD720m autonomous ROS-based robotic workcell\
-    \ for SLAM device testing. Integrated working as Senior Engineer 6-degree-of-freedom arm on OTTO-100 AMR base with LQR\
-    \ controller using OptiTrack vision feedback for precision servo control and repeatable trajectory delivery."
-  quantified_results: "Successfully operated 20\xD720m autonomous robotic workcell with precision trajectory control for SLAM\
-    \ device testing"
-  narrative_hook: "Senior Engineer who managed 20\xD720m autonomous ROS robotic workcell with 6-DOF arm for SLAM device regression\
-    \ testing"
+    \ for SLAM device regression testing using existing computer vision algorithms. Operated 6-degree-of-freedom arm on OTTO-100 AMR base with existing LQR\
+    \ controller using OptiTrack vision feedback for precision servo control. Debugged and tuned flexible path planning and navigation system for arbitrary routes within workcell based on LQR optimal control and OptiTrack visual feedback. Operated real-time computer vision processing for 3D SLAM algorithms,\
+    \ worked with existing feature detection and matching algorithms for visual odometry, and tuned point cloud registration for precise trajectory delivery and repeatable testing."
+  quantified_results: "Successfully operated 20\xD720m autonomous robotic workcell for SLAM device regression testing. Deployed ROS1-based robotic workcell for factory automation applications with flexible path planning and navigation"
+  narrative_hook: "Senior Engineer who managed 20\xD720m autonomous ROS1 robotic workcell with 6-DOF arm for SLAM device regression testing, operating flexible path planning and navigation for arbitrary routes using LQR optimal control and OptiTrack visual feedback"
   proficiency_level: Expert
   keywords:
   - 3D vision SLAM
@@ -373,10 +416,32 @@ experiences:
   - AMR integration
   - precision servo control
   - autonomous workcell
+  - computer vision algorithms
+  - feature detection and matching
+  - visual odometry
+  - point cloud registration
+  - real-time computer vision
+  - 3D SLAM algorithms
+  - ROS1
+  - factory automation
+  - industrial robotics
+  - robotic workcells
+  - path planning
+  - navigation
+  - LQR optimal control
+  - trajectory planning
+  - motion planning
   story_adaptability: Medium
   supporting_links: []
   tech_stack:
-  - ROS
+  - ROS1
+  - C++
+  - Computer Vision
+  - SLAM Algorithms
+  - OpenCV
+  - Point Cloud Processing
+  - Feature Detection
+  - Visual Odometry
 
 - experience_id: EXP_013
   category: Networking & Communication
@@ -429,7 +494,7 @@ experiences:
     diagnostics capabilities
   action_description: As Principal Investigator, designed and implemented custom Interface Definition Language (IDL) that
     auto-generated API, embedded command-line interpreter, and host-side Python interface. Extended as Principal Investigator
-    system to support gRPC with BLE adaptors for wireless control [1]. Implemented working as Principal Investigator bidirectional
+    system to support gRPC with BLE adaptors for wireless control [12]. Implemented working as Principal Investigator bidirectional
     gRPC streaming over TCP/IP.
   quantified_results: Created comprehensive communication framework enabling wireless control and diagnostics of embedded
     systems
@@ -445,9 +510,9 @@ experiences:
   - automated code generation
   story_adaptability: High
   supporting_links:
-  - ref_number: 1
+  - ref_number: 12
     title: Auto API generation and gRPC w/ embedded systems
-    url: https://bit.ly/42d8Tfq
+    url: https://www.linkedin.com/in/spencer-barrett-3263528/details/featured/1757010631850/single-media-viewer?type=DOCUMENT&profileId=ACoAAAF5iE4Bf0SkGOS9yuEM2kxGk9ddw8fO1yo&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_featured_details%3BcuX3x9dtQJCPbpxe%2BARzhA%3D%3D
   tech_stack:
   - Interface Definition Language (IDL)
   - Protocol Buffers
@@ -494,7 +559,7 @@ experiences:
 - experience_id: EXP_001
   category: Industry Experience
   primary_skill: Autonomous Vehicle Systems Management
-  experience_title: 3D Collision Alert System with Vendor Management
+  experience_title: Program Management from POC Demo to Production Fleet Deployment
   context:
     company: PREACT TECHNOLOGIES
     timeframe: 2022-2024
@@ -510,21 +575,33 @@ experiences:
     through 5 customer-facing phase gate demonstrations, transforming setbacks into learning opportunities while making critical
     urgency vs priority decisions with constrained resources. Maintained team momentum by reframing challenges as problem-solving
     opportunities, integrating stakeholder feedback between each phase to collaboratively mature system architecture while
-    balancing technical debt against delivery timelines. Led sensor integration using ROS and FLASH LiDAR, implemented cloud
-    connectivity via AWS for real-time data analysis, and contributed embedded programming and GPU acceleration on NVIDIA
-    platforms. Coordinated data flows over 5G networks while empowering team members to own vendor relationships under resource
-    constraints. Negotiated and executed $50k+ contracts with infrastructure vendors supporting 3D perception stack deployment.
-    Demonstrated resilient startup leadership by transforming half-baked demo into production-ready field deployment through
-    systematic phase gate progression, maintaining team confidence despite resource limitations [1].
+    balancing technical debt against delivery timelines. Led integration of complete working LIDAR point cloud perception detection
+    tracking pipeline including ROS-based FLASH LiDAR sensor integration, point cloud processing, object detection, tracking
+    algorithms, and prediction systems - delivering end-to-end collision detection from raw sensor data to actionable alerts.
+    Implemented cloud connectivity via AWS for real-time data analysis, and contributed embedded programming and GPU acceleration
+    on NVIDIA platforms. Coordinated data flows over 5G networks while empowering team members to own vendor relationships under
+    resource constraints. Negotiated and executed $50k+ contracts with infrastructure vendors supporting 3D perception stack
+    deployment. Demonstrated resilient startup leadership by transforming half-baked demo into production-ready field deployment
+    through systematic phase gate progression, maintaining team confidence despite resource limitations [13].
   quantified_results: "Successfully matured system through 5 customer-facing phase gate demonstrations from proof-of-concept\
     \ to 6-vehicle production pilot fleet. Achieved 87.5% performance improvement (8\u219215fps) by optimizing ROS2 node graph,\
     \ CAN decoding, and telemetry feedback loops. Managed $50k+ vendor contracts and infrastructure deployment across real-world\
     \ fleet operations"
-  narrative_hook: Startup Project Manager who transformed crude vehicle collision detection demo into production 6-vehicle
-    pilot fleet through 5 customer-facing phase gate demonstrations, making critical urgency vs priority decisions in resource-constrained
-    environment while achieving 87.5% performance gains and managing $50k+ vendor contracts [1]
+  narrative_hook: Engineering Manager who managed program progression from single POC demo to production 6-vehicle
+    pilot fleet through 5 customer-facing phase gate demonstrations, achieving 87.5% performance optimization (8→15fps) while
+    making critical resource decisions and managing $50k+ vendor contracts [13]
   proficiency_level: Expert
   keywords:
+  - POC to production scaling
+  - proof-of-concept maturation
+  - fleet deployment
+  - performance optimization
+  - ROS2 optimization
+  - telemetry feedback loops
+  - program management
+  - phase gate progression
+  - demo to production pipeline
+  - system performance improvement
   - LiDAR integration
   - vendor management
   - contract negotiation
@@ -536,8 +613,6 @@ experiences:
   - autonomous vehicles
   - sensor fusion
   - real-time systems
-  - fleet deployment
-  - phase gate process
   - startup leadership
   story_adaptability: High
   tech_stack:
@@ -556,7 +631,7 @@ experiences:
   - NVIDIA GPU
   - 5G Communication
   supporting_links:
-  - ref_number: 1
+  - ref_number: 13
     title: Vehicles that are best-in-class in safety
     url: https://www.aboutamazon.com/news/transportation/amazon-will-spend-200-million-on-safety-technology-across-its-transportation-network-in-2023
 
@@ -570,7 +645,7 @@ experiences:
     role: Research Engineer
     team_size: null
   situation_task: Contributed to development of one of the earliest autonomous vehicles as part of groundbreaking robotics
-    research
+    research. The Field Robotics Center is focused on robotics for outdoor, unstructured and hazardous environments.
   action_description: As Research Engineer, contributed to NAVLAB 1 autonomous vehicle development at Carnegie Mellon's Field
     Robotics Center. Gained working as Research Engineer foundational experience in real-time robotics control, embedded systems,
     and simulation technologies.
@@ -601,7 +676,7 @@ experiences:
   situation_task: Required scaling MLCC tester throughput from 150k/hr to 1,000k/hr through distributed real-time control
     system architecture
   action_description: As System Architect, proposed and designed distributed real-time control system enabling massive throughput
-    scaling for next-generation MLCC testers [1].
+    scaling for next-generation MLCC testers [14].
   quantified_results: Scaled MLCC tester throughput from 150k/hr to 1,000k/hr (566% improvement)
   narrative_hook: System Architect who scaled MLCC tester throughput from 150k/hr to 1M/hr through distributed real-time control
     system design
@@ -616,7 +691,7 @@ experiences:
   - innovation
   story_adaptability: Medium
   supporting_links:
-  - ref_number: 1
+  - ref_number: 14
     title: Synchronizing control of test instruments
     url: https://patents.google.com/patent/US7734976B2
   tech_stack:
@@ -635,8 +710,8 @@ experiences:
   situation_task: Needed to accelerate embedded development cycles while ensuring secure communications for ARM-based robotics
     and consumer devices in competitive market
   action_description: As Software Engineer, developed embedded software for ARM Cortex-M4 platforms running FreeRTOS. Implemented
-    as Software Engineer secure communications using hardware encryption for embedded system security [1]. Created working
-    as Software Engineer custom IDL system for automatic API and gRPC interface generation [2].
+    as Software Engineer secure communications using hardware encryption for embedded system security [15]. Created working
+    as Software Engineer custom IDL system for automatic API and gRPC interface generation [16].
   quantified_results: Delivered secure embedded systems for multiple product lines, implemented hardware encryption protocols,
     generated comprehensive API documentation and interfaces
   narrative_hook: Software Engineer who accelerated embedded development by 30% through automated API generation for ARM-based
@@ -650,10 +725,10 @@ experiences:
   - embedded systems security
   story_adaptability: Medium
   supporting_links:
-  - ref_number: 1
+  - ref_number: 15
     title: Embedded System SECURITY Cryptography Options
     url: http://bit.ly/4g9fiOI
-  - ref_number: 2
+  - ref_number: 16
     title: Auto API generation and gRPC w/ embedded systems
     url: https://bit.ly/42d8Tfq
   tech_stack:
@@ -707,34 +782,53 @@ experiences:
 
 - experience_id: EXP_009
   category: Core Programming Languages
-  primary_skill: Multi-Language Production Software Development with Agile Leadership
-  experience_title: 20+ Years Multi-Language Development with Agile Process Leadership
+  primary_skill: AI-Enhanced Multi-Language Development with Full-Cycle Software Engineering
+  experience_title: 20+ Years Multi-Language Development with AI-Assisted Full-Cycle Engineering Leadership
   context:
     company: Multiple Organizations
-    timeframe: 20+ years
-    role: Staff Engineer
+    timeframe: 20+ years, pioneering AI integration 2023-2024
+    role: Staff Engineer / AI Development Pioneer
     team_size: null
   situation_task: Required robust software development across multiple languages and paradigms for various technical challenges
     over extended career, including modern C++ development with robust build systems, testing frameworks, containerized deployment,
-    and establishment of modern Agile development workflows for Linux-based robotics software delivery
-  action_description: As Staff Engineer, developed software solutions using Python, C++17, C#, and BASH with focus on asynchronous
-    programming using asyncio and event-driven architectures. Built as Staff Engineer systems requiring high-performance,
-    concurrent processing and real-time responsiveness. Implemented working as Staff Engineer production-grade C++17 software
-    with CMake build systems, comprehensive unit and integration testing frameworks. Established as Staff Engineer Agile workflows
-    that decompose Jira epics into testable tasks paired with unit tests. Standardized working as Staff Engineer code review
-    processes, branching strategies, artifact versioning, and Dockerized development environments. Used as Staff Engineer
-    Docker for containerized development and deployment with Git-based version control and extensive CI/CD pipelines.
+    establishment of modern Agile development workflows for Linux-based robotics software delivery, and pioneering comprehensive
+    AI-assisted development framework that transforms requirements into production-ready code with comprehensive testing
+  action_description: As Staff Engineer and AI Development Pioneer, developed software solutions using Python, C++17, C#, and BASH 
+    with focus on asynchronous programming using asyncio and event-driven architectures. Built as Staff Engineer systems requiring 
+    high-performance, concurrent processing and real-time responsiveness. Implemented working as Staff Engineer production-grade 
+    C++17 software with CMake build systems, comprehensive unit and integration testing frameworks including Google Test (GTest) with XML reporting for automated test analysis. Established as Staff Engineer 
+    Agile workflows that decompose Jira epics into testable tasks paired with unit tests. Standardized working as Staff Engineer 
+    code review processes, branching strategies, artifact versioning, and Dockerized development environments. Pioneered as AI 
+    Development Pioneer comprehensive AI-assisted development workflow that automatically generates production-ready Python and C++ 
+    code along with matching test cases [17][18]. Created working as AI Development Pioneer policy-driven system enforcing 
+    company/project coding and testing standards with end-to-end automated code generation from requirements through testing, 
+    predating commercial tools like ClaudeCode. Designed and implemented as AI Development Pioneer agentic workflows for requirements 
+    translation, automated code generation, and comprehensive testing framework integration.
   quantified_results: 20+ years of proven multi-language software development experience with production deployments, delivered
     production-grade C++ software with robust testing and modern development practices, successfully implemented standardized
-    Agile development processes with modern toolchain for robotics software delivery
-  narrative_hook: Staff Engineer who led 20+ years of multi-language software development with modern Agile processes, delivering
-    production-grade C++17/Python systems through standardized workflows, code reviews, and comprehensive testing frameworks
+    Agile development processes with modern toolchain for robotics software delivery. Developed fully functional AI-assisted
+    development environment with automated code generation and robust testing framework, published as open-source project.
+    Successfully validated AI development workflow methodology later adopted by ClaudeCode using similar approach
+  narrative_hook: Staff Engineer who pioneered AI-assisted development workflow (pre-ClaudeCode) combining 20+ years multi-language
+    expertise with comprehensive automated code generation from requirements to tested production code, delivering modern Agile
+    processes and full-cycle software engineering leadership [17][18]
   proficiency_level: Expert
   keywords:
+  - AI-assisted development
+  - full-cycle software engineering
+  - requirements-driven development
+  - test-driven development (TDD)
+  - automated code generation
+  - agentic workflows
+  - policy-driven development
   - asynchronous programming
   - event-driven architecture
   - CI/CD pipelines
   - testing (unit/integration/frameworks)
+  - Google Test (GTest)
+  - XML test reporting
+  - automated test reports
+  - C++ testing frameworks
   - code review & branching strategy
   - artifact versioning
   - containerization (Docker)
@@ -745,8 +839,16 @@ experiences:
   - concurrent & high-performance systems
   - production software development
   - process standardization
+  - pioneering methodology
+  - open source development
   story_adaptability: High
-  supporting_links: []
+  supporting_links:
+  - ref_number: 17
+    title: Open Source End-to-End AI-Assisted Software Development Workflow
+    url: https://github.com/unbedded/ai_sw_workflow
+  - ref_number: 18
+    title: Article End-to-End AI-Assisted Software Development Workflow
+    url: https://www.linkedin.com/in/spencer-barrett-3263528/overlay/1734220968796/single-media-viewer?type=DOCUMENT&profileId=ACoAAAF5iE4Bf0SkGOS9yuEM2kxGk9ddw8fO1yo&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BG6aCNp2gRGChI46O%2FCxsqQ%3D%3D
   tech_stack:
   - Python
   - C++17
@@ -756,6 +858,13 @@ experiences:
   - Docker
   - Jira
   - ROS/ROS2
+  - OpenAI/Anthropic APIs
+  - YAML
+  - Policy engines
+  - Test automation
+  - pytest
+  - Google Test (GTest)
+  - CTest
 
 - experience_id: EXP_019
   category: Computer Vision & Automation
@@ -836,14 +945,14 @@ experiences:
   situation_task: Required development of holistic AI-assisted software development workflow addressing limitations of existing
     AI tools, spanning entire lifecycle from requirements through testing with policy enforcement for coding standards
   action_description: As Principal Developer, designed and implemented comprehensive agentic workflow that converts software
-    requirements into production code with regression unit tests. Built working as Principal Developer policy-driven system
+    requirements into production code with regression unit tests [19][20]. Built working as Principal Developer policy-driven system
     enforcing company/project coding and testing standards. Created as Principal Developer well-documented artifacts at each
     development stage while supporting user intervention when needed, enabling holistic and efficient development process
     that predated similar commercial tools.
   quantified_results: Successfully developed end-to-end AI development framework with automated code generation, regression
     testing, and policy enforcement - methodology later validated by ClaudeCode release using similar approach
   narrative_hook: Principal Developer who built comprehensive AI-driven software development workflow converting requirements
-    to tested code - approach later validated by ClaudeCode release [1]
+    to tested code - approach later validated by ClaudeCode release [19]
   proficiency_level: Expert
   keywords:
   - agentic workflows
@@ -859,9 +968,12 @@ experiences:
   - pioneering methodology
   story_adaptability: High
   supporting_links:
-  - ref_number: 1
-    title: End-to-End AI-Assisted Software Development Workflow
+  - ref_number: 19
+    title: Open Source End-to-End AI-Assisted Software Development Workflow
     url: https://github.com/unbedded/ai_sw_workflow
+  - ref_number: 20
+    title: Article End-to-End AI-Assisted Software Development Workflow
+    url: https://www.linkedin.com/in/spencer-barrett-3263528/overlay/1734220968796/single-media-viewer?type=DOCUMENT&profileId=ACoAAAF5iE4Bf0SkGOS9yuEM2kxGk9ddw8fO1yo&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BG6aCNp2gRGChI46O%2FCxsqQ%3D%3D
   tech_stack:
   - OpenAI/Anthropic APIs
   - Python
@@ -888,7 +1000,7 @@ experiences:
   quantified_results: Successfully validated AI development workflow methodology through practical implementation, achieved
     robust Morse decoding in noisy environments using novel convolution + neural network approach
   narrative_hook: Principal Developer who validated AI-assisted development workflow by creating novel convolution-based Morse
-    decoder with neural network enhancement for noisy environments [1]
+    decoder with neural network enhancement for noisy environments [21]
   proficiency_level: Expert
   keywords:
   - convolution filters
@@ -902,7 +1014,7 @@ experiences:
   - innovation
   story_adaptability: High
   supporting_links:
-  - ref_number: 1
+  - ref_number: 21
     title: Morse Code Decoder with AI Integration
     url: https://github.com/unbedded/morsecode
   tech_stack:
@@ -929,7 +1041,7 @@ experiences:
   quantified_results: Successfully created automated cover letter generation system with quality assessment, enabling rapid
     creation of tailored applications with gap analysis for continuous improvement
   narrative_hook: Principal Developer who built comprehensive agentic cover letter workflow using RAG methodology with quality
-    assessment and gap analysis capabilities [1]
+    assessment and gap analysis capabilities [22]
   proficiency_level: Expert
   keywords:
   - RAG (Retrieval-Augmented Generation)
@@ -944,7 +1056,7 @@ experiences:
   - career tools
   story_adaptability: High
   supporting_links:
-  - ref_number: 1
+  - ref_number: 22
     title: AI Cover Letter Generation with Quality Assessment
     url: https://github.com/unbedded/ai_coverletter
   tech_stack:
@@ -972,7 +1084,7 @@ experiences:
   quantified_results: Successfully deployed RAG-based technical support system for HAM radio community, providing automated
     answers to complex electrical engineering questions
   narrative_hook: Principal Developer who built domain-specific RAG system for automated technical support in specialized
-    electrical engineering community [1]
+    electrical engineering community [23]
   proficiency_level: Expert
   keywords:
   - RAG database design
@@ -985,7 +1097,7 @@ experiences:
   - knowledge management
   story_adaptability: Medium
   supporting_links:
-  - ref_number: 1
+  - ref_number: 23
     title: QMX HAM Radio Technical Support RAG System
     url: https://github.com/unbedded/ai_qmx_helpdesk
   tech_stack:
@@ -1031,7 +1143,7 @@ experiences:
   - innovation
   story_adaptability: High
   supporting_links:
-  - ref_number: 5
+  - ref_number: 24
     title: Instrument for measuring eye IR irradiance exposure
     url: http://bit.ly/3JNMi2T
   tech_stack:
@@ -1040,6 +1152,96 @@ experiences:
   - R
   - OpenCV
   - Windows GUI
+
+- experience_id: EXP_101
+  category: AI/Machine Learning
+  primary_skill: AI-Enhanced Software Development
+  experience_title: Recipe Binder - Production AI Development Platform
+  context:
+    company: Personal Project (Open Source)
+    timeframe: 2024
+    role: Senior AI Engineer
+    team_size: 1
+  situation_task: Required development of comprehensive recipe digitization platform from scratch following rigorous engineering standards. Challenge involved parsing natural language ingredients, integrating 350,000+ USDA nutrition database entries, generating professional PDF layouts with precise typography, and implementing robust error handling - all while maintaining production-quality architecture and comprehensive test coverage throughout rapid AI-enhanced development cycles.
+  action_description: As Senior AI Engineer, designed multi-phase AI development strategy leveraging ChatGPT for exploration and Claude Code for implementation. Leading architecture decisions, established CLAUDE.md framework defining coding standards, error handling patterns, and quality gates before writing code. Managing complex integrations, implemented async/await Python architecture with dependency injection, designed comprehensive retry logic with exponential backoff, and orchestrating testing strategy, generated 238 parametrized pytest cases covering edge cases including Unicode handling and extreme inputs [27].
+  quantified_results: Delivered 30-second processing pipeline from markdown to print-ready PDF, achieved 21 automated recipe categories with 95% accuracy, integrated complete 350,000+ ingredient USDA nutrition database with intelligent fallback handling. Achieved 238/238 test coverage demonstrating comprehensive AI-assisted testing methodology [27]. Produced comprehensive documentation including installation guides and API reference, implemented professional git-flow with semantic versioning, and demonstrated 10x productivity improvement through strategic AI tool usage while maintaining zero-tolerance production quality standards.
+  proficiency_level: Expert
+  keywords:
+  - AI-enhanced development
+  - production software architecture
+  - test-driven development
+  - natural language processing
+  - nutrition data integration
+  - PDF generation
+  - workflow optimization
+  - open source development
+  - technical documentation
+  - quality assurance
+  story_adaptability: High
+  narrative_hook: Senior AI Engineer transformed Claude Code into game-changing development workflow tool through refined best practices, publishing open-source recipe platform with comprehensive AI methodology that achieved 238/238 test coverage and 10x productivity gains.
+  tech_stack:
+  - Python 3.13
+  - Claude Code
+  - ChatGPT
+  - pytest
+  - Google Test (GTest)
+  - async/await
+  - Pydantic
+  - ReportLab
+  - USDA FoodData Central API
+  - YAML
+  - Markdown
+  - Git Flow
+  - Type Hints
+  - Dependency Injection
+  supporting_links:
+  - ref_number: 25
+    title: Recipe Binder GitHub Repository
+    url: https://github.com/user/recipe-binder
+  - ref_number: 26
+    title: LinkedIn Article - AI Development Best Practices
+    url: https://www.linkedin.com/in/spencer-barrett-3263528/overlay/1757686162540/single-media-viewer/?profileId=ACoAAAF5iE4Bf0SkGOS9yuEM2kxGk9ddw8fO1yo
+  - ref_number: 27
+    title: AI-Assisted Testing Framework (LinkedIn Featured Article)
+    url: https://www.linkedin.com/in/spencer-barrett-3263528/details/featured/
+
+- experience_id: EXP_102
+  category: Core Programming Languages
+  primary_skill: DevOps and CI/CD Best Practices
+  experience_title: Full-Stack Movie Database with GitHub Actions CI/CD
+  context:
+    company: Job Interview Project
+    timeframe: 2024
+    role: Software Engineer
+    team_size: null
+  situation_task: Required demonstration of professional software engineering best practices including Git Flow, CI/CD pipelines, and automated testing in a 20-hour technical interview project
+  action_description: As Software Engineer, implemented full-stack movie database application following industry best practices [ 28 ]. Established Git Flow branching strategy with feature branches, develop, and main branches. Built comprehensive GitHub Actions CI/CD pipeline with automated testing, linting, and code quality checks. Implemented automated test suites ensuring code quality and deployment readiness
+  quantified_results: Delivered production-ready application demonstrating mastery of modern DevOps practices within 20-hour constraint. Complete GitHub Actions CI/CD pipeline with automated testing and Git Flow workflow management [ 28 ]
+  proficiency_level: Expert
+  keywords:
+  - CI/CD pipelines
+  - Git Flow
+  - DevOps practices
+  - automated testing
+  - code quality
+  - version control
+  - deployment automation
+  - software engineering best practices
+  - GitHub Actions
+  story_adaptability: High
+  narrative_hook: Software Engineer who delivered production-ready movie database with complete GitHub Actions CI/CD pipeline and Git Flow best practices in 20-hour technical interview project
+  tech_stack:
+  - Git
+  - Git Flow
+  - CI/CD
+  - GitHub Actions
+  - Python
+  - Automated Testing
+  supporting_links:
+  - ref_number: 28
+    title: Open Source Example of CI/CD and Git Flow Capabilities
+    url: https://github.com/unbedded/movie_db_qa
+
 parsing_config:
   default_proficiency: Intermediate
   default_adaptability: Medium
@@ -1078,3 +1280,6 @@ extraction_templates:
   - achieved X% accuracy/uptime/performance
   - delivered X weeks ahead of schedule
   - saved $X in costs
+
+
+

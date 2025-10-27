@@ -5,7 +5,12 @@ __pycache__/
 .mypy_cache/
 .pytest_cache/
 
-output/cvrltr*.md
+output/cvrltr*.*
+output/coverltr*.*
+!output/resume.md
+
+job_desc/*.md
+!job_desc/README.md
 
 # Personal/sensitive information
 config/personal/
@@ -34,4 +39,8 @@ Thumbs.db
 
 # Cover Letter Automation - Personal Data
 source_materials/personal_info.md
+output/cvrltr_*
+output/resume_*
+managed_context/
+test_suite_analysis/
 
