@@ -11,7 +11,7 @@
 
 **This is "Career as Code"**: one source of truth that generates tailored cover letters, ATS-friendly resumes, and interview prep materials in minutes.
 
-📖 **[Read the full story](#why-this-exists---full-article)** about how this system was built and why it works.
+📖 **[Read the full story](article/article_linkedin_20250907.md)** about how this system was built and why it works.
 
 ---
 
